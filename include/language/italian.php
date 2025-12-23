@@ -121,17 +121,17 @@ $a = array (
 	"entry_no" => "Numero di registraione",
 	"entries" => "Registrazini",
 
-	"new_entry" => "Registraione é stato aggiunto con successo.",
-	"entry_exist" => "Registraione é gia esistente.",
-	"entry_changed" => "Registraione é stato modificato con successo.",
-	"entry_deleted" => "Registraione é stato cancellato con successo.",
+	"new_entry" => "Registraione Ã© stato aggiunto con successo.",
+	"entry_exist" => "Registraione Ã© gia esistente.",
+	"entry_changed" => "Registraione Ã© stato modificato con successo.",
+	"entry_deleted" => "Registraione Ã© stato cancellato con successo.",
 	"entry_not_deleted" => "Registraione non si puo cancellare.",
 	"entry_canceled" => "Entry was canceled.",
 	"entry_not_canceled" => "Entry was not canceled.",
 
 	"field_error" => "Casella non compilata giusta.",
 
-	"invoice_issued" => "Questo registraione é stato gia fattura / offerta.",
+	"invoice_issued" => "Questo registraione Ã© stato gia fattura / offerta.",
 	"payment_issued" => "For this invoice a payment was issued.<br />
 		To change the invoice, you must delete the payment first.",
 	"position_used" => "This position is used in invoices / offers.",
@@ -146,7 +146,7 @@ $a = array (
 	"login_title" => "Iscrizione",
 	"login" => "Iscrizinoe",
 	"login_to" => "Iscrizione",
-	"loggedin" => "Iscritto è",
+	"loggedin" => "Iscritto Ã¨",
 	"user_active" => "Utente attiva",
 	"fullname" => "Nome",
 	"username" => "Nome dellutente",
@@ -156,7 +156,7 @@ $a = array (
 	"password_error" => "Il primo e il secondo password devono essere uguali.",
 	"login_error" => "Iscrizione non posibile. Per favore tentare unaltra volta.",
 	"login_end" => "Ritirazione erfolgreich. Grazie per luso di",
-	"session_end" => "La seduta è tolta. Per lungo tempo non è stata fatta una digitazione.",
+	"session_end" => "La seduta Ã¨ tolta. Per lungo tempo non Ã¨ stata fatta una digitazione.",
 	"no_permission" => "Non ha lautorizzazione di aprire questa pagina.",
 
 
@@ -210,7 +210,7 @@ $a = array (
 
 	// E-Mail
 	//
-	"email_priority" => "Prioritá",
+	"email_priority" => "PrioritÃ¡",
 	"email_from" => "Mittente",
 	"email_to" => "a",
 	"email_cc" => "Copia (Cc)",
@@ -218,8 +218,8 @@ $a = array (
 	"email_subject" => "Subject",
 	"email_text" => "Messagio",
 	"email_send" => "Mandare E-Mail",
-	"email_ok" => "E-Mail é stata mandata",
-	"email_error" => "Errore: E-Mail non é stata mandata.",
+	"email_ok" => "E-Mail Ã© stata mandata",
+	"email_error" => "Errore: E-Mail non Ã© stata mandata.",
 	"email_html" => "E-Mail HTML",
 	"email_text" => "E-Mail Testo",
 	"email_pdf" => "E-Mail PDF-Attachment",
@@ -232,7 +232,7 @@ $a = array (
 	"pos_all" => "Show all positions",
 	"pos_name" => "Posizione / Articolo",
 	"pos_text" => "Descrizione",
-	"pos_quantity" => "Quantitá",
+	"pos_quantity" => "QuantitÃ¡",
 	"pos_price" => "Prezzo",
 	"pos_amount" => "Somma",
 	"pos_choose" => "Scegliere posizione",
@@ -370,7 +370,7 @@ $a = array (
 	"valid_thru" => "Valido fino",
 	"outstanding_payment" => "Si mostreranno solo cliente con conti ancora aperti.",
 	"payment_error" => "Payment is already available.",
-	"payment_incorrect" => "Un versamento piú alto non è possibile.<br /><br />Versamento deve corrispondere alla somma della fattura.",
+	"payment_incorrect" => "Un versamento piÃº alto non Ã¨ possibile.<br /><br />Versamento deve corrispondere alla somma della fattura.",
  	"payment_deletion" => "By the deletion of this payment, the existence of the cash book<br />
 		would slip in the minus. Cash in hand cannot be negative!",
 
@@ -397,7 +397,7 @@ $a = array (
 	"cashbook_number" => "Numero di ricevuta",
 	"description" => "Descrizione",
 	"takings_expenditures_error" => "Entrate incasso e spese non si possono compilare contemporaneo.",
-	"cashbook_expenditures" => "Non puo spendere più soldi che esistono in cassa.",
+	"cashbook_expenditures" => "Non puo spendere piÃ¹ soldi che esistono in cassa.",
 
 	// Syslog
 	//
@@ -448,7 +448,7 @@ $language = array (
 $group = array (
 	1 => "Root",
 	2 => "Responsabile",
-	3 => "Contabilità",
+	3 => "ContabilitÃ ",
 	4 => "Impiegato",
 	5 => "Utente"
 );

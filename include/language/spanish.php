@@ -3,7 +3,7 @@
 /*
 	spanish.php
 
-	phpFactura - Un simple programa de facturación y administración de direcciónes.
+	phpFactura - Un simple programa de facturaciÃ³n y administraciÃ³n de direcciÃ³nes.
 	Copyright (C) 2001 - 2018 Edy Corak < edy at loenshotel dot de >
 
 	Spanish translation by: 2005 - 2008 Markus Ehrlich < metatux at gmx dot net >
@@ -39,26 +39,26 @@ $a = array (
 	"choose_language" => "Seleccionar Idioma",
 
 
-	// Navegación
+	// NavegaciÃ³n
 	//
 	"logout" => "Salir",
 	"startpage" => "Inicio",
 	"addressbook" => "Directorio",
-	"position" => "Posición",
+	"position" => "PosiciÃ³n",
 	"offer" => "Presupuesto",
 	"invoice" => "Factura",
 	"credit_note" => "Abono",
 	"payment" => "Pagos",
 	"cashbook" => "Caja",
 	"reports" => "Reportes",
-	"configuration" => "Configuración",
+	"configuration" => "ConfiguraciÃ³n",
 	"message" => "Mensaje",
 	"method_of_payment" => "Forma de Pago",
-	"category" => "Categorías",
+	"category" => "CategorÃ­as",
 	"tax" => "IMPUESTO AL VALOR AGREGADO",
 	"tax_short" => "Tax",
 	"settings" => "Ajustes",
-	"user_admin" => "Administración de Usuarios",
+	"user_admin" => "AdministraciÃ³n de Usuarios",
 	"super_user" => "Administrador",
 	"syslog" => "Syslog",
 	"license" => "License",
@@ -67,10 +67,10 @@ $a = array (
 	"new" => "Nuevo",
 	"search" => "Buscar",
 	"detail_search" => "Buscar en detalle",
-	"searchresult" => "Resultado de búsqueda",
+	"searchresult" => "Resultado de bÃºsqueda",
 	"help" => "Ayuda",
 
-	"info" => "Información",
+	"info" => "InformaciÃ³n",
 	"all_info" => "Todas las informaciones",
 
 
@@ -94,7 +94,7 @@ $a = array (
 	"close" => "Cerrar",
 	"close_window" => "Cerrar ventana",
 	"choose_message" => "Seleccionar Mensaje",
-	"back" => "Atrás",
+	"back" => "AtrÃ¡s",
 	"next" => "Adelante",
 	"accept" => "Accept",
 
@@ -102,9 +102,9 @@ $a = array (
 	// En general
 	//
 	"date_text" => "Fecha",
-	"number_text" => "Número",
+	"number_text" => "NÃºmero",
 
-	"page" => "Página",
+	"page" => "PÃ¡gina",
 	"firstpage" => "First page",
 	"prevpage" => "Previous page",
 	"nextpage" => "Next page",
@@ -114,25 +114,25 @@ $a = array (
 	"not_canceled_entries" => "Show not canceled entries",
 	"all_entries" => "Show all entries",
 
-	"entry" => "Entrada/Inscripción",
+	"entry" => "Entrada/InscripciÃ³n",
 	"no_entry" => "No hay bloques de datos.",
 	"entry_no" => "Bloque de datos Nro.",
 	"entries" => "Entradas",
 
-	"new_entry" => "Bloque de datos ha sido agregado con éxito.",
+	"new_entry" => "Bloque de datos ha sido agregado con Ã©xito.",
 	"entry_exist" => "Bloque de datos ya existe.",
-	"entry_changed" => "Bloque de datos ha sido modificado con éxito.",
-	"entry_deleted" => "Bloque de datos ha sido eliminado con éxito.",
+	"entry_changed" => "Bloque de datos ha sido modificado con Ã©xito.",
+	"entry_deleted" => "Bloque de datos ha sido eliminado con Ã©xito.",
 	"entry_not_deleted" => "El bloque de datos no se puede eliminar.",
 	"entry_canceled" => "Datensatz wurde storniert.",
 	"entry_not_canceled" => "Datensatz kann nicht storniert werden.",
 	"field_error" => "El campo no ha sido llenado correctamente.",
 	"invoice_issued" => "Para este bloque de datos ya existen facturas.",
 	"payment_issued" => "Para este bloque de datos ya existen pagos.<br />
-		Para modificar esta factura tendrá que eliminar primero el ingreso de pago.",
+		Para modificar esta factura tendrÃ¡ que eliminar primero el ingreso de pago.",
 	"position_used" => "Este bloque de datos se esta usando en facturas.",
 	"offer_used" => "Para este bloque de datos ya se han hecho facturas.<br />
-		Para modificar este Presupuesto tendrá que eliminar primero la factura.",
+		Para modificar este Presupuesto tendrÃ¡ que eliminar primero la factura.",
 	"invalid_date" => "La fecha no es correcta. Favor rectificar y redactar. e. g. 01.01.1970",
 
 
@@ -149,10 +149,10 @@ $a = array (
 	"password" => "Contrasena",
 	"repeat_password" => "Repetir contrasena",
 	"password_error" => "La primera y la segunda contrasena tienen que ser identicas.",
-	"login_error" => "Entrada sin éxito. Por favor intentarlo nuevamente.",
-	"login_end" => "Entrada con éxito. Gracias por usar",
-	"session_end" => "Sessión cerrada. No hubo acción durante un tiempo.",
-	"no_permission" => "Usted no tiene permiso para ver esta Página.",
+	"login_error" => "Entrada sin Ã©xito. Por favor intentarlo nuevamente.",
+	"login_end" => "Entrada con Ã©xito. Gracias por usar",
+	"session_end" => "SessiÃ³n cerrada. No hubo acciÃ³n durante un tiempo.",
+	"no_permission" => "Usted no tiene permiso para ver esta PÃ¡gina.",
 
 
 	// Directorio
@@ -161,35 +161,35 @@ $a = array (
 	"prefix" => "Sexo/Encabezamiento",
 	"firstname" => "Nombre",
 	"lastname" => "Apellido",
-	"title" => "Título",
+	"title" => "TÃ­tulo",
 	"company" => "Empresa",
-	"department" => "Extensión",
-	"postalcode" => "Código postal",
+	"department" => "ExtensiÃ³n",
+	"postalcode" => "CÃ³digo postal",
 	"city" => "Ciudad",
-	"country" => "País",
+	"country" => "PaÃ­s",
 	"stateprov" => "Departamento",
 	"address" => "Calle",
-	"position1" => "Posición",
+	"position1" => "PosiciÃ³n",
 	"initials" => "Iniciales",
 	"salutation" => "Encabezamiento",
 	"phonehome" => "Tel. (Privado)",
 	"phoneoffi" => "Tel. (Oficina)",
 	"phoneothe" => "Tel. (Otros)",
 	"phonework" => "Tel. (Trabajo)",
-	"mobile" => "Tel. (Móvil)",
+	"mobile" => "Tel. (MÃ³vil)",
 	"pager" => "Beeper",
 	"fax" => "Fax",
 	"email" => "E-Mail",
-	"url" => "Página web",
+	"url" => "PÃ¡gina web",
 	"note" => "Nota",
-	"url2" => "Página web 2",
+	"url2" => "PÃ¡gina web 2",
 	"email2" => "E-Mail 2",
 	"altfield1" => "Campo usuario 1",
 	"altfield2" => "Campo usuario 2",
 	"cust_method_of_payment" => "Forma de Pago",
 	"birthday" => "Fecha de Cumpleanos e. g. 01.01.1970",
 	"select_all" => "Todos",
-	"envelope" => "Calculación",
+	"envelope" => "CalculaciÃ³n",
 	"issue_invoice" => "Hacer factura para",
 	"issue_offer" => "Hacer presupuesto para",
 	"issue_credit_note" => "Hacer abono para",
@@ -222,27 +222,27 @@ $a = array (
 
 	// Tablero posiciones
 	//
-	"pos_active" => "Posición activa",
-	"pos_inactive" => "Posición inactiva",
+	"pos_active" => "PosiciÃ³n activa",
+	"pos_inactive" => "PosiciÃ³n inactiva",
 	"pos_all" => "Mostrar todas las Posiciones",
-	"pos_name" => "Posición / Artículo",
-	"pos_text" => "Descripción",
+	"pos_name" => "PosiciÃ³n / ArtÃ­culo",
+	"pos_text" => "DescripciÃ³n",
 	"pos_quantity" => "Cantidad",
 	"pos_price" => "Precio",
 	"pos_amount" => "Monto",
-	"pos_choose" => "Seleccionar posición",
-	"pos_new" => "Ingresar nueva Posición",
-	"pos_print" => "Imprimir posición",
+	"pos_choose" => "Seleccionar posiciÃ³n",
+	"pos_new" => "Ingresar nueva PosiciÃ³n",
+	"pos_print" => "Imprimir posiciÃ³n",
 	"pos_group" => "Gruppe",
 	"pos_inventory" => "Existencias",
-	"pos_search" => "Introducir: Posición / Artículo o Descripción para buscar.",
+	"pos_search" => "Introducir: PosiciÃ³n / ArtÃ­culo o DescripciÃ³n para buscar.",
 
 
 	// Tablero impuestos
 	//
 	"tax_divide" => "Divido por",
 	"tax_multiply" => "Multiplicado con",
-	"tax_description" => "I.V.A. Descripción",
+	"tax_description" => "I.V.A. DescripciÃ³n",
 
 
 	// Ajustes
@@ -251,20 +251,20 @@ $a = array (
 	"company_settings" => "Company settings",
 	"pdf_settings" => "PDF settings",
 	"print_company_data" => "Imprimir datos de empresa",
-	"print_position_name" => "Imprimir nombre de posición",
+	"print_position_name" => "Imprimir nombre de posiciÃ³n",
 	"print_output" => "Imprimir",
 	"company_logo" => "Logotipo empresa",
 	"company_logo_width" => "Amplitud logotipo",
 	"company_logo_height" => "Altura logotipo",
 	"company_name" => "Nombre de empresa",
-	"company_address" => "Dirección",
-	"company_postal" => "Código postal",
+	"company_address" => "DirecciÃ³n",
+	"company_postal" => "CÃ³digo postal",
 	"company_city" => "Ciudad",
-	"company_country" => "País",
-	"company_phone" => "Teléfono",
+	"company_country" => "PaÃ­s",
+	"company_phone" => "TelÃ©fono",
 	"company_fax" => "Telefax",
 	"company_email" => "E-Mail",
-	"company_url" => "Página Web",
+	"company_url" => "PÃ¡gina Web",
 	"company_wap" => "WAP",
 	"company_currency" => "Moneda",
 	"company_tax_free" => "Impuesto libremente",
@@ -273,7 +273,7 @@ $a = array (
 	"business_taxnr" => "Numero registro A.E.A.T.",
 	"bank_name" => "Datos de banco",
 	"bank_account" => "Nro. de Cuenta.",
-	"bank_number" => "Código bancario",
+	"bank_number" => "CÃ³digo bancario",
 	"bank_iban" => "IBAN",
 	"bank_bic" => "BIC",
 	"email_internal" => "E-Mail interno",
@@ -281,10 +281,10 @@ $a = array (
 	"email_signature" => "Firma",
 	"stock_active" => "Existencias activas",
 	"reminder" => "Recordatorio de pago",
-	"reminder_price" => "Multa por amonestación",
+	"reminder_price" => "Multa por amonestaciÃ³n",
 	"reminder_days" => "Remind after day(s)",
-	"entries_per_page" => "Entradas por página",
-	"session_sec" => "Sessión Seg.",
+	"entries_per_page" => "Entradas por pÃ¡gina",
+	"session_sec" => "SessiÃ³n Seg.",
 	"pdf_font" => "Font",
 	"pdf_text1" => "Font size 1",
 	"pdf_text2" => "Font size 2",
@@ -337,8 +337,8 @@ $a = array (
 	"email_invoice" => "Factura por E-Mail a:",
 	"invoice_was_send" => "Factura ha sido enviado por E-Mail a",
 	"open_since" => "Abierta desde dia(s)",
-	"invoice_deletion" => "Eliminando esta factura, quedaría<br />
-		el estado de la contabilidad en disminución!",
+	"invoice_deletion" => "Eliminando esta factura, quedarÃ­a<br />
+		el estado de la contabilidad en disminuciÃ³n!",
 	"delivery_note" => "Lieferschein",
 	"print_delivery_note" => "Lieferschein drucken",
 	"delivery_note_initials" => "LS",
@@ -361,24 +361,24 @@ $a = array (
 	"payment_number" => "Ingreso de Pago Nro.",
 	"payment_sum" => "Bezahlt",
 	"total_payment" => "Gesamt",
-	"card_number" => "Tarjeta de Crédito Nro.",
-	"valid_thru" => "Válida hasta",
+	"card_number" => "Tarjeta de CrÃ©dito Nro.",
+	"valid_thru" => "VÃ¡lida hasta",
 	"outstanding_payment" => "Solo se muestran Clientes con facturas abiertas.",
 	"payment_error" => "Zahlung ist bereits vorhanden.",
 	"payment_incorrect" => "Aumento de ingreso de pago imposible.<br /><br /> Ingreso de Pago tiene que ser igual al Monto total.",
- 	"payment_deletion" => "Eliminando este ingreso de pago, quedaría<br />
-		el estado de la contabilidad en disminución!",
+ 	"payment_deletion" => "Eliminando este ingreso de pago, quedarÃ­a<br />
+		el estado de la contabilidad en disminuciÃ³n!",
 
 
 	// Reportes
 	//
 	"select_report" => "Seleccionar reporte",
 	"customer_sales" => "Ventas por cliente",
-	"position_sales" => "Ventas por Posición/Artículo",
+	"position_sales" => "Ventas por PosiciÃ³n/ArtÃ­culo",
 	"invoice_totals" => "Registro salida de facturas",
 	"booking_details" => "Detalles de ingresos por fecha",
 	"individual_values" => "Valores detallados",
-	"summary" => "Resúmen",
+	"summary" => "ResÃºmen",
 	"date_from" => "del",
 	"date_till" => "hasta",
 
@@ -390,9 +390,9 @@ $a = array (
 	"takings" => "Ingresos",
 	"expenditures" => "Egresos",
 	"cashbook_number" => "Recibo Nro.",
-	"cashbook_description" => "Descripción",
+	"cashbook_description" => "DescripciÃ³n",
 	"takings_expenditures_error" => "Ingresos y Egresos no pueden ser registrados al mismo tiempo.",
-	"cashbook_expenditures" => "Usted no puede gastar más de lo que hay en la Caja.",
+	"cashbook_expenditures" => "Usted no puede gastar mÃ¡s de lo que hay en la Caja.",
 
 
 	// Syslog
@@ -408,10 +408,10 @@ $reports = array (
 	"booking_details.php" => "Detalles ingresos por - Fecha",
 	"invoice_ledger.php" => "Registro Egresos",
 	"outstanding_accounts.php" => "Facturas abiertas",
-	"invoice_ledger_summary.php" => "Ventas por Clientes - Resúmen",
+	"invoice_ledger_summary.php" => "Ventas por Clientes - ResÃºmen",
 	"cashbook.php" => "Registro caja",
-	"position_sales_summary.php" => "Ventas por Posición/Artículo - Resúmen",
-	"position_sales.php" => "Ventas por Posición/Artículo - Valores detallados",
+	"position_sales_summary.php" => "Ventas por PosiciÃ³n/ArtÃ­culo - ResÃºmen",
+	"position_sales.php" => "Ventas por PosiciÃ³n/ArtÃ­culo - Valores detallados",
 	"outstanding_offers.php" => "Presupuestos no avanzados"
 );
 
@@ -428,14 +428,14 @@ $customer_reports = array (
 // Idioma
 //
 $language = array (
-	1 => "Alemán",
-	2 => "Inglés",
+	1 => "AlemÃ¡n",
+	2 => "InglÃ©s",
 	3 => "Polaco",
 	4 => "Croata",
-	5 => "Francés",
+	5 => "FrancÃ©s",
 	6 => "Italiano",
 	7 => "Espanol - ES",
-	8 => "Holandés"
+	8 => "HolandÃ©s"
 );
 
 
@@ -457,7 +457,7 @@ $choice_yes_no = array (
 );
 
 
-// Formato de impresión
+// Formato de impresiÃ³n
 //
 $print_output = array (
 	1 => "HTML",
@@ -485,7 +485,7 @@ $email_priority = array (
 //
 $offer_status = array(
 	1 => "No recibido",
-	2 => "Confirmación de orden",
+	2 => "ConfirmaciÃ³n de orden",
 	3 => "Factura"
 );
 

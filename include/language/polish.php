@@ -6,8 +6,8 @@
 	phpRechnung - is easy-to-use Web-based multilingual accounting software.
 	Copyright (C) 2001 - 2018 Edy Corak < edy at loenshotel dot de >
 
-	phpRechnung - Prosty program do fakturowania wraz z administracj± ksi±¿ki adresowej
-	T³umaczy³: Krzysztof B³¿owski < ciarko at wp dot pl >
+	phpRechnung - Prosty program do fakturowania wraz z administracjÂ± ksiÂ±Â¿ki adresowej
+	TÂ³umaczyÂ³: Krzysztof BÂ³Â¿owski < ciarko at wp dot pl >
 	
 	ISO-8859-2
 
@@ -32,34 +32,34 @@
 $a = array (
 	"welcome" => "Welcome to",
 	"programname" => "phpRechnung 1.6.6",
-	"phprechnung" => "phpRechnung 1.6.6 - Copyright &copy; 2001 - 2018 <a class='nmenulink' title='phpRechnung Home' href='https://loenshotel.de/phpRechnung/' target='_blank'>&nbsp;Edy Corak&nbsp;</a>. Wszelkie prawa zastrze¿one.",
+	"phprechnung" => "phpRechnung 1.6.6 - Copyright &copy; 2001 - 2018 <a class='nmenulink' title='phpRechnung Home' href='https://loenshotel.de/phpRechnung/' target='_blank'>&nbsp;Edy Corak&nbsp;</a>. Wszelkie prawa zastrzeÂ¿one.",
 
 	"admin" => "Administrator",
 
-	"language" => "Jêzyk",
-	"choose_language" => "Wybór jêzyka",
+	"language" => "JÃªzyk",
+	"choose_language" => "WybÃ³r jÃªzyka",
 
 
 	// Linkbar
 	//
 	"logout" => "Wyloguj",
-	"startpage" => "Strona g³ówna",
-	"addressbook" => "Ksi±¿ka adresowa",
-	"position" => "Towar lub us³uga",
+	"startpage" => "Strona gÂ³Ã³wna",
+	"addressbook" => "KsiÂ±Â¿ka adresowa",
+	"position" => "Towar lub usÂ³uga",
 	"offer" => "Oferta",
 	"invoice" => "Faktura VAT",
 	"credit_note" => "Credit note",
-	"payment" => "P³atno¶ci",
-	"cashbook" => "Ksiêga p³atno¶ci",
+	"payment" => "PÂ³atnoÂ¶ci",
+	"cashbook" => "KsiÃªga pÂ³atnoÂ¶ci",
 	"reports" => "Raporty",
 	"configuration" => "Konfiguracja",
-	"message" => "Wiadomo¶ci",
-	"method_of_payment" => "Forma p³atno¶ci",
+	"message" => "WiadomoÂ¶ci",
+	"method_of_payment" => "Forma pÂ³atnoÂ¶ci",
 	"category" => "Category",
 	"tax" => "Podatek VAT",
 	"tax_short" => "VAT",
 	"settings" => "Ustawienia",
-	"user_admin" => "Zarz±dzanie u¿ytkownikami",
+	"user_admin" => "ZarzÂ±dzanie uÂ¿ytkownikami",
 	"super_user" => "Super User",
 	"syslog" => "Syslog",
 	"license" => "License",
@@ -67,7 +67,7 @@ $a = array (
 	"list" => "Lista",
 	"new" => "Nowa",
 	"search" => "Szukaj",
-	"detail_search" => "Szukanie szczegó³owe",
+	"detail_search" => "Szukanie szczegÃ³Â³owe",
 	"searchresult" => "Wynik wyszukiwanie",
 	"help" => "Pomoc",
 
@@ -94,8 +94,8 @@ $a = array (
 	"choose" => "Wybierz",
 	"close" => "Close",
 	"close_window" => "Zamknij okno",
-	"choose_message" => "Wybór wiadomo¶ci",
-	"back" => "Wróæ",
+	"choose_message" => "WybÃ³r wiadomoÂ¶ci",
+	"back" => "WrÃ³Ã¦",
 	"next" => "Dalej",
 	"accept" => "Accept",
 
@@ -116,28 +116,28 @@ $a = array (
 	"all_entries" => "Show all entries",
 
 	"entry" => "Wpis",
-	"no_entry" => "Nie ma ¿adnych rekordów.",
+	"no_entry" => "Nie ma Â¿adnych rekordÃ³w.",
 	"entry_no" => "Nr rekordu.",
 	"entries" => "Opcje",
 
-	"new_entry" => "Rekord zosta³ pomy¶lnie dodany do bazy danych.",
-	"entry_exist" => "Taki rekord istnieje ju¿ w bazie danych.",
-	"entry_changed" => "Rekord zosta³ pomy¶lnie zmieniony.",
-	"entry_deleted" => "Rekord zosta³ pomy¶lnie skasowany.",
-	"entry_not_deleted" => "Rekord nie mo¿e zostaæ skasowany.",
+	"new_entry" => "Rekord zostaÂ³ pomyÂ¶lnie dodany do bazy danych.",
+	"entry_exist" => "Taki rekord istnieje juÂ¿ w bazie danych.",
+	"entry_changed" => "Rekord zostaÂ³ pomyÂ¶lnie zmieniony.",
+	"entry_deleted" => "Rekord zostaÂ³ pomyÂ¶lnie skasowany.",
+	"entry_not_deleted" => "Rekord nie moÂ¿e zostaÃ¦ skasowany.",
 	"entry_canceled" => "Entry was canceled.",
 	"entry_not_canceled" => "Entry was not canceled.",
 
-	"field_error" => "Pole zosta³o b³êdnie wype³nione.",
+	"field_error" => "Pole zostaÂ³o bÂ³Ãªdnie wypeÂ³nione.",
 
-	"invoice_issued" => "Dla tego rekordu zosta³a ju¿ wystawiana faktura.",
-	"payment_issued" => "Dla tego rekordu przeprowadzona zosta³a p³atno¶æ.<br />
-		Aby zmieniæ fakturê nale¿y najpierw skasowaæ p³atno¶æ.",
-	"position_used" => "Ten rekord bêdzie wyko¿ystany w faktura.",
-	"offer_used" => "Dla tego rekordu wystawina zosta³a faktura.<br />
-		Aby zieniæ ofertê nale¿y najpierw skasowaæ fakturê.",
+	"invoice_issued" => "Dla tego rekordu zostaÂ³a juÂ¿ wystawiana faktura.",
+	"payment_issued" => "Dla tego rekordu przeprowadzona zostaÂ³a pÂ³atnoÂ¶Ã¦.<br />
+		Aby zmieniÃ¦ fakturÃª naleÂ¿y najpierw skasowaÃ¦ pÂ³atnoÂ¶Ã¦.",
+	"position_used" => "Ten rekord bÃªdzie wykoÂ¿ystany w faktura.",
+	"offer_used" => "Dla tego rekordu wystawina zostaÂ³a faktura.<br />
+		Aby zieniÃ¦ ofertÃª naleÂ¿y najpierw skasowaÃ¦ fakturÃª.",
 
-	"invalid_date" => "Data jest b³êdna. Proszê, sprawd¼ podane dane. np. 01.01.1970",
+	"invalid_date" => "Data jest bÂ³Ãªdna. ProszÃª, sprawdÂ¼ podane dane. np. 01.01.1970",
 
 
 	// Login
@@ -146,38 +146,38 @@ $a = array (
 	"login" => "Logowanie",
 	"login_to" => "Logowanie w",
 	"loggedin" => "Zalogowany jest",
-	"user_active" => "U¿ytkownik aktywan",
-	"fullname" => "Imiê",
+	"user_active" => "UÂ¿ytkownik aktywan",
+	"fullname" => "ImiÃª",
 	"username" => "Login",
 	"usergroup" => "Grupa",
-	"password" => "Has³o",
-	"repeat_password" => "Powtórz has³o",
-	"password_error" => "Pierwsze i drugie has³o musz± byæ identyczne.",
-	"login_error" => "Logowanie nieudane. Spróbuj ponownie.",
-	"login_end" => "Koniec pracy. Dziêkujemy za ko¿ystanie z",
-	"session_end" => "Sesja zakoñczona z powodu zbyt d³ugiego braku aktywno¶ci.",
-	"no_permission" => "Nie masz odpowienich uprawnieñ aby obejrzeæ t± stronê.",
+	"password" => "HasÂ³o",
+	"repeat_password" => "PowtÃ³rz hasÂ³o",
+	"password_error" => "Pierwsze i drugie hasÂ³o muszÂ± byÃ¦ identyczne.",
+	"login_error" => "Logowanie nieudane. SprÃ³buj ponownie.",
+	"login_end" => "Koniec pracy. DziÃªkujemy za koÂ¿ystanie z",
+	"session_end" => "Sesja zakoÃ±czona z powodu zbyt dÂ³ugiego braku aktywnoÂ¶ci.",
+	"no_permission" => "Nie masz odpowienich uprawnieÃ± aby obejrzeÃ¦ tÂ± stronÃª.",
 
 
 	// Addressbook
 	//
-	"print_name" => "Drukuj imiê",
+	"print_name" => "Drukuj imiÃª",
 	"prefix" => "Prefix",
-	"firstname" => "Imiê",
+	"firstname" => "ImiÃª",
 	"lastname" => "Nazwisko",
-	"title" => "Tytu³",
+	"title" => "TytuÂ³",
 	"company" => "Firma",
-	"department" => "Dzia³",
+	"department" => "DziaÂ³",
 	"postalcode" => "Kod pocztowy",
-	"city" => "Miejscowo¶æ",
+	"city" => "MiejscowoÂ¶Ã¦",
 	"country" => "Kraj",
-	"stateprov" => "Województwo",
+	"stateprov" => "WojewÃ³dztwo",
 	"address" => "Ulica",
 	"position1" => "Pozycja",
-	"initials" => "Skrót",
-	"salutation" => "Zwrot grzeczno¶ciowy",
+	"initials" => "SkrÃ³t",
+	"salutation" => "Zwrot grzecznoÂ¶ciowy",
 	"phonehome" => "Tel. (Prywatny)",
-	"phoneoffi" => "Tel. (Bezpo¶redni)",
+	"phoneoffi" => "Tel. (BezpoÂ¶redni)",
 	"phoneothe" => "Tel. (Inne)",
 	"phonework" => "Tel. (Firma)",
 	"mobile" => "Tel. (Mobil)",
@@ -188,20 +188,20 @@ $a = array (
 	"note" => "Notatnik",
 	"url2" => "Homepage 2",
 	"email2" => "E-Mail 2",
-	"altfield1" => "Pole u¿ytkownika 1",
-	"altfield2" => "Pole u¿ytkownika 2",
-	"cust_method_of_payment" => "Forma p³atno¶ci",
+	"altfield1" => "Pole uÂ¿ytkownika 1",
+	"altfield2" => "Pole uÂ¿ytkownika 2",
+	"cust_method_of_payment" => "Forma pÂ³atnoÂ¶ci",
 	"birthday" => "Data urodzenia (np. 01.01.1970)",
 	"select_all" => "Wszyscy",
 	"envelope" => "Koperta",
-	"issue_invoice" => "Wystaw fakturê dla",
-	"issue_offer" => "Wystaw ofertê dla",
+	"issue_invoice" => "Wystaw fakturÃª dla",
+	"issue_offer" => "Wystaw ofertÃª dla",
 	"issue_credit_note" => "Issue credit note for",
 	"customer" => "Dane klienta",
 	"customer_no" => "Nr klienta",
 	"customer_no_initials" => "CU",
-	"choose_customer" => "Wybór klienta",
-	"find_customer" => "Podaj: Imiê, Nazwisko albo firmê wg których bêdziemy szukaæ.",
+	"choose_customer" => "WybÃ³r klienta",
+	"find_customer" => "Podaj: ImiÃª, Nazwisko albo firmÃª wg ktÃ³rych bÃªdziemy szukaÃ¦.",
 	"basic_info" => "Info",
 	"extended_info" => "Extended information",
 	"auth_info" => "Authentification",
@@ -215,13 +215,13 @@ $a = array (
 	"email_cc" => "Kopia (Cc)",
 	"email_bcc" => "Bcc",
 	"email_subject" => "Dotyczy",
-	"email_text" => "Wiadomo¶æ",
-	"email_send" => "Wy¶lij e-Mail",
-	"email_ok" => "E-Mail zosta³ wys³any do",
+	"email_text" => "WiadomoÂ¶Ã¦",
+	"email_send" => "WyÂ¶lij e-Mail",
+	"email_ok" => "E-Mail zostaÂ³ wysÂ³any do",
 	"email_error" => "Error: E-Mail was not send.",
 	"email_html" => "E-Mail HTML",
 	"email_text" => "E-Mail Text",
-	"email_pdf" => "E-Mail Za³±cznik-PDF",
+	"email_pdf" => "E-Mail ZaÂ³Â±cznik-PDF",
 
 
 	// Position
@@ -229,23 +229,23 @@ $a = array (
 	"pos_active" => "Pozycja aktywna",
 	"pos_inactive" => "Position inactive",
 	"pos_all" => "Show all positions",
-	"pos_name" => "Pozycja / Artykó³",
+	"pos_name" => "Pozycja / ArtykÃ³Â³",
 	"pos_text" => "SWW/PKWiU",
-	"pos_quantity" => "Ilo¶æ",
+	"pos_quantity" => "IloÂ¶Ã¦",
 	"pos_price" => "Cena",
-	"pos_amount" => "Warto¶æ",
+	"pos_amount" => "WartoÂ¶Ã¦",
 	"pos_choose" => "Wybierz pozycje",
 	"pos_new" => "Wpisanie nowej pozycji",
 	"pos_print" => "Drukowanie pozycji",
 	"pos_group" => "Group",
 	"pos_inventory" => "Inventory",
-	"pos_search" => "Podaj: Pozycja / Artykó³ albo opis wg których bêdziemy szukaæ.",
+	"pos_search" => "Podaj: Pozycja / ArtykÃ³Â³ albo opis wg ktÃ³rych bÃªdziemy szukaÃ¦.",
 
 
 	// Tax
 	//
 	"tax_divide" => "Dzielenie przez",
-	"tax_multiply" => "Mno¿yæ przez",
+	"tax_multiply" => "MnoÂ¿yÃ¦ przez",
 	"tax_description" => "VAT Opis",
 
 
@@ -258,12 +258,12 @@ $a = array (
 	"print_position_name" => "Drukowanie nazwy pozycji",
 	"print_output" => "Print output",
 	"company_logo" => "Logo firmy",
-	"company_logo_width" => "Szeroko¶æ loga firmy",
-	"company_logo_height" => "Wysoko¶æ loga firmy",
+	"company_logo_width" => "SzerokoÂ¶Ã¦ loga firmy",
+	"company_logo_height" => "WysokoÂ¶Ã¦ loga firmy",
 	"company_name" => "Adres firmy",
 	"company_address" => "Adres",
 	"company_postal" => "Kod pocztowy",
-	"company_city" => "Miejscowo¶æ",
+	"company_city" => "MiejscowoÂ¶Ã¦",
 	"company_country" => "Kraj",
 	"company_phone" => "Telefon",
 	"company_fax" => "Telefax",
@@ -272,7 +272,7 @@ $a = array (
 	"company_wap" => "WAP",
 	"company_currency" => "Waluta",
 	"company_tax_free" => "Tax Free",
-	"sales_prices" => "Ceny sprzeda¿y s±",
+	"sales_prices" => "Ceny sprzedaÂ¿y sÂ±",
 	"company_taxnr" => "NIP",
 	"business_taxnr" => "REGON",
 	"bank_name" => "Dane bankowe",
@@ -281,13 +281,13 @@ $a = array (
 	"bank_iban" => "IBAN",
 	"bank_bic" => "BIC",
 	"email_internal" => "E-Mail internal",
-	"email_use_signature" => "Wyko¿ystaæ podpis",
+	"email_use_signature" => "WykoÂ¿ystaÃ¦ podpis",
 	"email_signature" => "Podpis",
 	"stock_active" => "Stock check active",
 	"reminder" => "Przypomnienie",
 	"reminder_price" => "Reminder price",
 	"reminder_days" => "Remind after day(s)",
-	"entries_per_page" => "Wpisów na strone",
+	"entries_per_page" => "WpisÃ³w na strone",
 	"session_sec" => "Czas sessi Sek.",
 	"pdf_font" => "Font",
 	"pdf_text1" => "Font size 1",
@@ -299,10 +299,10 @@ $a = array (
 
 	// Offer
 	//
-	"save_offer" => "Zapisaæ ofertê",
-	"print_offer" => "Drukuj ofertê",
+	"save_offer" => "ZapisaÃ¦ ofertÃª",
+	"print_offer" => "Drukuj ofertÃª",
 	"print_order" => "Print order",
-	"change_offer" => "Edytuj ofertê",
+	"change_offer" => "Edytuj ofertÃª",
 	"copy_offer" => "Copy offer",
 	"status" => "Status",
 	"order" => "Order",
@@ -311,38 +311,38 @@ $a = array (
 	"order_initials" => "OR",
 	"offer_number" => "Nr oferty.",
 	"order_number" => "Order-No.",
-	"offer_subtotal" => "Miêdzysuma",
+	"offer_subtotal" => "MiÃªdzysuma",
 	"offer_tax1" => "Stawka VAT. 1",
 	"offer_tax2" => "Stawka VAT. 2",
 	"offer_tax3" => "Stawka VAT. 3",
 	"offer_amount" => "Razem brutto",
-	"email_offer" => "Wy¶lij ofertê przez E-Mail do:",
+	"email_offer" => "WyÂ¶lij ofertÃª przez E-Mail do:",
 	"email_order" => "E-Mail order to:",
-	"was_send" => "zosta³o wys³ane przez E-Mail do",
+	"was_send" => "zostaÂ³o wysÂ³ane przez E-Mail do",
 
 
 	// Invoice
 	//
-	"save_invoice" => "Zapisaæ fakturê",
-	"print_invoice" => "Drukuj fakturê",
+	"save_invoice" => "ZapisaÃ¦ fakturÃª",
+	"print_invoice" => "Drukuj fakturÃª",
 	"copy_invoice" => "Copy invoice",
-	"change_invoice" => "Edytuj fakturê",
-	"open_account" => "Nale¿no¶ci zaleg³e",
+	"change_invoice" => "Edytuj fakturÃª",
+	"open_account" => "NaleÂ¿noÂ¶ci zalegÂ³e",
 	"invoice_initials" => "FA",
 	"invoice_number" => "Nr faktury",
-	"invoice_subtotal" => "Miêdzysuma",
+	"invoice_subtotal" => "MiÃªdzysuma",
 	"invoice_tax1" => "Stawka VAT 1",
 	"invoice_tax2" => "Stawka VAT 2",
 	"invoice_tax3" => "Stawka VAT 3",
 	"invoice_amount" => "Razem",
-	"transaction" => "Wp³yw p³atno¶ci",
-	"invoice_transaction" => "Zap³ata za kwit nr",
+	"transaction" => "WpÂ³yw pÂ³atnoÂ¶ci",
+	"invoice_transaction" => "ZapÂ³ata za kwit nr",
 	"open_invoice" => "Faktury nieuregulowane",
-	"email_invoice" => "Fakturê przez E-Mail do:",
-	"invoice_was_send" => "Fakturê zosta³o wys³ane przez E-Mail do",
-	"open_since" => "Otworzone od Dzieñ(Dni)",
-	"invoice_deletion" => "W wyniku skasowanie tej faktury, zmieni³ siê stan<br />
-		ksiêgi p³atno¶ci na minus!",
+	"email_invoice" => "FakturÃª przez E-Mail do:",
+	"invoice_was_send" => "FakturÃª zostaÂ³o wysÂ³ane przez E-Mail do",
+	"open_since" => "Otworzone od DzieÃ±(Dni)",
+	"invoice_deletion" => "W wyniku skasowanie tej faktury, zmieniÂ³ siÃª stan<br />
+		ksiÃªgi pÂ³atnoÂ¶ci na minus!",
 	"delivery_note" => "Delivery note",
 	"print_delivery_note" => "Print delivery note",
 	"delivery_note_initials" => "DN",
@@ -359,29 +359,29 @@ $a = array (
 
 	// Payment
 	//
-	"save_payment" => "Zapisz p³atno¶æ",
-	"print_payment" => "Drukuj p³atno¶æ",
-	"change_payment" => "Edytuj p³atno¶æ",
-	"payment_number" => "Nr p³atno¶æi.",
+	"save_payment" => "Zapisz pÂ³atnoÂ¶Ã¦",
+	"print_payment" => "Drukuj pÂ³atnoÂ¶Ã¦",
+	"change_payment" => "Edytuj pÂ³atnoÂ¶Ã¦",
+	"payment_number" => "Nr pÂ³atnoÂ¶Ã¦i.",
 	"payment_sum" => "Paid",
 	"total_payment" => "Razem brutto",
 	"card_number" => "Nr kart",
-	"valid_thru" => "Wa¿ne do",
-	"outstanding_payment" => "Pokazani s± klienci, których faktury nie zosta³y uregulowane.",
+	"valid_thru" => "WaÂ¿ne do",
+	"outstanding_payment" => "Pokazani sÂ± klienci, ktÃ³rych faktury nie zostaÂ³y uregulowane.",
 	"payment_error" => "Payment is already available.",
-	"payment_incorrect" => "Wy¿sza zap³ata nie jest mo¿liwa.<br /><br /> Zap³ata musi odpowiadaæ warto¶ci faktury.",
- 	"payment_deletion" => "Poprzez skasowanie tej p³atno¶ci zmieni³ siê stan<br />
-		ksiêgi p³atno¶ci na minus!",
+	"payment_incorrect" => "WyÂ¿sza zapÂ³ata nie jest moÂ¿liwa.<br /><br /> ZapÂ³ata musi odpowiadaÃ¦ wartoÂ¶ci faktury.",
+ 	"payment_deletion" => "Poprzez skasowanie tej pÂ³atnoÂ¶ci zmieniÂ³ siÃª stan<br />
+		ksiÃªgi pÂ³atnoÂ¶ci na minus!",
 
 
 	// Reports
 	//
-	"select_report" => "Wybór raportów",
-	"customer_sales" => "Sprzeda¿ do klientów",
-	"position_sales" => "Sprzeda¿ pozycji lub artyku³ów",
+	"select_report" => "WybÃ³r raportÃ³w",
+	"customer_sales" => "SprzedaÂ¿ do klientÃ³w",
+	"position_sales" => "SprzedaÂ¿ pozycji lub artykuÂ³Ã³w",
 	"invoice_totals" => "Zestawienie faktur",
-	"booking_details" => "Operacje ksiêgowe wg daty",
-	"individual_values" => "Zestawienie szczegó³owe",
+	"booking_details" => "Operacje ksiÃªgowe wg daty",
+	"individual_values" => "Zestawienie szczegÃ³Â³owe",
 	"summary" => "Zestawienie",
 	"date_from" => "od",
 	"date_till" => "do",
@@ -390,13 +390,13 @@ $a = array (
 	// Cash book
 	//
 	"cash_in_hand" => "Stan",
-	"starting_with" => "Stan pocz±tkowy",
+	"starting_with" => "Stan poczÂ±tkowy",
 	"takings" => "Przychody",
 	"expenditures" => "Wydatki",
 	"cashbook_number" => "Nr kwitu",
 	"description" => "Opis",
-	"takings_expenditures_error" => "Dochody i wydatki nie mog± byæ jednocze¶nie wype³niane.",
-	"cashbook_expenditures" => "Nie mo¿esz wydaæ wiêcej pieniêdzy ni¿ masz w kasie.",
+	"takings_expenditures_error" => "Dochody i wydatki nie mogÂ± byÃ¦ jednoczeÂ¶nie wypeÂ³niane.",
+	"cashbook_expenditures" => "Nie moÂ¿esz wydaÃ¦ wiÃªcej pieniÃªdzy niÂ¿ masz w kasie.",
 
 	// Syslog
 	//
@@ -408,21 +408,21 @@ $a = array (
 // Reports
 //
 $reports = array (
-	"booking_details.php" => "Operacje ksiêgowe wg daty",
+	"booking_details.php" => "Operacje ksiÃªgowe wg daty",
 	"invoice_ledger.php" => "Zestawienie faktur",
 	"outstanding_accounts.php" => "Faktury nieuregulowane",
-	"invoice_ledger_summary.php" => "Zestawienie sprzeda¿y wg klientów",
-	"cashbook.php" => "Ksiêga p³atno¶ci",
-	"position_sales_summary.php" => "Zestawienie sumaryczne sprzeda¿y wg pozycji",
-	"position_sales.php" => "Zestawienie sprzeda¿y wg poszczególnych pozycji",
-	"outstanding_offers.php" => "Ofertê nieuregulowane"
+	"invoice_ledger_summary.php" => "Zestawienie sprzedaÂ¿y wg klientÃ³w",
+	"cashbook.php" => "KsiÃªga pÂ³atnoÂ¶ci",
+	"position_sales_summary.php" => "Zestawienie sumaryczne sprzedaÂ¿y wg pozycji",
+	"position_sales.php" => "Zestawienie sprzedaÂ¿y wg poszczegÃ³lnych pozycji",
+	"outstanding_offers.php" => "OfertÃª nieuregulowane"
 );
 
 
 // Customer reports
 //
 $customer_reports = array (
-	"../reports/customer_booking_details.php" => "Operacje ksiêgowe wg daty",
+	"../reports/customer_booking_details.php" => "Operacje ksiÃªgowe wg daty",
 	"../reports/customer_invoices.php" => "Zestawienie faktur",
 	"../reports/customer_outstanding_accounts.php" => "Faktury nieuregulowane"
 );
@@ -436,8 +436,8 @@ $language = array (
 	3 => "Polski",
 	4 => "Chorwacki",
 	5 => "Francja",
-	6 => "W³oski",
-	7 => "Hiszpañski - ES",
+	6 => "WÂ³oski",
+	7 => "HiszpaÃ±ski - ES",
 	8 => "Holenderski"
 );
 
@@ -447,9 +447,9 @@ $language = array (
 $group = array (
 	1 => "Root",
 	2 => "Dyrektor",
-	3 => "Ksiêgowo¶æ",
+	3 => "KsiÃªgowoÂ¶Ã¦",
 	4 => "Pracownik",
-	5 => "U¿ytkownik"
+	5 => "UÂ¿ytkownik"
 );
 
 // Choice Yes / No

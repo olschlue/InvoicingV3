@@ -28,7 +28,7 @@
 
 $a = array (
 	"welcome" => "Willkommen bei",
-	"programname" => "Schlüter & Friends",
+	"programname" => "SchlÃ¼ter & Friends",
 	"phprechnung" => "",
 
 	"admin" => "Administrator",
@@ -89,8 +89,8 @@ $a = array (
 	"print" => "Drucken",
 	"sort" => "Sortieren nach",
 	"choose" => "W&auml;hlen",
-	"close" => "Schließen",
-	"close_window" => "Fenster schließen",
+	"close" => "SchlieÃŸen",
+	"close_window" => "Fenster schlieÃŸen",
 	"choose_message" => "Mitteilung w&auml;hlen",
 	"back" => "Zur&uuml;ck",
 	"next" => "Weiter",
@@ -169,7 +169,7 @@ $a = array (
 	"city" => "ort",
 	"country" => "Land",
 	"stateprov" => "Bundesland",
-	"address" => "Straße",
+	"address" => "StraÃŸe",
 	"position1" => "Position",
 	"initials" => "K&uuml;rzel",
 	"salutation" => "Briefanrede",
@@ -287,9 +287,9 @@ $a = array (
 	"entries_per_page" => "Eintr&auml;ge pro Seite",
 	"session_sec" => "Sitzungsdauer Sek.",
 	"pdf_font" => "Schriftart",
-	"pdf_text1" => "Schriftgr&ouml;ße 1",
-	"pdf_text2" => "Schriftgr&ouml;ße 2",
-	"pdf_text3" => "Schriftgr&ouml;ße z. B. Rechnung",
+	"pdf_text1" => "Schriftgr&ouml;ÃŸe 1",
+	"pdf_text2" => "Schriftgr&ouml;ÃŸe 2",
+	"pdf_text3" => "Schriftgr&ouml;ÃŸe z. B. Rechnung",
 	"pdf_dir" => "TMP-Verzeichnis",
 	"pdf_attachment_text" => "PDF-Anhang-Text",
 

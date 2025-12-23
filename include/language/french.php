@@ -23,13 +23,13 @@
 	Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
 
-// Définition linguistique - Français
+// DÃ©finition linguistique - FranÃ§ais
 //
 
 $a = array (
 	"welcome" => "Bienvenu",
 	"programname" => "phpRechnung 1.6.6",
-	"phprechnung" => "phpRechnung 1.6.6 - Droits d'auteur &copy; 2001 - 2018 <a class='nmenulink' title='phpRechnung Home' href='https://loenshotel.de/phpRechnung/' target='_blank'>&nbsp;Edy Corak&nbsp;</a>. Touts droits reservés.",
+	"phprechnung" => "phpRechnung 1.6.6 - Droits d'auteur &copy; 2001 - 2018 <a class='nmenulink' title='phpRechnung Home' href='https://loenshotel.de/phpRechnung/' target='_blank'>&nbsp;Edy Corak&nbsp;</a>. Touts droits reservÃ©s.",
 
 	"admin" => "Administrateur",
 
@@ -45,17 +45,17 @@ $a = array (
 	"position" => "Position",
 	"offer" => "Devis",
 	"invoice" => "Facture",
-	"credit_note" => "Crédit",
+	"credit_note" => "CrÃ©dit",
 	"payment" => "Reglement",
 	"cashbook" => "Livre de caisse",
 	"reports" => "Messages",
 	"configuration" => "Configuration",
 	"message" => "Message",
-	"method_of_payment" => "Modalités de paiement",
-	"category" => "Catégorie",
-	"tax" => "Taxe sur la valeur ajoutée",
+	"method_of_payment" => "ModalitÃ©s de paiement",
+	"category" => "CatÃ©gorie",
+	"tax" => "Taxe sur la valeur ajoutÃ©e",
 	"tax_short" => "Tax",
-	"settings" => "Paramétres",
+	"settings" => "ParamÃ©tres",
 	"user_admin" => "Administration d'utilisateur",
 	"super_user" => "Super User",
 	"syslog" => "Syslog",
@@ -64,8 +64,8 @@ $a = array (
 	"list" => "Liste",
 	"new" => "Nouveau",
 	"search" => "Recherche",
-	"detail_search" => "Recherche Detaillé",
-	"searchresult" => "Résultat de la recherche",
+	"detail_search" => "Recherche DetaillÃ©",
+	"searchresult" => "RÃ©sultat de la recherche",
 	"help" => "Aide",
 
 	"info" => "Info",
@@ -75,16 +75,16 @@ $a = array (
 	// Actions
 	//
 	"insert" => "Enregistrer",
-	"save" => "Mémoire",
+	"save" => "MÃ©moire",
 	"edit" => "Travailler",
-	"edit_entry" => "Travailler une série de données",
+	"edit_entry" => "Travailler une sÃ©rie de donnÃ©es",
 	"change" => "Modifier",
 	"delete" => "Supprimer",
-	"delete_entry" => "Supprimer une série de données",
+	"delete_entry" => "Supprimer une sÃ©rie de donnÃ©es",
 	"cancel" => "Cancel",
 	"cancel_entry" => "Cancel entry",
 	"copy" => "Copie",
-	"copy_entry" => "Copiez l'entrée",
+	"copy_entry" => "Copiez l'entrÃ©e",
 
 	"print" => "Imprimer",
 	"sort" => "Trier",
@@ -97,10 +97,10 @@ $a = array (
 	"accept" => "Accept",
 
 
-	// Généralités
+	// GÃ©nÃ©ralitÃ©s
 	//
 	"date_text" => "Date",
-	"number_text" => "Numéro",
+	"number_text" => "NumÃ©ro",
 
 	"page" => "Page",
 	"firstpage" => "First page",
@@ -112,29 +112,29 @@ $a = array (
 	"not_canceled_entries" => "Show not canceled entries",
 	"all_entries" => "Show all entries",
 
-	"entry" => "Entrée",
-	"no_entry" => "Aucune série de données n'existe.",
-	"entry_no" => "Numéro de série de données",
-	"entries" => "Entrées",
+	"entry" => "EntrÃ©e",
+	"no_entry" => "Aucune sÃ©rie de donnÃ©es n'existe.",
+	"entry_no" => "NumÃ©ro de sÃ©rie de donnÃ©es",
+	"entries" => "EntrÃ©es",
 
-	"new_entry" => "La série de données a été ajoutée avec succès.",
-	"entry_exist" => "La série de données existe déjà.",
-	"entry_changed" => "La série de données a été modifiée avec succès.",
-	"entry_deleted" => "La série de données a été supprimée avec succès.",
-	"entry_not_deleted" => "La série de données ne peut pas être supprimée.",
+	"new_entry" => "La sÃ©rie de donnÃ©es a Ã©tÃ© ajoutÃ©e avec succÃ¨s.",
+	"entry_exist" => "La sÃ©rie de donnÃ©es existe dÃ©jÃ .",
+	"entry_changed" => "La sÃ©rie de donnÃ©es a Ã©tÃ© modifiÃ©e avec succÃ¨s.",
+	"entry_deleted" => "La sÃ©rie de donnÃ©es a Ã©tÃ© supprimÃ©e avec succÃ¨s.",
+	"entry_not_deleted" => "La sÃ©rie de donnÃ©es ne peut pas Ãªtre supprimÃ©e.",
 	"entry_canceled" => "Entry was canceled.",
 	"entry_not_canceled" => "Entry was not canceled.",
 
-	"field_error" => "Le champ n'a pas été rempli correctement.",
+	"field_error" => "Le champ n'a pas Ã©tÃ© rempli correctement.",
 
-	"invoice_issued" => "Pour cette série de données, la facture a déjà été fournie.",
-	"payment_issued" => "Un paiement a déjà été entrepris pour cette série de données.<br />
+	"invoice_issued" => "Pour cette sÃ©rie de donnÃ©es, la facture a dÃ©jÃ  Ã©tÃ© fournie.",
+	"payment_issued" => "Un paiement a dÃ©jÃ  Ã©tÃ© entrepris pour cette sÃ©rie de donnÃ©es.<br />
 		Pour modifier la facture , vous devez supprimer d'abord le paiement.",
-	"position_used" => "Cette série de données est utilisée dans les facture.",
-	"offer_used" => "Pour cette série de données, une facture a déjà été fournie.<br />
+	"position_used" => "Cette sÃ©rie de donnÃ©es est utilisÃ©e dans les facture.",
+	"offer_used" => "Pour cette sÃ©rie de donnÃ©es, une facture a dÃ©jÃ  Ã©tÃ© fournie.<br />
 		Pour modifier l'offre , vous devez supprimer d'abord la facture.",
 
-	"invalid_date" => "La date n'est pas correcte. Veuillez réexaminer votre entrée. par exemple. 01.01.1970",
+	"invalid_date" => "La date n'est pas correcte. Veuillez rÃ©examiner votre entrÃ©e. par exemple. 01.01.1970",
 
 
 	// Annonce
@@ -142,29 +142,29 @@ $a = array (
 	"login_title" => "Annonce",
 	"login" => "Annoncer",
 	"login_to" => "Annoncer",
-	"loggedin" => "Annoncé",
-	"user_active" => "Utilisateur activé",
+	"loggedin" => "AnnoncÃ©",
+	"user_active" => "Utilisateur activÃ©",
 	"fullname" => "Nom",
 	"username" => "Nom de l'utilisateur",
 	"usergroup" => "Groupe",
 	"password" => "Mot de passe",
-	"repeat_password" => "Répéter mot de passe",
-	"password_error" => "Le premier et le deuxième mot de passe doivent être mêmes.",
-	"login_error" => "Annonce manqué. Veuillez essayer encore.",
-	"login_end" => "Déclaration de départ avec succès. Merci beaucoup pour l'utilisation",
-	"session_end" => "La réunion termine. Ils n'ont pas entrepris longs d'entrées.",
-	"no_permission" => "Ils ne doivent pas indiquer d'autorisation autour de ce côté.",
+	"repeat_password" => "RÃ©pÃ©ter mot de passe",
+	"password_error" => "Le premier et le deuxiÃ¨me mot de passe doivent Ãªtre mÃªmes.",
+	"login_error" => "Annonce manquÃ©. Veuillez essayer encore.",
+	"login_end" => "DÃ©claration de dÃ©part avec succÃ¨s. Merci beaucoup pour l'utilisation",
+	"session_end" => "La rÃ©union termine. Ils n'ont pas entrepris longs d'entrÃ©es.",
+	"no_permission" => "Ils ne doivent pas indiquer d'autorisation autour de ce cÃ´tÃ©.",
 
 
 	// Annuaire
 	//
 	"print_name" => "Nom imprimer",
 	"prefix" => "Prefix",
-	"firstname" => "Prénom",
+	"firstname" => "PrÃ©nom",
 	"lastname" => "Nom de famille",
 	"title" => "Titre",
 	"company" => "Entreprise",
-	"department" => "Département",
+	"department" => "DÃ©partement",
 	"postalcode" => "Code postal",
 	"city" => "Lieu",
 	"country" => "Pays",
@@ -173,49 +173,49 @@ $a = array (
 	"position1" => "Position",
 	"initials" => "Initiales",
 	"salutation" => "Salutation",
-	"phonehome" => "Téléphone (privé)",
-	"phoneoffi" => "Téléphone (bureau)",
-	"phoneothe" => "Téléphone (d'autres)",
-	"phonework" => "Téléphone (entreprise)",
-	"mobile" => "Téléphone (portable)",
+	"phonehome" => "TÃ©lÃ©phone (privÃ©)",
+	"phoneoffi" => "TÃ©lÃ©phone (bureau)",
+	"phoneothe" => "TÃ©lÃ©phone (d'autres)",
+	"phonework" => "TÃ©lÃ©phone (entreprise)",
+	"mobile" => "TÃ©lÃ©phone (portable)",
 	"pager" => "Pager",
 	"fax" => "Fax",
-	"email" => "Courrier électronique",
+	"email" => "Courrier Ã©lectronique",
 	"url" => "Homepage",
 	"note" => "Note",
 	"url2" => "Homepage 2",
 	"email2" => "E-Mail 2",
 	"altfield1" => "Champ utilisateur 1",
 	"altfield2" => "Champ utilisateur 2",
-	"cust_method_of_payment" => "Modalité de paiement",
+	"cust_method_of_payment" => "ModalitÃ© de paiement",
 	"birthday" => "Anniversaire par exemple. 01.01.1970",
 	"select_all" => "Tout",
 	"envelope" => "Enveloppe",
 	"issue_invoice" => "Fournir une facture",
 	"issue_offer" => "Faire une offre",
-	"issue_credit_note" => "Fournir une crédit",
+	"issue_credit_note" => "Fournir une crÃ©dit",
 	"customer" => "Client",
-	"customer_no" => "Numéro de client",
+	"customer_no" => "NumÃ©ro de client",
 	"customer_no_initials" => "CU",
 	"choose_customer" => "Choisir client",
-	"find_customer" => "Entrée : Prénom, nom de famille ou entreprise.",
+	"find_customer" => "EntrÃ©e : PrÃ©nom, nom de famille ou entreprise.",
 	"basic_info" => "Info",
-	"extended_info" => "L'information prolongée",
+	"extended_info" => "L'information prolongÃ©e",
 	"auth_info" => "Authentification",
 
 
 	// E-Mail
 	//
-	"email_priority" => "Priorité",
-	"email_from" => "Expéditeur",
+	"email_priority" => "PrioritÃ©",
+	"email_from" => "ExpÃ©diteur",
 	"email_to" => "A",
 	"email_cc" => "Copie (Cc)",
 	"email_bcc" => "Copie aveugle (Bcc)",
 	"email_subject" => "Objet",
 	"email_text" => "Information",
 	"email_send" => "Envoyer un e-mail",
-	"email_ok" => "E-mail envoyé dessus",
-	"email_error" => "Erreur : Le e-mail n'a pas été envoyé.",
+	"email_ok" => "E-mail envoyÃ© dessus",
+	"email_error" => "Erreur : Le e-mail n'a pas Ã©tÃ© envoyÃ©.",
 	"email_html" => "E-Mail HTML",
 	"email_text" => "E-Mail Texte",
 	"email_pdf" => "E-Mail PDF-Annexe",
@@ -223,12 +223,12 @@ $a = array (
 
 	// Position
 	//
-	"pos_active" => "Position activé",
+	"pos_active" => "Position activÃ©",
 	"pos_inactive" => "Position inactif",
 	"pos_all" => "Indiquer toutes les positions",
 	"pos_name" => "Position / Article",
 	"pos_text" => "Description",
-	"pos_quantity" => "Quantité",
+	"pos_quantity" => "QuantitÃ©",
 	"pos_price" => "Prix",
 	"pos_amount" => "Montant",
 	"pos_choose" => "Choisir la position",
@@ -236,44 +236,44 @@ $a = array (
 	"pos_print" => "Position imprimer",
 	"pos_group" => "Group",
 	"pos_inventory" => "Inventory",
-	"pos_search" => "Entrée : La position/article ou la description.",
+	"pos_search" => "EntrÃ©e : La position/article ou la description.",
 
 
 	// Taxe
 	//
-	"tax_divide" => "Divisé",
-	"tax_multiply" => "Multiplié",
+	"tax_divide" => "DivisÃ©",
+	"tax_multiply" => "MultipliÃ©",
 	"tax_description" => " TVA Description",
 
 
-	// Réglage
+	// RÃ©glage
 	//
 	"basic_settings" => "Basic settings",
 	"company_settings" => "Company settings",
 	"pdf_settings" => "PDF settings",
-	"print_company_data" => "Imprimer données de la société",
+	"print_company_data" => "Imprimer donnÃ©es de la sociÃ©tÃ©",
 	"print_position_name" => "Imprimer les noms de position",
 	"print_output" => "Impression",
 	"company_logo" => "Logo d'entreprise",
 	"company_logo_width" => "Logo d'entreprise largeur",
 	"company_logo_height" => "Logo d'entreprise hauteur",
 	"company_name" => "Raison sociale",
-	"company_address" => "Route/numéro",
+	"company_address" => "Route/numÃ©ro",
 	"company_postal" => "Code postal",
 	"company_city" => "Lieu",
 	"company_country" => "Pays",
-	"company_phone" => "Téléphone",
-	"company_fax" => "Télécopie",
+	"company_phone" => "TÃ©lÃ©phone",
+	"company_fax" => "TÃ©lÃ©copie",
 	"company_email" => "E-Mail",
 	"company_url" => "Home Page",
 	"company_wap" => "WAP",
 	"company_currency" => "Monnaie",
-	"company_tax_free" => "Impôt librement",
+	"company_tax_free" => "ImpÃ´t librement",
 	"sales_prices" => "Prix de vente hors taxe",
-	"company_taxnr" => "Numéro d'identification fiscale",
-	"business_taxnr" => "Numéro d'impôt sur chiffre d'affaires",
+	"company_taxnr" => "NumÃ©ro d'identification fiscale",
+	"business_taxnr" => "NumÃ©ro d'impÃ´t sur chiffre d'affaires",
 	"bank_name" => "Relation bancaire",
-	"bank_account" => "Numéro de compte",
+	"bank_account" => "NumÃ©ro de compte",
 	"bank_number" => "Code de banque",
 	"bank_iban" => "IBAN",
 	"bank_bic" => "BIC",
@@ -284,8 +284,8 @@ $a = array (
 	"reminder" => "Rappel",
 	"reminder_price" => "Taxes de mise en demeure",
 	"reminder_days" => "Remind after day(s)",
-	"entries_per_page" => "Entrées par page",
-	"session_sec" => "Durée de réunion sec.",
+	"entries_per_page" => "EntrÃ©es par page",
+	"session_sec" => "DurÃ©e de rÃ©union sec.",
 	"pdf_font" => "Font",
 	"pdf_text1" => "Font size 1",
 	"pdf_text2" => "Font size 2",
@@ -306,8 +306,8 @@ $a = array (
 	"change_status" => "Modifier un statut",
 	"offer_initials" => "OF",
 	"order_initials" => "OR",
-	"offer_number" => "Numéro d'offre",
-	"order_number" => "Numéro d'ordre",
+	"offer_number" => "NumÃ©ro d'offre",
+	"order_number" => "NumÃ©ro d'ordre",
 	"offer_subtotal" => "Sous-total",
 	"offer_tax1" => "TVA. 1",
 	"offer_tax2" => "TVA. 2",
@@ -315,7 +315,7 @@ $a = array (
 	"offer_amount" => "Total",
 	"email_offer" => "Offre par e-mail:",
 	"email_order" => "L'ordre par e-mail:",
-	"was_send" => "envoyé par e-mail",
+	"was_send" => "envoyÃ© par e-mail",
 
 
 	// Facture
@@ -326,18 +326,18 @@ $a = array (
 	"change_invoice" => "Modifier facture",
 	"open_account" => "Bilan",
 	"invoice_initials" => "FA",
-	"invoice_number" => "Numéro de facture",
+	"invoice_number" => "NumÃ©ro de facture",
 	"invoice_subtotal" => "Sous-total",
 	"invoice_tax1" => "TVA. 1",
 	"invoice_tax2" => "TVA. 2",
 	"invoice_tax3" => "TVA. 3",
 	"invoice_amount" => "Total",
 	"transaction" => "Par",
-	"invoice_transaction" => "Encaissement numéro de facture",
-	"open_invoice" => "Factures non payés",
+	"invoice_transaction" => "Encaissement numÃ©ro de facture",
+	"open_invoice" => "Factures non payÃ©s",
 	"email_invoice" => "Facture par e-mail:",
-	"invoice_was_send" => "Facture par e-mail envoyé",
-	"open_since" => "Non rêglé de puis (e) de jour",
+	"invoice_was_send" => "Facture par e-mail envoyÃ©",
+	"open_since" => "Non rÃªglÃ© de puis (e) de jour",
 	"invoice_deletion" => "Par la suppression de cette facture,<br />
 		l'existence du livre de caisse glisserait dans au minus!",
 	"delivery_note" => "Delivery note",
@@ -347,10 +347,10 @@ $a = array (
 	"email_delivery_note" => "E-Mail delivery note to:",
 
 
-	// Crédit
+	// CrÃ©dit
 	//
-	"credit_note_number" => "Numéro de crédit",
-	"credit_note_redeemed" => "Racheté",
+	"credit_note_number" => "NumÃ©ro de crÃ©dit",
+	"credit_note_redeemed" => "RachetÃ©",
 	"credit_note_initials" => "CR",
 
 
@@ -359,40 +359,40 @@ $a = array (
 	"save_payment" => "Enregistrer paiement",
 	"print_payment" => "Imprimer paiement",
 	"change_payment" => "Modifier paiement",
-	"payment_number" => "Numéro de paiement",
+	"payment_number" => "NumÃ©ro de paiement",
 	"payment_sum" => "Paid",
 	"total_payment" => "Total",
-	"card_number" => "Numéro de carte",
+	"card_number" => "NumÃ©ro de carte",
 	"valid_thru" => "Valable",
-	"outstanding_payment" => "Lui seulement clients indiqué ses factures être encore ouvert.",
+	"outstanding_payment" => "Lui seulement clients indiquÃ© ses factures Ãªtre encore ouvert.",
 	"payment_error" => "Payment is already available.",
-	"payment_incorrect" => "Un paiement plus élevé n'est pas malheureusement possible.<br />
+	"payment_incorrect" => "Un paiement plus Ã©levÃ© n'est pas malheureusement possible.<br />
 		Le paiement doit aussi correspondre au total de facture ou vous<br />pouvoir un acompte entreprendre!",
- 	"payment_deletion" => "Suppression deréglement resulte ecompte debiteur!",
+ 	"payment_deletion" => "Suppression derÃ©glement resulte ecompte debiteur!",
 
 
 	// Rapports
 	//
 	"select_report" => "Choisir le rapport",
-	"customer_sales" => "Ventes auprès clients",
-	"position_sales" => "Ventes conformément à la position/article",
+	"customer_sales" => "Ventes auprÃ¨s clients",
+	"position_sales" => "Ventes conformÃ©ment Ã  la position/article",
 	"invoice_totals" => "Livre",
-	"booking_details" => "Détail de réservation après date",
+	"booking_details" => "DÃ©tail de rÃ©servation aprÃ¨s date",
 	"individual_values" => "Valeurs individuelles",
-	"summary" => "Résumé",
+	"summary" => "RÃ©sumÃ©",
 	"date_from" => "du",
 	"date_till" => "au",
 
 
 	// Livre de caisse
 	//
-	"cash_in_hand" => "Relevé",
-	"starting_with" => "Date relevé",
+	"cash_in_hand" => "RelevÃ©",
+	"starting_with" => "Date relevÃ©",
 	"takings" => "Revenus",
-	"expenditures" => "Dépenses",
-	"cashbook_number" => "Numéro de document",
+	"expenditures" => "DÃ©penses",
+	"cashbook_number" => "NumÃ©ro de document",
 	"cashbook_description" => "Description",
-	"takings_expenditures_error" => "Recettes et des dépenses ne peuvent pas être remplies en même temps.",
+	"takings_expenditures_error" => "Recettes et des dÃ©penses ne peuvent pas Ãªtre remplies en mÃªme temps.",
 	"cashbook_expenditures" => "Reglement impossible!",
 
 	// Syslog
@@ -405,23 +405,23 @@ $a = array (
 // Rapports
 //
 $reports = array (
-	"booking_details.php" => "Détail de réservation après date",
+	"booking_details.php" => "DÃ©tail de rÃ©servation aprÃ¨s date",
 	"invoice_ledger.php" => "Livre",
-	"outstanding_accounts.php" => "Factures non réglès auprés",
-	"invoice_ledger_summary.php" => "Ventes clients résumé",
+	"outstanding_accounts.php" => "Factures non rÃ©glÃ¨s auprÃ©s",
+	"invoice_ledger_summary.php" => "Ventes clients rÃ©sumÃ©",
 	"cashbook.php" => "Livre de caisse",
-	"position_sales_summary.php" => "Ventes conformément à la position/article résumé",
-	"position_sales.php" => "Ventes conformément à la position/article de valeurs individuelles",
-	"outstanding_offers.php" => "Devis non réglès auprés"
+	"position_sales_summary.php" => "Ventes conformÃ©ment Ã  la position/article rÃ©sumÃ©",
+	"position_sales.php" => "Ventes conformÃ©ment Ã  la position/article de valeurs individuelles",
+	"outstanding_offers.php" => "Devis non rÃ©glÃ¨s auprÃ©s"
 );
 
 
 // Rapports de client
 //
 $customer_reports = array (
-	"../reports/customer_booking_details.php" => "Détail de réservation après date",
+	"../reports/customer_booking_details.php" => "DÃ©tail de rÃ©servation aprÃ¨s date",
 	"../reports/customer_invoices.php" => "Livre",
-	"../reports/customer_outstanding_accounts.php" => "Factures non réglès auprés"
+	"../reports/customer_outstanding_accounts.php" => "Factures non rÃ©glÃ¨s auprÃ©s"
 );
 
 
@@ -432,7 +432,7 @@ $language = array (
 	2 => "Anglais",
 	3 => "Polonais",
 	4 => "Croate",
-	5 => "Français",
+	5 => "FranÃ§ais",
 	6 => "Italien",
 	7 => "Espagnol - ES",
 	8 => "Hollandais"
@@ -444,8 +444,8 @@ $language = array (
 $group = array (
 	1 => "Root",
 	2 => "Directeur",
-	3 => "Comptabilité",
-	4 => "Employé",
+	3 => "ComptabilitÃ©",
+	4 => "EmployÃ©",
 	5 => "Utilisateur"
 );
 
@@ -472,7 +472,7 @@ $sales_price = array (
 );
 
 
-// E-Mail Priorité
+// E-Mail PrioritÃ©
 //
 $email_priority = array (
 	3 => "Normalement",
@@ -484,7 +484,7 @@ $email_priority = array (
 // Statut d'ordre
 //
 $offer_status = array(
-	1 => "Non accepté",
+	1 => "Non acceptÃ©",
 	2 => "Confirmation de commande",
 	3 => "Facture"
 );
