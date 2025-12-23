@@ -78,11 +78,15 @@
   $this->Cell(115);
 	$this->Cell(70,5,$a['date_text'].': '.$Date,0,1,'R');
 	
-	$this->SetY(95);
-  $this->Cell(115);
-	$this->Cell(70,5,'Leistungsdatum: '.$AchievedDate,0,1,'R');
+	// Leistungsdatum - konfigurierbar über branding.php
+	if (PDF_SHOW_ACHIEVED_DATE) {
+		$this->SetY(95);
+		$this->Cell(115);
+		$this->Cell(70,5,'Leistungsdatum: '.$AchievedDate,0,1,'R');
+	}
 	
-	if (!empty($METHOD_OF_PAY_DATE))
+	// Zahlungsfrist - konfigurierbar über branding.php
+	if (PDF_SHOW_PAYMENT_DATE && !empty($METHOD_OF_PAY_DATE))
 	{
 		$this->SetY(100);
 		$this->Cell(115);

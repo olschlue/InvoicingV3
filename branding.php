@@ -168,4 +168,16 @@ define('PDF_TEMPLATE_SCALE', -200);    // Skalierung (-200 = automatische Skalie
 // PDF-Template Bottom Position (für zweites Bild)
 define('PDF_TEMPLATE_BOTTOM_Y', 270);  // Y-Position für unteres Template
 
+/*
+ * ========================================
+ * PDF-ANZEIGE EINSTELLUNGEN
+ * ========================================
+ */
+
+// Leistungsdatum auf PDF anzeigen (true = anzeigen, false = ausblenden)
+define('PDF_SHOW_ACHIEVED_DATE', true);
+
+// Zahlungsfrist ("Zahlung bis") auf PDF anzeigen (true = anzeigen, false = ausblenden)
+define('PDF_SHOW_PAYMENT_DATE', true);
+
 ?>

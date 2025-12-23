@@ -98,6 +98,12 @@ PDF_TEMPLATE_SCALE         // Skalierung (-200 = automatisch)
 PDF_TEMPLATE_BOTTOM_Y      // Y-Position für unteres Template (Standard: 270)
 ```
 
+### PDF-Anzeige Einstellungen
+```php
+PDF_SHOW_ACHIEVED_DATE     // Leistungsdatum anzeigen (true/false)
+PDF_SHOW_PAYMENT_DATE      // Zahlungsfrist ("Zahlung bis") anzeigen (true/false)
+```
+
 ## Anwendung der Einstellungen
 
 ### 1. Firmenname
@@ -190,6 +196,32 @@ Für ein zusätzliches Bild am unteren Rand:
        $pdf->Image($web . PDF_TEMPLATE_BOTTOM, PDF_TEMPLATE_X, PDF_TEMPLATE_BOTTOM_Y, PDF_TEMPLATE_SCALE);
    }
    ```
+
+## PDF-Datumsfelder konfigurieren
+
+Sie können steuern, welche Datumsfelder auf dem PDF angezeigt werden:
+
+### Leistungsdatum anzeigen/ausblenden
+
+1. Öffnen Sie `branding.php`
+2. Ändern Sie `PDF_SHOW_ACHIEVED_DATE`:
+   ```php
+   define('PDF_SHOW_ACHIEVED_DATE', true);  // Anzeigen
+   // oder
+   define('PDF_SHOW_ACHIEVED_DATE', false); // Ausblenden
+   ```
+
+### Zahlungsfrist ("Zahlung bis") anzeigen/ausblenden
+
+1. Öffnen Sie `branding.php`
+2. Ändern Sie `PDF_SHOW_PAYMENT_DATE`:
+   ```php
+   define('PDF_SHOW_PAYMENT_DATE', true);  // Anzeigen
+   // oder
+   define('PDF_SHOW_PAYMENT_DATE', false); // Ausblenden
+   ```
+
+**Hinweis**: Die Zahlungsfrist wird nur angezeigt, wenn sie auch in den Rechnungsdaten gesetzt ist.
 
 ## Logo austauschen
 
