@@ -19,23 +19,25 @@
 	Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 *}
 {if $smarty.session.SuperUser and ( $smarty.session.SuperUser eq $Root )}
-	<p id="top10" align="center">
-	[&nbsp;<a accesskey="A" class="nmenulink" title="{$Addressbook}" href="../addressbook/list.php?{$Session}">{$Addressbook}</a>
-	|&nbsp;&nbsp;<a accesskey="P" class="nmenulink" title="{$Position}" href="../position/list.php?{$Session}">{$Position}</a>&nbsp;
-	{*|&nbsp;&nbsp;<a accesskey="O" class="nmenulink" title="{$Offer}" href="../offer/list.php?{$Session}">{$Offer}</a>&nbsp;*}
-	|&nbsp;&nbsp;<a accesskey="I" class="nmenulink" title="{$Invoice}" href="../invoice/list.php?{$Session}">{$Invoice}</a>&nbsp;
-	|&nbsp;&nbsp;<a accesskey="M" class="nmenulink" title="{$Payment}" href="../payment/list.php?{$Session}">{$Payment}</a>&nbsp;
-	|&nbsp;&nbsp;<a accesskey="C" class="nmenulink" title="{$Cashbook}" href="../cashbook/list.php?{$Session}">{$Cashbook}</a>&nbsp;
-	|&nbsp;&nbsp;<a accesskey="R" class="nmenulink" title="{$Reports}" href="../reports/index.php?{$Session}">{$Reports}</a>&nbsp;
-	|&nbsp;&nbsp;<a accesskey="L" class="nmenulink" title="{$Logout}" href="../login/suend.php?{$Session}">{$Logout}</a>&nbsp;]</p>
+	<div id="top10" align="center" style="padding: 15px 0;">
+	<a accesskey="A" class="btn nmenulink" title="{$Addressbook}" href="../addressbook/list.php?{$Session}">{$Addressbook}</a>
+	<a accesskey="P" class="btn nmenulink" title="{$Position}" href="../position/list.php?{$Session}">{$Position}</a>
+	{*<a accesskey="O" class="btn nmenulink" title="{$Offer}" href="../offer/list.php?{$Session}">{$Offer}</a>*}
+	<a accesskey="I" class="btn nmenulink" title="{$Invoice}" href="../invoice/list.php?{$Session}">{$Invoice}</a>
+	<a accesskey="M" class="btn nmenulink" title="{$Payment}" href="../payment/list.php?{$Session}">{$Payment}</a>
+	<a accesskey="C" class="btn nmenulink" title="{$Cashbook}" href="../cashbook/list.php?{$Session}">{$Cashbook}</a>
+	<a accesskey="R" class="btn nmenulink" title="{$Reports}" href="../reports/index.php?{$Session}">{$Reports}</a>
+	<a accesskey="L" class="btn nmenulink" title="{$Logout}" href="../login/suend.php?{$Session}">{$Logout}</a>
+	</div>
 {else}
-	<p id="top10" align="center">
-	[&nbsp;<a accesskey="A" class="nmenulink" title="{$Addressbook}" href="../addressbook/list.php?{$Session}">{$Addressbook}</a>
-	|&nbsp;&nbsp;<a accesskey="P" class="nmenulink" title="{$Position}" href="../position/list.php?{$Session}">{$Position}</a>&nbsp;
-	{*|&nbsp;&nbsp;<a accesskey="O" class="nmenulink" title="{$Offer}" href="../offer/list.php?{$Session}">{$Offer}</a>&nbsp;*}
-	|&nbsp;&nbsp;<a accesskey="I" class="nmenulink" title="{$Invoice}" href="../invoice/list.php?{$Session}">{$Invoice}</a>&nbsp;
-	|&nbsp;&nbsp;<a accesskey="M" class="nmenulink" title="{$Payment}" href="../payment/list.php?{$Session}">{$Payment}</a>&nbsp;
-	{*|&nbsp;&nbsp;<a accesskey="C" class="nmenulink" title="{$Cashbook}" href="../cashbook/list.php?{$Session}">{$Cashbook}</a>&nbsp;*}
-	|&nbsp;&nbsp;<a accesskey="R" class="nmenulink" title="{$Reports}" href="../reports/index.php?{$Session}">{$Reports}</a>&nbsp;
-	|&nbsp;&nbsp;<a accesskey="L" class="nmenulink" title="{$Logout}" href="../login/logout.php?{$Session}">{$Logout}</a>&nbsp;]</p>
+	<div id="top10" align="center" style="padding: 15px 0;">
+	<a accesskey="A" class="btn nmenulink" title="{$Addressbook}" href="../addressbook/list.php?{$Session}">{$Addressbook}</a>
+	<a accesskey="P" class="btn nmenulink" title="{$Position}" href="../position/list.php?{$Session}">{$Position}</a>
+	{*<a accesskey="O" class="btn nmenulink" title="{$Offer}" href="../offer/list.php?{$Session}">{$Offer}</a>*}
+	<a accesskey="I" class="btn nmenulink" title="{$Invoice}" href="../invoice/list.php?{$Session}">{$Invoice}</a>
+	<a accesskey="M" class="btn nmenulink" title="{$Payment}" href="../payment/list.php?{$Session}">{$Payment}</a>
+	{*<a accesskey="C" class="btn nmenulink" title="{$Cashbook}" href="../cashbook/list.php?{$Session}">{$Cashbook}</a>*}
+	<a accesskey="R" class="btn nmenulink" title="{$Reports}" href="../reports/index.php?{$Session}">{$Reports}</a>
+	<a accesskey="L" class="btn nmenulink" title="{$Logout}" href="../login/logout.php?{$Session}">{$Logout}</a>
+	</div>
 {/if}
