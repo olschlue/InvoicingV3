@@ -523,6 +523,19 @@ input.button:active, button:active, input[type="submit"]:active, input[type="but
 }
 
 /* ===== Utilities ===== */
+#td1_20 {
+	position: sticky;
+	top: 0;
+	max-width: 120px;
+	vertical-align: top;
+	z-index: 50;
+}
+
+table[summary="Tabelle 4"] {
+	max-width: 120px;
+	width: 100%;
+}
+
 td {
 	border-spacing: 0;
 	padding: 4px 6px;
