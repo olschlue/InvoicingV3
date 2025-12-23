@@ -309,7 +309,7 @@ img{
 }
 
 a:hover img{
-	border: 2px solid #f97c24;
+	
 	padding: 0;
 	border-radius: 4px;
 	transition: all 0.3s ease;
