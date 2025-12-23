@@ -538,7 +538,7 @@ $pdf->SetCreator($a['programname']);
 // Send output to browser. If you choose
 // save as, this is the default file name
 //
-$pdf->Output("info_customer_$MYID.pdf","I");
+$pdf->Output(PDF_FILENAME_PREFIX . "info_customer_$MYID.pdf","I");
 
 }
 

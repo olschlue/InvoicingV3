@@ -108,7 +108,7 @@ else
 
 	if($Type == 'Offer')
 	{
-		$FileName = "$a[offer_initials]-$PrintD-$ID";
+		$FileName = PDF_FILENAME_PREFIX . "$a[offer_initials]-$PrintD-$ID";
 		$Subject = "$a[offer] - $a[offer_number]: $FileName, $a[customer_no]: $MYID, $a[date_text]: $Date";
 		$sendfile = $PDFDirectory.$FileName.'.pdf';
 	}
@@ -122,7 +122,7 @@ else
 				die($db->ErrorMsg());
 			}
 		}
-		$FileName = "$a[order_initials]-$PrintD-$ID";
+		$FileName = PDF_FILENAME_PREFIX . "$a[order_initials]-$PrintD-$ID";
 		$Subject = "$a[order] - $a[order_number]: $FileName, $a[customer_no]: $MYID, $a[date_text]: $Date";
 		$sendfile = $PDFDirectory.$FileName.'.pdf';
 	}

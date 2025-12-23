@@ -180,4 +180,14 @@ define('PDF_SHOW_ACHIEVED_DATE', true);
 // Zahlungsfrist ("Zahlung bis") auf PDF anzeigen (true = anzeigen, false = ausblenden)
 define('PDF_SHOW_PAYMENT_DATE', true);
 
+/*
+ * ========================================
+ * PDF-DATEINAME EINSTELLUNGEN
+ * ========================================
+ */
+
+// PDF-Dateiname-Präfix (wird allen generierten PDFs vorangestellt)
+// Beispiel: Mit Präfix 'SF-' wird aus 'rechnung-123.pdf' -> 'SF-rechnung-123.pdf'
+define('PDF_FILENAME_PREFIX', 'SF-');
+
 ?>

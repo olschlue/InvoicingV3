@@ -219,7 +219,7 @@ else
 	// will be displayed e.g. print_pdf.php
 	//
 
-	$pdf->Output("$PrintD-$ID.pdf","I");
+	$pdf->Output(PDF_FILENAME_PREFIX . "$PrintD-$ID.pdf","I");
 }
 
 ?>

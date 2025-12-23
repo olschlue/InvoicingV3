@@ -107,14 +107,14 @@ else
 
 	if($Type == 'Invoice')
 	{
-		$FileName = "$a[invoice_initials]-$PrintD-$ID";
+		$FileName = PDF_FILENAME_PREFIX . "$a[invoice_initials]-$PrintD-$ID";
 		$Subject = "$a[invoice] - $a[invoice_number]: $FileName, $a[customer_no]: $MYID, $a[date_text]: $Date";
 		$sendfile = $PDFDirectory.$FileName.'.pdf';
 		$_SESSION['Type'] = "$a[invoice_number]";
 	}
 	else
 	{
-		$FileName = "$a[delivery_note_initials]-$PrintD-$ID";
+		$FileName = PDF_FILENAME_PREFIX . "$a[delivery_note_initials]-$PrintD-$ID";
 		$Subject = "$a[delivery_note] - $a[delivery_note_number]: $FileName, $a[customer_no]: $MYID, $a[date_text]: $Date";
 		$sendfile = $PDFDirectory.$FileName.'.pdf';
 		$_SESSION['Type'] = "$a[delivery_note_number]";

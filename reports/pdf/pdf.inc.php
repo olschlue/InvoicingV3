@@ -130,7 +130,7 @@ else
 	// will be displayed e.g. print_pdf.php
 	//
 
-	$pdf->Output("$Type.pdf","I");
+	$pdf->Output(PDF_FILENAME_PREFIX . "$Type.pdf","I");
 }
 
 ?>
