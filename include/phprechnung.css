@@ -493,9 +493,7 @@ input.button:active, button:active, input[type="submit"]:active, input[type="but
 		width: 100% !important;
 	}
 	
-	table[summary="Tabelle 4"] {
-		width: 100% !important;
-	}
+	
 	
 	/* Buttons volle Breite auf Mobile */
 	.btn, a.ninfolink, a.nlink, a.nmenulink {
@@ -543,10 +541,7 @@ table[summary="Tabelle 3"] {
 	width: 100%;
 }
 
-table[summary="Tabelle 4"] {
-	max-width: 150px;
-	width: 150px !important;
-}
+
 
 td {
 	border-spacing: 0;
