@@ -526,8 +526,8 @@ input.button:active, button:active, input[type="submit"]:active, input[type="but
 #td1_20 {
 	position: sticky;
 	top: 0;
-	width: 180px !important;
-	max-width: 180px;
+	width: 200px !important;
+	max-width: 200px;
 	vertical-align: top;
 	z-index: 50;
 }

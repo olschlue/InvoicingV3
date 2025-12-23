@@ -22,7 +22,7 @@
 <body onload="document.Search.Description_1.focus();">
 {include file="htable.tpl"}
 <table border="0" width="100%" cellspacing="0" cellpadding="0" summary="Tabelle 3">
-<tr><td id="td1_20" width="20%" valign="top">
+<tr><td id="td1_20" width="200px" valign="top">
 {* Menubar start *}
 <table border="0" width="80%" cellspacing="0" cellpadding="0" summary="Tabelle 4">
 {if $smarty.session.SuperUser and ( $smarty.session.SuperUser eq $Root )}
