@@ -165,10 +165,10 @@ href="../configuration.php?{$Session}">{$Configuration}</a></td></tr>
 				<td valign="top" align="center"><a href="print_pdf.php?myID={$invoice.MYID}&amp;invoiceID={$invoice.INVOICEID}&amp;Type=Invoice&amp;{$Session}" target="_blank"><img border="0" src="../images/print.png" title="{$Print_Invoice} - {$Invoice_No} {$invoice.INVOICEID}" alt="{$Print_Invoice} - {$Invoice_No} {$invoice.INVOICEID}" /></a></td>
 				<td valign="top" align="center"><a href="../payment/new.php?myID={$invoice.MYID}&amp;invoiceID={$invoice.INVOICEID}&amp;{$Session}"><img border="0" src="../images/bill.png" title="{$Invoice_Transaction} {$invoice.INVOICEID}{if $invoice.FIRSTNAME} {$invoice.FIRSTNAME}{/if}{if $invoice.LASTNAME} {$invoice.LASTNAME},{/if}{if $invoice.COMPANY} {$invoice.COMPANY}{/if}" alt="{$Invoice_Transaction} {$invoice.INVOICEID}{if $invoice.FIRSTNAME} {$invoice.FIRSTNAME}{/if}{if $invoice.LASTNAME} {$invoice.LASTNAME},{/if}{if $invoice.COMPANY} {$invoice.COMPANY}{/if}" /></a></td>
 			{else}
-				<td valign="top" align="center" colspan="3"></td>
+				<td valign="top" align="center" colspan="4"></td>
 			{/if}
 		{else}
-			<td valign="top" align="center" colspan="3"></td>
+			<td valign="top" align="center" colspan="4"></td>
 		{/if}
 	{else}
 		<td valign="top" align="left" class="graytxt">
@@ -197,7 +197,7 @@ href="../configuration.php?{$Session}">{$Configuration}</a></td></tr>
 		{else}
 			<td valign="top" align="right" class="graytxt"></td>
 		{/if}
-		<td valign="top" align="center" colspan="3" class="graytxt"></td>
+		<td valign="top" align="center" colspan="4" class="graytxt"></td>
 	{/if}
 	</tr>
 {/foreach}
@@ -206,10 +206,10 @@ href="../configuration.php?{$Session}">{$Configuration}</a></td></tr>
 {if $smarty.session.Username and ( $smarty.session.Username eq $Root )}
 	<tr><td>&nbsp;</td></tr>
 	{if $OPEN_ACCOUNT gt 0}
-		<tr><td valign="top" align="right" colspan="5">{$Open_Account} {$Invoice_Currency}:</td><td valign="top" align="right" colspan="3" class="redtxt">{$OPEN_ACCOUNT|number_format}</td></tr>
+		<tr><td valign="top" align="right" colspan="5">{$Open_Account} {$Invoice_Currency}:</td><td valign="top" align="right" colspan="4" class="redtxt">{$OPEN_ACCOUNT|number_format}</td></tr>
 	{/if}
-	<tr><td valign="top" align="right" colspan="5">{$Invoice_Amount} - {$PageMsg}  {$Invoice_Currency}:</td><td valign="top" align="right" colspan="3">{$TOTAL_PAGE|number_format}</td></tr>
-	<tr><td valign="top" align="right" colspan="5"><b>{$Invoice_Amount} {$Invoice_Currency}</b>:</td><td valign="top" align="right" colspan="3"><b>{$TOTAL_AMOUNT|number_format}</b></td></tr>
+	<tr><td valign="top" align="right" colspan="5">{$Invoice_Amount} - {$PageMsg}  {$Invoice_Currency}:</td><td valign="top" align="right" colspan="4">{$TOTAL_PAGE|number_format}</td></tr>
+	<tr><td valign="top" align="right" colspan="5"><b>{$Invoice_Amount} {$Invoice_Currency}</b>:</td><td valign="top" align="right" colspan="4"><b>{$TOTAL_AMOUNT|number_format}</b></td></tr>
 {/if}
 <tr><td>&nbsp;</td></tr>
 {* Display pager and linkbar if $PageRows => $Rows ( lines per page ) *}

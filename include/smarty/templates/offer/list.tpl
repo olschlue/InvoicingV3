@@ -174,7 +174,7 @@ href="../configuration.php?{$Session}">{$Configuration}</a></td></tr>
 			<td valign="top" align="center" colspan="3"></td>
 		{/if}
 	{else}
-		<td valign="top" align="center" colspan="3"></td>
+			<td valign="top" align="center" colspan="3"></td>
 	{/if}
 {else}
 	<td valign="top" align="left" class="graytxt">

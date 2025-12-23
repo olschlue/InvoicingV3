@@ -526,6 +526,7 @@ input.button:active, button:active, input[type="submit"]:active, input[type="but
 td {
 	border-spacing: 0;
 	padding: 4px 6px;
+	vertical-align: middle;
 }
 
 /* ===== Scrollbar Styling (für moderne Browser) ===== */
@@ -584,9 +585,9 @@ td a {
 	padding: 3px 8px;
 	margin: 1px;
 	border-radius: 2px;
-	background: #f97c24;
+	background: #ffffff;
 	border: 1px solid #f97c24;
-	color: #ffffff !important;
+	color: #f97c24 !important;
 	text-decoration: none !important;
 	font-weight: 400;
 	transition: all 0.15s ease;
@@ -597,8 +598,9 @@ td a {
 td a:hover {
 	transform: none;
 	box-shadow: none;
-	background: #ff6a00;
+	background: #fff5ed;
 	border-color: #ff6a00;
+	color: #ff6a00 !important;
 }
 
 /* Spezielle Styles für Icon-Links (kleine Buttons) */
