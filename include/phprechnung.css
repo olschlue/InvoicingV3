@@ -195,9 +195,7 @@ table{
 }
 
 a.user-info-link:hover {
-	background: rgba(255, 255, 255, 0.3) !important;
-	transform: translateY(-1px);
-	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+	background: #f8f9fa !important;
 }
 
 /* ===== Menü Styles (Modernisiert) ===== */
@@ -661,28 +659,23 @@ a img {
 	text-decoration: none !important;
 	font-weight: 500;
 	transition: all 0.3s ease;
-	box-shadow: 0 2px 6px rgba(249, 124, 36, 0.3);
 }
 
 .phprechnung_tabelle a:not(.ninfolink):not(.nlink):hover,
 .phprechnung_tabelle_g a:not(.ninfolink):not(.nlink):hover {
-	transform: translateY(-2px);
-	box-shadow: 0 4px 10px rgba(249, 124, 36, 0.5);
-	background: linear-gradient(135deg, #ffab70 0%, #f97c24 100%);
+	background: #ff6a00;
 }
 
 /* Pager Navigation Links - kompakter und moderner */
 img[alt*="Page"], img[title*="Seite"], img[src*="first.png"], 
 img[src*="prev.png"], img[src*="next.png"], img[src*="last.png"] {
-	transition: all 0.3s ease;
-	filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+	transition: opacity 0.2s ease;
 }
 
 img[alt*="Page"]:hover, img[title*="Seite"]:hover,
 img[src*="first.png"]:hover, img[src*="prev.png"]:hover, 
 img[src*="next.png"]:hover, img[src*="last.png"]:hover {
-	transform: scale(1.2);
-	filter: drop-shadow(0 4px 8px rgba(249, 124, 36, 0.5));
+	opacity: 0.7;
 }
 
 /* Sort Icons */
@@ -693,14 +686,12 @@ img[src*="up.png"], img[src*="down.png"] {
 
 img[src*="up.png"]:hover, img[src*="down.png"]:hover {
 	opacity: 1;
-	transform: scale(1.15);
 }
 
 /* Moderne Cards für Content-Bereiche */
 .phprechnung_tabelle {
 	background: #ffffff;
 	border-radius: 12px;
-	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 	padding: 30px;
 	margin: 20px 0;
 }
