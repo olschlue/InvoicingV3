@@ -25,6 +25,9 @@
 //
 require_once("smarty/libs/Smarty.class.php");
 
+// Lade Branding-Konfiguration
+require_once(__DIR__ . '/../branding.php');
+
 $smarty = new Smarty;
 
 // Smarty configuration
@@ -151,5 +154,16 @@ $smarty->assign("Hostname", "$Hostname");
 $smarty->assign("IPAddress", "$IPAddress");
 $smarty->assign("Browser", "$Browser");
 $smarty->assign("Strftime", "$Strftime");
+
+// Branding-Variablen für Templates
+$smarty->assign("BrandingCompanyName", BRANDING_COMPANY_NAME);
+$smarty->assign("BrandingAppName", BRANDING_APP_NAME);
+$smarty->assign("BrandingLogoPath", BRANDING_LOGO_PATH);
+$smarty->assign("BrandingLogoMaxHeight", BRANDING_LOGO_MAX_HEIGHT);
+$smarty->assign("BrandingColorPrimary", BRANDING_COLOR_PRIMARY);
+$smarty->assign("BrandingColorPrimaryHover", BRANDING_COLOR_PRIMARY_HOVER);
+$smarty->assign("BrandingColorTextDark", BRANDING_COLOR_TEXT_DARK);
+$smarty->assign("BrandingColorTextLight", BRANDING_COLOR_TEXT_LIGHT);
+$smarty->assign("BrandingColorTextMuted", BRANDING_COLOR_TEXT_MUTED);
 
 ?>

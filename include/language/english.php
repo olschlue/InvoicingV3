@@ -26,9 +26,13 @@
 // Language definition - Englisch
 //
 
+// Lade Branding-Konfiguration
+require_once(__DIR__ . '/../../branding.php');
+
+
 $a = array (
 	"welcome" => "Welcome to",
-	"programname" => "phpRechnung 1.6.6",
+	"programname" => BRANDING_COMPANY_NAME,
 	"phprechnung" => "phpRechnung 1.6.6 - Copyright &copy; 2001 - 2018 <a class='nmenulink' title='phpRechnung Home' href='https://loenshotel.de/phpRechnung/' target='_blank'>&nbsp;Edy Corak&nbsp;</a>. All rights reserved.",
 
 	"admin" => "Administrator",

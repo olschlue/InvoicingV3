@@ -25,12 +25,16 @@
 	Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
 
+
+// Lade Branding-Konfiguration
+require_once(__DIR__ . '/../../branding.php');
+
 // Definiciones en - Espanol
 //
 
 $a = array (
 	"welcome" => "Bienvenido a",
-	"programname" => "phpFactura 1.6.6",
+	"programname" => BRANDING_COMPANY_NAME,
 	"phprechnung" => "phpFactura 1.6.6 - Copyright &copy; 2001 - 2018 <a class='nmenulink' title='phpFactura Home' href='https://loenshotel.de/phpRechnung/' target='_blank'>&nbsp;Edy Corak&nbsp;</a>. Derechos reservados.",
 
 	"admin" => "Administrador",

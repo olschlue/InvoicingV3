@@ -26,9 +26,12 @@
 // Sprachdefinition - Deutsch
 //
 
+// Lade Branding-Konfiguration
+require_once(__DIR__ . '/../../branding.php');
+
 $a = array (
 	"welcome" => "Willkommen bei",
-	"programname" => "Schlüter & Friends",
+	"programname" => BRANDING_COMPANY_NAME,
 	"phprechnung" => "",
 
 	"admin" => "Administrator",

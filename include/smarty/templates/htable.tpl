@@ -24,8 +24,8 @@
 <tr>
 <td align="left" width="30%" style="padding: 10px;">
 <div style="display: flex; align-items: center;">
-<img border="0" src="{$Web}/images/logo.png" alt="Logo" style="max-height: 60px; margin-right: 15px;">
-<span style="font-size: 1.2em; font-weight: 600; color: #2c3e50;">S&F Invoicing</span>
+<img border="0" src="{$Web}/{$BrandingLogoPath}" alt="Logo" style="max-height: {$BrandingLogoMaxHeight}; margin-right: 15px;">
+<span style="font-size: 1.2em; font-weight: 600; color: {$BrandingColorTextDark};">{$BrandingAppName}</span>
 </div>
 </td>
 <td align="right" width="70%" style="padding: 10px;">

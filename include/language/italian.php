@@ -25,6 +25,10 @@
 	You should have received a copy of the GNU General Public License
 	along with this program; if not, write to the Free Software
 	Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+
+// Lade Branding-Konfiguration
+require_once(__DIR__ . '/../../branding.php');
+
 */
 
 // Definizione di lingua - italiano
@@ -32,7 +36,7 @@
 
 $a = array (
 	"welcome" => "Benvenuto a",
-	"programname" => "phpRechnung 1.6.6",
+	"programname" => BRANDING_COMPANY_NAME,
 	"phprechnung" => "phpRechnung 1.6.6 - Copyright &copy; 2001 - 2018 <a class='nmenulink' title='phpRechnung Home' href='https://loenshotel.de/phpRechnung/' target='_bkank'>&nbsp;Edy Corak&nbsp;</a>. All rights reserved.",
 
 	"admin" => "Amministratore",
