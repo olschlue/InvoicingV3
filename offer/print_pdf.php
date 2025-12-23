@@ -127,7 +127,9 @@ $PrintD = date("Y", strtotime($Date));
 
 if(isset($Type) && $Type == 'Offer')
 {
-	$Subject = "$a[offer] - $a[offer_number]: $a[offer_initials]-$PrintD-$ID, $a[customer_no]: $MYID, $a[date_text]: $Date";
+	// Verwende OFFER_INITIALS aus branding.php wenn definiert, sonst Sprachdatei
+	$offerInitials = defined('OFFER_INITIALS') ? OFFER_INITIALS : $a['offer_initials'];
+	$Subject = "$a[offer] - $a[offer_number]: $offerInitials-$PrintD-$ID, $a[customer_no]: $MYID, $a[date_text]: $Date";
 }
 else
 {
@@ -139,7 +141,9 @@ else
 			die($db->ErrorMsg());
 		}
 	}
-	$Subject = "$a[order] - $a[order_number]: $a[order_initials]-$PrintD-$ID, $a[customer_no]: $MYID, $a[date_text]: $Date";
+	// Verwende ORDER_INITIALS aus branding.php wenn definiert, sonst Sprachdatei
+	$orderInitials = defined('ORDER_INITIALS') ? ORDER_INITIALS : $a['order_initials'];
+	$Subject = "$a[order] - $a[order_number]: $orderInitials-$PrintD-$ID, $a[customer_no]: $MYID, $a[date_text]: $Date";
 }
 
 if(isset($tmpPos) && $tmpPos == '1')

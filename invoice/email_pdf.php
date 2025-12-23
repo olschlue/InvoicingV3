@@ -107,14 +107,18 @@ else
 
 	if($Type == 'Invoice')
 	{
-		$FileName = PDF_FILENAME_PREFIX . "$a[invoice_initials]-$PrintD-$ID";
+		// Verwende INVOICE_INITIALS aus branding.php wenn definiert, sonst Sprachdatei
+		$invoiceInitials = defined('INVOICE_INITIALS') ? INVOICE_INITIALS : $a['invoice_initials'];
+		$FileName = PDF_FILENAME_PREFIX . "$invoiceInitials-$PrintD-$ID";
 		$Subject = "$a[invoice] - $a[invoice_number]: $FileName, $a[customer_no]: $MYID, $a[date_text]: $Date";
 		$sendfile = $PDFDirectory.$FileName.'.pdf';
 		$_SESSION['Type'] = "$a[invoice_number]";
 	}
 	else
 	{
-		$FileName = PDF_FILENAME_PREFIX . "$a[delivery_note_initials]-$PrintD-$ID";
+		// Verwende DELIVERY_NOTE_INITIALS aus branding.php wenn definiert, sonst Sprachdatei
+		$deliveryNoteInitials = defined('DELIVERY_NOTE_INITIALS') ? DELIVERY_NOTE_INITIALS : $a['delivery_note_initials'];
+		$FileName = PDF_FILENAME_PREFIX . "$deliveryNoteInitials-$PrintD-$ID";
 		$Subject = "$a[delivery_note] - $a[delivery_note_number]: $FileName, $a[customer_no]: $MYID, $a[date_text]: $Date";
 		$sendfile = $PDFDirectory.$FileName.'.pdf';
 		$_SESSION['Type'] = "$a[delivery_note_number]";

@@ -141,11 +141,15 @@ $PrintD = date("Y", strtotime($Date));
 
 if(isset($Type) && $Type == 'Invoice')
 {
-	$Subject = "$a[invoice] - $a[invoice_number]: $a[invoice_initials]-$PrintD-$ID, $a[customer_no]: $MYID, $a[date_text]: $Date";
+	// Verwende INVOICE_INITIALS aus branding.php wenn definiert, sonst Sprachdatei
+	$invoiceInitials = defined('INVOICE_INITIALS') ? INVOICE_INITIALS : $a['invoice_initials'];
+	$Subject = "$a[invoice] - $a[invoice_number]: $invoiceInitials-$PrintD-$ID, $a[customer_no]: $MYID, $a[date_text]: $Date";
 }
 else
 {
-	$Subject = "$a[delivery_note] - $a[delivery_note_number]: $a[delivery_note_initials]-$PrintD-$ID, $a[customer_no]: $MYID, $a[date_text]: $Date";
+	// Verwende DELIVERY_NOTE_INITIALS aus branding.php wenn definiert, sonst Sprachdatei
+	$deliveryNoteInitials = defined('DELIVERY_NOTE_INITIALS') ? DELIVERY_NOTE_INITIALS : $a['delivery_note_initials'];
+	$Subject = "$a[delivery_note] - $a[delivery_note_number]: $deliveryNoteInitials-$PrintD-$ID, $a[customer_no]: $MYID, $a[date_text]: $Date";
 }
 
 if(isset($tmpPos) && $tmpPos == '1')

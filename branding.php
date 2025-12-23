@@ -190,4 +190,23 @@ define('PDF_SHOW_PAYMENT_DATE', true);
 // Beispiel: Mit Präfix 'SF-' wird aus 'rechnung-123.pdf' -> 'SF-rechnung-123.pdf'
 define('PDF_FILENAME_PREFIX', 'SF-');
 
+/*
+ * ========================================
+ * RECHNUNGSNUMMER-KÜRZEL
+ * ========================================
+ */
+
+// Kürzel für Rechnungsnummern (z.B. "RE" ergibt "RE-2025-123")
+// Überschreibt die Sprachdatei-Einstellungen
+define('INVOICE_INITIALS', 'RE');
+
+// Kürzel für Lieferscheine (z.B. "LS" ergibt "LS-2025-123")
+define('DELIVERY_NOTE_INITIALS', 'LS');
+
+// Kürzel für Angebote (z.B. "AN" ergibt "AN-2025-123")
+define('OFFER_INITIALS', 'AN');
+
+// Kürzel für Bestellungen (z.B. "BE" ergibt "BE-2025-123")
+define('ORDER_INITIALS', 'BE');
+
 ?>

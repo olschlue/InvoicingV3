@@ -108,7 +108,9 @@ else
 
 	if($Type == 'Offer')
 	{
-		$FileName = PDF_FILENAME_PREFIX . "$a[offer_initials]-$PrintD-$ID";
+		// Verwende OFFER_INITIALS aus branding.php wenn definiert, sonst Sprachdatei
+		$offerInitials = defined('OFFER_INITIALS') ? OFFER_INITIALS : $a['offer_initials'];
+		$FileName = PDF_FILENAME_PREFIX . "$offerInitials-$PrintD-$ID";
 		$Subject = "$a[offer] - $a[offer_number]: $FileName, $a[customer_no]: $MYID, $a[date_text]: $Date";
 		$sendfile = $PDFDirectory.$FileName.'.pdf';
 	}
@@ -122,7 +124,9 @@ else
 				die($db->ErrorMsg());
 			}
 		}
-		$FileName = PDF_FILENAME_PREFIX . "$a[order_initials]-$PrintD-$ID";
+		// Verwende ORDER_INITIALS aus branding.php wenn definiert, sonst Sprachdatei
+		$orderInitials = defined('ORDER_INITIALS') ? ORDER_INITIALS : $a['order_initials'];
+		$FileName = PDF_FILENAME_PREFIX . "$orderInitials-$PrintD-$ID";
 		$Subject = "$a[order] - $a[order_number]: $FileName, $a[customer_no]: $MYID, $a[date_text]: $Date";
 		$sendfile = $PDFDirectory.$FileName.'.pdf';
 	}

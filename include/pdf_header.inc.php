@@ -72,7 +72,9 @@
 	$this->SetY(85); 
 		$this->Cell(115);
 		
-			$this->Cell(70,5,$a['invoice_number'].': '.$a['invoice_initials'].'-'.$PrintD.'-'.$invoiceID,0,0,'R');
+			// Verwende INVOICE_INITIALS aus branding.php wenn definiert, sonst Sprachdatei
+			$invoiceInitials = defined('INVOICE_INITIALS') ? INVOICE_INITIALS : $a['invoice_initials'];
+			$this->Cell(70,5,$a['invoice_number'].': '.$invoiceInitials.'-'.$PrintD.'-'.$invoiceID,0,0,'R');
 		
 	$this->SetY(90);
   $this->Cell(115);
