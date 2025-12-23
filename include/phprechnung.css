@@ -523,7 +523,7 @@ input.button:active, button:active, input[type="submit"]:active, input[type="but
 }
 
 /* ===== Utilities ===== */
-#td1_20 {
+#td1_20, #td2_20 {
 	position: sticky;
 	top: 0;
 	width: 200px !important;
@@ -532,8 +532,15 @@ input.button:active, button:active, input[type="submit"]:active, input[type="but
 	z-index: 50;
 }
 
-#td1_2 {
+#td1_2, #td2_2 {
 	width: 20px !important;
+	min-width: 20px;
+	max-width: 20px;
+}
+
+table[summary="Tabelle 3"] {
+	table-layout: fixed;
+	width: 100%;
 }
 
 table[summary="Tabelle 4"] {

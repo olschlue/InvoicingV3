@@ -60,7 +60,7 @@ href="license.php?{$Session}">{$License}</a></td></tr>*}
 {/if}
 </tbody></table></td>
 {* Menubar end *}
-<td id="td1_2" width="2%"></td><td class="phprechnung_tabelle" width="78%" valign="top" align="center">
+<td id="td1_2" width="20px"></td><td class="phprechnung_tabelle" style="width: auto;" valign="top" align="center">
 <h2>{$Programname} - {$License}</h2>
 <table width="100%" border="0" class="wTD" cellpadding="3" cellspacing="3" summary="Tabelle 5"><tbody>
 {if $smarty.session.LicenseAccepted neq 1}
@@ -428,6 +428,6 @@ Public License instead of this License.<br />
 {/if}
 </tbody></table>
 </td></tr>
-<tr><td id="td2_20" width="20%"><br /></td><td id="td2_2" width="2%"></td>
-<td width="78%" valign="top"><br /></td></tr></tbody></table>
+<tr><td id="td2_20" width="200px"><br /></td><td id="td2_2" width="20px"></td>
+<td style="width: auto;" valign="top"><br /></td></tr></tbody></table>
 {include file="footer.tpl"}

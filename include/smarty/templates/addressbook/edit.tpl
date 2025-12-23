@@ -68,7 +68,7 @@ href="../configuration.php?{$Session}">{$Configuration}</a></td></tr>
 {/if}
 </table></td>
 {* Menubar end *}
-<td id="td1_2" width="2%"></td><td width="78%" valign="top" align="center">
+<td id="td1_2" width="20px"></td><td style="width: auto;" valign="top" align="center">
 <form id="Edit" name="Edit" action="editf.php?{$Session}" method="post">
 <table width="80%" class="phprechnung_tabelle" border="0" cellspacing="0" cellpadding="2" summary="Tabelle 1">
 {* Display back button *}
@@ -198,6 +198,6 @@ href="../configuration.php?{$Session}">{$Configuration}</a></td></tr>
 </table>
 </form>
 </td></tr>
-<tr><td id="td2_20" width="20%"><br /></td><td id="td2_2" width="2%"></td>
-<td width="78%" valign="top"><br /></td></tr></table>
+<tr><td id="td2_20" width="200px"><br /></td><td id="td2_2" width="20px"></td>
+<td style="width: auto;" valign="top"><br /></td></tr></table>
 {include file="footer.tpl"}

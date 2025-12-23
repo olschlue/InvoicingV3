@@ -64,7 +64,7 @@ href="help.php?{$Session}">{$Help}</a></td></tr>*}
 {/if}
 </table></td>
 {* Menubar end *}
-<td id="td1_2" width="2%"></td><td width="78%" valign="top" align="center">
+<td id="td1_2" width="20px"></td><td style="width: auto;" valign="top" align="center">
 {* Display User information *}
 <form id="Search" name="Search" action="searchlist.php?{$Session}#{$methodpayID}" method="post">
 <table width="80%" border="0" class="phprechnung_tabelle" cellspacing="3" cellpadding="3" summary="Tabelle 2">
@@ -87,6 +87,6 @@ href="help.php?{$Session}">{$Help}</a></td></tr>*}
 </table>
 </form>
 </td></tr>
-<tr><td id="td2_20" width="20%"><br /></td><td id="td2_2" width="2%"></td>
-<td width="78%" valign="top"><br /></td></tr></table>
+<tr><td id="td2_20" width="200px"><br /></td><td id="td2_2" width="20px"></td>
+<td style="width: auto;" valign="top"><br /></td></tr></table>
 {include file="footer.tpl"}

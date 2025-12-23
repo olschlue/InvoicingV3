@@ -64,13 +64,13 @@ href="help.php?{$Session}">{$Help}</a></td></tr>*}
 {/if}
 </tbody></table></td>
 {* Menubar end *}
-<td id="td1_2" width="2%"></td><td class="phprechnung_tabelle" width="78%" valign="top" align="center">
+<td id="td1_2" width="20px"></td><td class="phprechnung_tabelle" style="width: auto;" valign="top" align="center">
 <h2>{$MethodOfPayment} - {$Help}</h2>
 {* Display help if available *}
 {if $smarty.session.Help}
 	{include file="$Helpfile"}
 {/if}
 </td></tr>
-<tr><td id="td2_20" width="20%"><br /></td><td id="td2_2" width="2%"></td>
-<td width="78%" valign="top"><br /></td></tr></tbody></table>
+<tr><td id="td2_20" width="200px"><br /></td><td id="td2_2" width="20px"></td>
+<td style="width: auto;" valign="top"><br /></td></tr></tbody></table>
 {include file="footer.tpl"}

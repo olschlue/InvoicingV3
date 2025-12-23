@@ -109,9 +109,9 @@
 			</table>
 		</td>
 		{* Menubar end *}
-		<td id="td1_2" width="2%">
+		<td id="td1_2" width="20px">
 		</td>
-		<td width="78%" valign="top" align="center">
+		<td style="width: auto;" valign="top" align="center">
 			<table width="80%" border="0" cellpadding="2" cellspacing="0" summary="Tabelle 1">
 				<tr>
 					<td class="phprechnung_tabelle">
@@ -233,11 +233,11 @@
 		</td>
 	</tr>
 	<tr>
-		<td id="td2_20" width="20%"><br />
+		<td id="td2_20" width="200px"><br />
 		</td>
-		<td id="td2_2" width="2%">
+		<td id="td2_2" width="20px">
 		</td>
-		<td width="78%" valign="top"><br />
+		<td style="width: auto;" valign="top"><br />
 		</td>
 	</tr>
 </table>
