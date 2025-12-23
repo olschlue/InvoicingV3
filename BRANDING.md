@@ -87,6 +87,17 @@ SYSTEM_ADMIN_GROUP_2       // Manager-Gruppe ID
 SYSTEM_ADMIN_GROUP_3       // Bookkeeping-Gruppe ID
 ```
 
+### PDF-Template Einstellungen
+```php
+PDF_TEMPLATE_IMAGE         // Pfad zum PDF-Template Hintergrundbild (z.B. "/template.png")
+PDF_TEMPLATE_BOTTOM        // Pfad zum unteren Template (optional, z.B. für Footer)
+PDF_TEMPLATE_ENABLED       // Template aktivieren (true) oder deaktivieren (false)
+PDF_TEMPLATE_X             // X-Position des Templates (Standard: 0)
+PDF_TEMPLATE_Y             // Y-Position des Templates (Standard: 0)
+PDF_TEMPLATE_SCALE         // Skalierung (-200 = automatisch)
+PDF_TEMPLATE_BOTTOM_Y      // Y-Position für unteres Template (Standard: 270)
+```
+
 ## Anwendung der Einstellungen
 
 ### 1. Firmenname
@@ -136,6 +147,49 @@ Wenn Sie die Installation auf einen anderen Server oder Pfad verschieben:
    define('SYSTEM_WEB_URL', 'https://ihre-domain.de/pfad/zur/installation');
    ```
 3. Passen Sie bei Bedarf `SYSTEM_DOCUMENT_ROOT` an
+
+## PDF-Template konfigurieren
+
+Das PDF-Template ist ein Hintergrundbild, das bei der PDF-Erzeugung verwendet wird (z.B. Briefpapier mit Firmenlogo).
+
+### PDF-Template aktivieren/deaktivieren
+
+1. Öffnen Sie `branding.php`
+2. Setzen Sie `PDF_TEMPLATE_ENABLED`:
+   ```php
+   define('PDF_TEMPLATE_ENABLED', true);  // Aktiviert
+   // oder
+   define('PDF_TEMPLATE_ENABLED', false); // Deaktiviert
+   ```
+
+### PDF-Template Bild ändern
+
+1. Platzieren Sie Ihr Template-Bild im Web-Root (z.B. `template.png`)
+2. Öffnen Sie `branding.php`
+3. Ändern Sie `PDF_TEMPLATE_IMAGE`:
+   ```php
+   define('PDF_TEMPLATE_IMAGE', '/ihr-template.png');
+   ```
+
+### Template-Position anpassen
+
+```php
+define('PDF_TEMPLATE_X', 0);        // X-Position (in mm)
+define('PDF_TEMPLATE_Y', 0);        // Y-Position (in mm)
+define('PDF_TEMPLATE_SCALE', -200); // -200 = automatische Skalierung
+```
+
+### Zweites Template (Footer) hinzufügen
+
+Für ein zusätzliches Bild am unteren Rand:
+
+1. In `branding.php` ist `PDF_TEMPLATE_BOTTOM` bereits definiert
+2. In `include/pdf.inc.php` die kommentierten Zeilen aktivieren:
+   ```php
+   if (PDF_TEMPLATE_ENABLED && defined('PDF_TEMPLATE_BOTTOM')) {
+       $pdf->Image($web . PDF_TEMPLATE_BOTTOM, PDF_TEMPLATE_X, PDF_TEMPLATE_BOTTOM_Y, PDF_TEMPLATE_SCALE);
+   }
+   ```
 
 ## Logo austauschen
 

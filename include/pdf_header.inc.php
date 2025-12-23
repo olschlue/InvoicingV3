@@ -30,7 +30,10 @@
 		$status, $OFFER_STATUS, $PrintD, $invoiceID, $offerID, $creditID, $tmpOfferID, $tmpInvoiceID, $web, $AchievedDate;
 		
   
-  $this->Image($web. '/template.png',0,0,-200);
+  	// PDF-Template laden (aus branding.php Konfiguration)
+  	if (PDF_TEMPLATE_ENABLED) {
+  		$this->Image($web . PDF_TEMPLATE_IMAGE, PDF_TEMPLATE_X, PDF_TEMPLATE_Y, PDF_TEMPLATE_SCALE);
+  	}
 		
 	$this->SetFont($PDFFont,'U',8);
 	$this->SetY(51);

@@ -144,4 +144,28 @@ define('SYSTEM_ADMIN_GROUP_1', '1');  // Root
 define('SYSTEM_ADMIN_GROUP_2', '2');  // Manager
 define('SYSTEM_ADMIN_GROUP_3', '3');  // Bookkeeping
 
+/*
+ * ========================================
+ * PDF-TEMPLATE EINSTELLUNGEN
+ * ========================================
+ */
+
+// PDF-Template (Hintergrundbild für PDFs)
+// Pfad relativ zur Web-Root oder absolute URL
+define('PDF_TEMPLATE_IMAGE', '/template.png');
+
+// PDF-Template unten (optional, z.B. für Footer-Grafik)
+define('PDF_TEMPLATE_BOTTOM', '/vorlage_unten.png');
+
+// PDF-Template aktivieren (true) oder deaktivieren (false)
+define('PDF_TEMPLATE_ENABLED', true);
+
+// PDF-Template Position und Größe
+define('PDF_TEMPLATE_X', 0);           // X-Position
+define('PDF_TEMPLATE_Y', 0);           // Y-Position
+define('PDF_TEMPLATE_SCALE', -200);    // Skalierung (-200 = automatische Skalierung)
+
+// PDF-Template Bottom Position (für zweites Bild)
+define('PDF_TEMPLATE_BOTTOM_Y', 270);  // Y-Position für unteres Template
+
 ?>

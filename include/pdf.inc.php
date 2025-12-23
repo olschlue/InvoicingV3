@@ -32,15 +32,14 @@ require_once('mc_table.php');
 //$pdf = new FPDF(); 
 $pdf = new PDF_MC_Table();
 $pdf->Open();
-//$pageCount = $pdf->setSourceFile('\vorlage.pdf');
-//$pdf->LoadTemplate (\vorlage.pdf);
-//$pageId = $pdf->importPage(1, PdfReader\PageBoundaries::MEDIA_BOX);
-$pdf->addPage();
-//$pdf->Image('https://oschlueter.de/bill/sf/template.png',0,0,-200);
 
-//$pdf->Image('https://oschlueter.de/bill/sf/vorlage_unten.png',0,270,-200);
-//$pdf->useImportedPage($pageId, 10, 10, 90);
-//$pdf->AddPage();
+// Optional: PDF-Template für zweites Bild (z.B. Footer)
+// Aktivieren Sie diese Zeilen und passen Sie PDF_TEMPLATE_BOTTOM in branding.php an
+// if (PDF_TEMPLATE_ENABLED && defined('PDF_TEMPLATE_BOTTOM')) {
+//     $pdf->Image($web . PDF_TEMPLATE_BOTTOM, PDF_TEMPLATE_X, PDF_TEMPLATE_BOTTOM_Y, PDF_TEMPLATE_SCALE);
+// }
+
+$pdf->addPage();
 $pdf->AliasNbPages();
 $pdf->SetDrawColor(0,0,0);
 
