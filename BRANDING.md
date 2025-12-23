@@ -2,7 +2,7 @@
 
 ## Übersicht
 
-Alle Personalisierungs-Einstellungen für die phpRechnung-Installation sind zentral in der Datei `branding.php` im Root-Verzeichnis zusammengefasst.
+Alle Personalisierungs-Einstellungen, System-Pfade und Datenbank-Verbindungen für die phpRechnung-Installation sind zentral in der Datei `branding.php` im Root-Verzeichnis zusammengefasst.
 
 ## Konfigurationsdatei: branding.php
 
@@ -51,6 +51,42 @@ BRANDING_VERSION         // Version der Anwendung
 BRANDING_COPYRIGHT_YEAR  // Copyright-Jahr
 ```
 
+### System-Pfade
+```php
+SYSTEM_WEB_URL          // Web-Root URL (z.B. "https://oschlueter.de/bill/test")
+SYSTEM_DOCUMENT_ROOT    // Dokumenten-Root Pfad auf dem Server
+SYSTEM_TEMPLATE_DIR     // Smarty Template-Verzeichnis
+SYSTEM_CONFIG_DIR       // Smarty Konfigurations-Verzeichnis
+SYSTEM_CACHE_ROOT       // Cache-Root Verzeichnis
+SYSTEM_COMPILE_DIR      // Smarty Compile-Verzeichnis
+SYSTEM_CACHE_DIR        // Smarty Cache-Verzeichnis
+```
+
+### Datenbank-Verbindung
+```php
+DB_HOST                 // Datenbank-Hostname
+DB_USER                 // Datenbank-Benutzername
+DB_PASS                 // Datenbank-Passwort
+DB_NAME                 // Datenbank-Name
+DB_TYPE                 // Datenbank-Typ (Standard: mysqli)
+```
+
+### Sicherheits-Einstellungen
+```php
+SECURITY_ENCRYPTION_KEY     // Verschlüsselungs-Schlüssel (NICHT nach Inbetriebnahme ändern!)
+SECURITY_ENCRYPTION_KEY_OLD // Alter Schlüssel für Migration
+```
+
+### System-Einstellungen
+```php
+SYSTEM_MULTIBAR            // Linkbars nach X Zeilen umschalten (Standard: "25")
+SYSTEM_USE_PEAR_MAIL       // PEAR Mail verwenden (1) oder PHP mail() (0)
+SYSTEM_ADMIN_ROOT          // Root-Admin-Name (Standard: "admin")
+SYSTEM_ADMIN_GROUP_1       // Root-Gruppe ID
+SYSTEM_ADMIN_GROUP_2       // Manager-Gruppe ID
+SYSTEM_ADMIN_GROUP_3       // Bookkeeping-Gruppe ID
+```
+
 ## Anwendung der Einstellungen
 
 ### 1. Firmenname
@@ -73,8 +109,33 @@ Die Änderungen werden sofort auf der gesamten Website sichtbar.
 
 Die Branding-Konfiguration wird automatisch geladen in:
 - **Sprachdateien** (`include/language/*.php`): Für den Firmennamen
-- **Smarty Template Engine** (`include/smarty.inc.php`): Für Template-Variablen
+- **Smarty Template Engine** (`include/smarty.inc.php`): Für Template-Variablen und Pfade
 - **Templates** (`include/smarty/templates/*.tpl`): Über Smarty-Variablen
+- **Datenbank-Konfiguration** (`include/dbconf.php`): Für DB-Verbindung
+- **Hauptkonfiguration** (`include/phprechnung.inc.php`): Für System-Einstellungen
+
+## Datenbank-Verbindung ändern
+
+1. Öffnen Sie `branding.php`
+2. Ändern Sie die Werte unter "DATENBANK-VERBINDUNG":
+   ```php
+   define('DB_HOST', 'ihr-db-server.com');
+   define('DB_USER', 'ihr-benutzername');
+   define('DB_PASS', 'ihr-passwort');
+   define('DB_NAME', 'ihre-datenbank');
+   ```
+3. Speichern Sie die Datei
+
+## Web-URL ändern
+
+Wenn Sie die Installation auf einen anderen Server oder Pfad verschieben:
+
+1. Öffnen Sie `branding.php`
+2. Ändern Sie `SYSTEM_WEB_URL`:
+   ```php
+   define('SYSTEM_WEB_URL', 'https://ihre-domain.de/pfad/zur/installation');
+   ```
+3. Passen Sie bei Bedarf `SYSTEM_DOCUMENT_ROOT` an
 
 ## Logo austauschen
 
@@ -102,6 +163,15 @@ define('BRANDING_COLOR_PRIMARY_HOVER', '#0056b3');
 - Änderungen in `branding.php` werden sofort wirksam
 - Die ursprüngliche CSS-Datei (`include/phprechnung.css`) bleibt unverändert
 - Für erweiterte Anpassungen können Sie zusätzliche CSS-Regeln hinzufügen
+- **WICHTIG**: Den `SECURITY_ENCRYPTION_KEY` NICHT ändern nach der Inbetriebnahme - sonst ist kein Login mehr möglich!
+- **SICHERHEIT**: Stellen Sie sicher, dass `branding.php` nicht öffentlich zugänglich ist (enthält sensible Daten wie DB-Passwort)
+
+## Zentrale Konfiguration - Vorteile
+
+1. **Eine Datei für alle Einstellungen**: Branding, Pfade, Datenbank - alles an einem Ort
+2. **Einfache Migration**: Bei Serverumzug nur eine Datei anpassen
+3. **Versionskontrolle**: Sensible Daten können über .gitignore ausgeschlossen werden
+4. **Übersichtlich**: Alle Konstanten sind dokumentiert und gruppiert
 
 ## Support
 

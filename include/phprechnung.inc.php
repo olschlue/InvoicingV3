@@ -29,6 +29,9 @@ if (version_compare(PHP_VERSION, '5.2', '<'))
 	exit("I'm sorry, this release of phpRechnung needs PHP-Version 5.2 or greater.
 	Your PHP-Version: ".PHP_VERSION."\n\n");
 
+// Lade zentrale Konfiguration
+require_once(__DIR__ . '/../branding.php');
+
 ini_set("session.use_trans_sid", "0");
 
 @session_start();
@@ -37,23 +40,23 @@ $sessid = session_id();
 
 // Turn on different linkbars after lines ( default "25" )
 //
-$MultiBar = "25";
+$MultiBar = SYSTEM_MULTIBAR;
 
 // Please don't change $root, $admingroup_1, $admingroup_2 and $admingroup_3
 //
-$root = "admin";
+$root = SYSTEM_ADMIN_ROOT;
 
 // Root
 //
-$admingroup_1 = "1";
+$admingroup_1 = SYSTEM_ADMIN_GROUP_1;
 
 // Manager
 //
-$admingroup_2 = "2";
+$admingroup_2 = SYSTEM_ADMIN_GROUP_2;
 
 // Bookkeeping
 //
-$admingroup_3 = "3";
+$admingroup_3 = SYSTEM_ADMIN_GROUP_3;
 
 // Language selection
 //
@@ -114,7 +117,7 @@ $Strftime = strftime('%A, %d. %B %Y %H:%M %Z');
 // or "" to use the PHP mail() function
 // Please Note PEAR::Mail is not ready for PHP5, you need PEAR::Mail2 and all dependencies.
 //
-$PHPSendMail = "1";
+$PHPSendMail = SYSTEM_USE_PEAR_MAIL;
 
 // Users IPAddress
 //
@@ -130,17 +133,17 @@ $Browser = getenv('HTTP_USER_AGENT');
 
 // Your own Webserver
 //
-$web = "https://oschlueter.de/bill/test";
+$web = SYSTEM_WEB_URL;
 
 // Key to encrypt and decrypt data
 // Note: If you change this key, thereafter
 // a login is no longer possible.
 //
-$pkey = "e76a669e075b6e034ec5911553a86abb";
+$pkey = SECURITY_ENCRYPTION_KEY;
 
 // After User Update please replace $pkey with $pkeyOld
 //
-$pkeyOld = "e76a669e075b6e034ec5911553a86abb";
+$pkeyOld = SECURITY_ENCRYPTION_KEY_OLD;
 
 // Header to send first
 //

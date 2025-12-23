@@ -20,20 +20,13 @@
 	Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
 
-// Database Hostname
-//
-define("_DBHOST", "db5004652185.hosting-data.io");
+// Lade zentrale Konfiguration
+require_once(__DIR__ . '/../branding.php');
 
-// Username for the Database Access
-//
-define("_DBUSER", "dbu1361608");
-
-// Database Password
-//
-define("_DBPASS", "ee97mnee");
-
-// Name of the database where you import phpRechnung tables
-//
-define("_DBNAME", "dbs3895544");
+// Backwards Compatibility - alte Konstanten werden aus branding.php geladen
+define("_DBHOST", DB_HOST);
+define("_DBUSER", DB_USER);
+define("_DBPASS", DB_PASS);
+define("_DBNAME", DB_NAME);
 
 ?>

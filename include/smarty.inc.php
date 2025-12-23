@@ -41,10 +41,10 @@ $smarty = new Smarty;
 // If you change $Templateroot you need also to change
 // template_dir and config_dir in smarty.inc.php
 //
-$Templateroot = $_SERVER['DOCUMENT_ROOT']."/bill/test";
+$Templateroot = SYSTEM_DOCUMENT_ROOT;
 
-$smarty->template_dir = "$Templateroot/include/smarty/templates";
-$smarty->config_dir = "$Templateroot/include/smarty/configs";
+$smarty->template_dir = SYSTEM_TEMPLATE_DIR;
+$smarty->config_dir = SYSTEM_CONFIG_DIR;
 
 // IMPORTANT: $Cacheroot needs write access by the webserver
 // For more informationen see
@@ -58,10 +58,10 @@ $smarty->config_dir = "$Templateroot/include/smarty/configs";
 // If you change $Cacheroot you need also to change
 // compile_dir and cache_dir in smarty.inc.php
 //
-$Cacheroot = $_SERVER['DOCUMENT_ROOT']."/bill/test";
+$Cacheroot = SYSTEM_CACHE_ROOT;
 
-$smarty->compile_dir = "$Cacheroot/include/smarty/templates_c";
-$smarty->cache_dir = "$Cacheroot/include/smarty/cache";
+$smarty->compile_dir = SYSTEM_COMPILE_DIR;
+$smarty->cache_dir = SYSTEM_CACHE_DIR;
 
 // Is set to true only during development
 //

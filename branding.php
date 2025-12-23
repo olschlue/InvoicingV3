@@ -71,4 +71,77 @@ define('BRANDING_FOOTER_TEXT', '');
 define('BRANDING_VERSION', '3.0');
 define('BRANDING_COPYRIGHT_YEAR', '2025');
 
+/*
+ * ========================================
+ * SYSTEM-PFADE
+ * ========================================
+ */
+
+// Web-Root (Ihre eigene Webserver-Adresse)
+define('SYSTEM_WEB_URL', 'https://oschlueter.de/bill/test');
+
+// Dokumenten-Root Pfad
+define('SYSTEM_DOCUMENT_ROOT', $_SERVER['DOCUMENT_ROOT'] . '/bill/test');
+
+// Template-Verzeichnis
+define('SYSTEM_TEMPLATE_DIR', SYSTEM_DOCUMENT_ROOT . '/include/smarty/templates');
+define('SYSTEM_CONFIG_DIR', SYSTEM_DOCUMENT_ROOT . '/include/smarty/configs');
+
+// Cache-Verzeichnis (benötigt Schreibrechte vom Webserver)
+define('SYSTEM_CACHE_ROOT', $_SERVER['DOCUMENT_ROOT'] . '/bill/test');
+define('SYSTEM_COMPILE_DIR', SYSTEM_CACHE_ROOT . '/include/smarty/templates_c');
+define('SYSTEM_CACHE_DIR', SYSTEM_CACHE_ROOT . '/include/smarty/cache');
+
+/*
+ * ========================================
+ * DATENBANK-VERBINDUNG
+ * ========================================
+ */
+
+// Datenbank-Hostname
+define('DB_HOST', 'db5004652185.hosting-data.io');
+
+// Datenbank-Benutzername
+define('DB_USER', 'dbu1361608');
+
+// Datenbank-Passwort
+define('DB_PASS', 'ee97mnee');
+
+// Datenbank-Name
+define('DB_NAME', 'dbs3895544');
+
+// Datenbank-Typ (Standard: mysqli)
+define('DB_TYPE', 'mysqli');
+
+/*
+ * ========================================
+ * SICHERHEITS-EINSTELLUNGEN
+ * ========================================
+ */
+
+// Verschlüsselungs-Schlüssel (NICHT ÄNDERN nach Inbetriebnahme!)
+// Hinweis: Wenn Sie diesen Schlüssel ändern, ist ein Login nicht mehr möglich.
+define('SECURITY_ENCRYPTION_KEY', 'e76a669e075b6e034ec5911553a86abb');
+
+// Alter Schlüssel (für Migration nach User-Update)
+define('SECURITY_ENCRYPTION_KEY_OLD', 'e76a669e075b6e034ec5911553a86abb');
+
+/*
+ * ========================================
+ * SYSTEM-EINSTELLUNGEN
+ * ========================================
+ */
+
+// Multi-Bar Einstellung (Linkbars nach X Zeilen umschalten)
+define('SYSTEM_MULTIBAR', '25');
+
+// PHP SendMail verwenden (1 = PEAR Mail Interface, 0 = PHP mail() Funktion)
+define('SYSTEM_USE_PEAR_MAIL', '1');
+
+// Admin-Gruppen (NICHT ÄNDERN!)
+define('SYSTEM_ADMIN_ROOT', 'admin');
+define('SYSTEM_ADMIN_GROUP_1', '1');  // Root
+define('SYSTEM_ADMIN_GROUP_2', '2');  // Manager
+define('SYSTEM_ADMIN_GROUP_3', '3');  // Bookkeeping
+
 ?>
