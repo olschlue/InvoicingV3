@@ -90,17 +90,18 @@ body{
 /* ===== Button Styles (für alle Links) - Minimalistisch ===== */
 .btn, a.ninfolink, a.nlink, a.nmenulink {
 	display: inline-block;
-	padding: 8px 16px;
-	margin: 4px 2px;
+	padding: 4px 10px;
+	margin: 2px 1px;
 	border: 1px solid #f97c24;
-	border-radius: 3px;
+	border-radius: 2px;
 	background: #f97c24;
 	color: #ffffff !important;
 	text-decoration: none !important;
 	font-weight: 400;
+	font-size: 0.85em;
 	text-align: center;
 	cursor: pointer;
-	transition: all 0.2s ease;
+	transition: all 0.15s ease;
 	box-shadow: none;
 }
 
@@ -161,8 +162,8 @@ table{
 .phprechnung_tabelle{
 	background: #ffffff;
 	color: #2c3e50;
-	padding: 25px;
-	border-radius: 3px;
+	padding: 15px;
+	border-radius: 2px;
 	box-shadow: none;
 	border: 1px solid #e9ecef;
 }
@@ -170,8 +171,8 @@ table{
 .phprechnung_tabelle_g{
 	background: #f8f9fa;
 	color: #2c3e50;
-	padding: 25px;
-	border-radius: 3px;
+	padding: 15px;
+	border-radius: 2px;
 	box-shadow: none;
 	border: 1px solid #e9ecef;
 }
@@ -180,12 +181,12 @@ table{
 .phprechnung_sp_oben{
 	background: #f97c24;
 	color: #ffffff;
-	padding: 15px 20px;
+	padding: 10px 15px;
 	border-radius: 0;
 	border: none;
-	border-bottom: 2px solid #ff6a00;
+	border-bottom: 1px solid #ff6a00;
 	box-shadow: none;
-	font-size: 0.95em;
+	font-size: 0.9em;
 }
 
 .modern-header {
@@ -210,26 +211,26 @@ a.user-info-link:hover {
 }
 
 .phprechnung_menu_sel a{
-	padding: 14px 16px;
+	padding: 8px 12px;
 	display: block;
-	font-size: 0.95em;
+	font-size: 0.9em;
 	width: 100%;
 	color: #ffffff !important;
 	background: transparent;
 	text-decoration: none !important;
-	font-weight: 500;
-	border-radius: 8px;
-	transition: all 0.3s ease;
+	font-weight: 400;
+	border-radius: 2px;
+	transition: all 0.15s ease;
 }
 
 .phprechnung_menu_sel a:hover{
-	padding: 14px 16px;
+	padding: 8px 12px;
 	display: block;
-	font-size: 0.95em;
+	font-size: 0.9em;
 	width: 100%;
 	color: #ffffff !important;
 	background: rgba(255, 255, 255, 0.1);
-	transform: translateX(4px);
+	transform: none;
 }
 
 .phprechnung_menu{
@@ -242,22 +243,22 @@ a.user-info-link:hover {
 }
 
 .phprechnung_menu a{
-	padding: 12px 16px;
+	padding: 8px 12px;
 	display: block;
-	font-size: 0.95em;
+	font-size: 0.9em;
 	width: 100%;
 	color: #495057 !important;
 	background: transparent;
 	text-decoration: none !important;
-	font-weight: 500;
-	border-radius: 8px;
-	transition: all 0.3s ease;
+	font-weight: 400;
+	border-radius: 2px;
+	transition: all 0.15s ease;
 }
 
 .phprechnung_menu a:hover{
-	padding: 12px 16px;
+	padding: 8px 12px;
 	display: block;
-	font-size: 0.95em;
+	font-size: 0.9em;
 	width: 100%;
 	color: #f97c24 !important;
 	background: #f8f9fa;
@@ -273,22 +274,22 @@ a.user-info-link:hover {
 }
 
 .phprechnung_menu_sub a{
-	padding: 10px 16px;
+	padding: 6px 12px;
 	display: block;
-	font-size: 0.9em;
+	font-size: 0.85em;
 	width: calc(100% - 12px);
 	color: #6c757d !important;
 	background: transparent;
 	text-decoration: none !important;
 	margin-left: 12px;
-	border-radius: 6px;
-	transition: all 0.3s ease;
+	border-radius: 2px;
+	transition: all 0.15s ease;
 }
 
 .phprechnung_menu_sub a:hover{
-	padding: 10px 16px;
+	padding: 6px 12px;
 	display: block;
-	font-size: 0.9em;
+	font-size: 0.85em;
 	width: calc(100% - 12px);
 	color: #f97c24 !important;
 	background: #f8f9fa;
@@ -349,33 +350,34 @@ a:hover img{
 .wTD{
 	background-color: #ffffff;
 	color: #2c3e50;
-	padding: 12px;
+	padding: 6px 8px;
 }
 
 .grayTD{
 	background-color: #f8f9fa;
 	color: #2c3e50;
-	padding: 12px;
+	padding: 6px 8px;
 }
 
 .DgrayTD{
 	background-color: #e9ecef;
 	color: #2c3e50;
-	padding: 12px;
+	padding: 6px 8px;
 }
 
 .mblueTD{
 	background: #f97c24;
 	color: #ffffff;
-	font-weight: 500;
-	padding: 12px;
-	border-bottom: 2px solid #ff6a00;
+	font-weight: 400;
+	padding: 8px 10px;
+	font-size: 0.9em;
+	border-bottom: 1px solid #ff6a00;
 }
 
 .redTD{
 	background-color: transparent;
 	color: #dc3545;
-	padding: 12px;
+	padding: 6px 8px;
 }
 
 .grayTD:hover, .wTD:hover, .hover{
@@ -394,34 +396,35 @@ a:hover img{
 }
 
 input, textarea, select{
-	border: 2px solid #e9ecef;
-	padding: 10px 14px;
+	border: 1px solid #e9ecef;
+	padding: 6px 10px;
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-	border-radius: 6px;
+	border-radius: 2px;
 	background: #ffffff;
 	color: #2c3e50;
-	transition: all 0.3s ease;
-	font-size: 0.95em;
+	transition: all 0.15s ease;
+	font-size: 0.9em;
 }
 
 input:focus, textarea:focus, select:focus{
-	border: 2px solid #f97c24;
+	border: 1px solid #f97c24;
 	color: #2c3e50;
 	background-color: #ffffff;
-	padding: 10px 14px;
+	padding: 6px 10px;
 	outline: none;
 	box-shadow: none;
 }
 
 input.button, button, input[type="submit"], input[type="button"]{
 	border: 1px solid #f97c24;
-	padding: 10px 20px;
+	padding: 6px 14px;
 	background: #f97c24;
 	color: #ffffff;
 	font-weight: 400;
-	border-radius: 3px;
+	font-size: 0.9em;
+	border-radius: 2px;
 	cursor: pointer;
-	transition: all 0.2s ease;
+	transition: all 0.15s ease;
 	box-shadow: none;
 }
 
@@ -522,7 +525,7 @@ input.button:active, button:active, input[type="submit"]:active, input[type="but
 /* ===== Utilities ===== */
 td {
 	border-spacing: 0;
-	padding: 8px;
+	padding: 4px 6px;
 }
 
 /* ===== Scrollbar Styling (für moderne Browser) ===== */
@@ -578,17 +581,17 @@ table tbody tr:hover {
 /* Styling für alle Links in Tabellen - Button-Style */
 td a {
 	display: inline-block;
-	padding: 6px 12px;
-	margin: 2px;
+	padding: 3px 8px;
+	margin: 1px;
 	border-radius: 2px;
 	background: #f97c24;
 	border: 1px solid #f97c24;
 	color: #ffffff !important;
 	text-decoration: none !important;
 	font-weight: 400;
-	transition: all 0.2s ease;
+	transition: all 0.15s ease;
 	box-shadow: none;
-	font-size: 0.9em;
+	font-size: 0.85em;
 }
 
 td a:hover {
@@ -681,29 +684,31 @@ img[src*="up.png"]:hover, img[src*="down.png"]:hover {
 
 .phprechnung_tabelle h2 {
 	color: #2c3e50;
-	font-weight: 500;
-	margin-bottom: 1.5rem;
-	padding-bottom: 0.5rem;
-	border-bottom: 2px solid #f97c24;
+	font-weight: 400;
+	font-size: 1.3em;
+	margin-bottom: 1rem;
+	padding-bottom: 0.4rem;
+	border-bottom: 1px solid #f97c24;
 }
 
 /* Minimale Alert/Message Boxen */
 .greentxt, .redtxt {
-	padding: 10px 15px;
+	padding: 6px 10px;
 	border-radius: 2px;
-	margin: 10px 0;
+	margin: 8px 0;
 	display: inline-block;
 	box-shadow: none;
+	font-size: 0.9em;
 }
 
 .greentxt {
 	background: #d4edda;
-	border-left: 3px solid #28a745;
+	border-left: 2px solid #28a745;
 }
 
 .redtxt {
 	background: #f8d7da;
-	border-left: 3px solid #dc3545;
+	border-left: 2px solid #dc3545;
 }
 
 /* ===== Focus Styles für Barrierefreiheit ===== */
