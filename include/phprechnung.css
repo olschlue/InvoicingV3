@@ -652,7 +652,7 @@ a img {
 .phprechnung_tabelle a:not(.ninfolink):not(.nlink), 
 .phprechnung_tabelle_g a:not(.ninfolink):not(.nlink) {
 	display: inline-block;
-	padding: 8px 16px;
+	padding: 4px 8px;
 	margin: 4px 2px;
 	border-radius: 6px;
 	color: #ffffff !important;
