@@ -593,9 +593,10 @@ table tbody tr {
 	transition: all 0.3s ease;
 }
 
-table tbody tr:hover {
+/* Hover-Effekt für Tabelle 3 entfernt */
+/* table tbody tr:hover {
 	background-color: rgba(249, 124, 36, 0.05);
-}
+} */
 
 /* Styling fÃ¼r alle Links in Tabellen - Button-Style */
 td a {
