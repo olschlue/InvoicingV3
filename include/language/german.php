@@ -414,6 +414,7 @@ $reports = array (
 	"invoice_ledger_summary.php" => "Verk&auml;ufe nach Kunden - Zusammenfassung",
 	"cashbook.php" => "Kassenbuch",
 	"position_sales_summary.php" => "Verk&auml;ufe nach Position/Artikel - Zusammenfassung",
+	"position_sales_summary_string.php" => "Verk&auml;ufe nach Text - Zusammenfassung",
 	"position_sales.php" => "Verk&auml;ufe nach Position/Artikel - Einzelwerte",
 	"outstanding_offers.php" => "Nicht angenommene Angebote"
 );
