@@ -36,8 +36,8 @@
 	<tr><td align="center" class="phprechnung_menu"><a accesskey="L" title="{$Logout}"
 	href="../login/logout.php?{$Session}">{$Logout}</a></td></tr>
 {/if}
-<tr><td align="left" class="phprechnung_menu"><a accesskey="W" title="{$Startpage}"
-href="../index.php?{$Session}">{$Startpage}</a></td></tr>
+{*<tr><td align="left" class="phprechnung_menu"><a accesskey="W" title="{$Startpage}"
+href="../index.php?{$Session}">{$Startpage}</a></td></tr>*}
 <tr><td align="left" class="phprechnung_menu_sel"><a accesskey="A" title="{$Addressbook} - {$List}"
 href="list.php?{$Session}">{$Addressbook}</a></td></tr>
 <tr><td align="left" class="phprechnung_menu_sub"><a accesskey="1" title="{$Addressbook} - {$New}"
