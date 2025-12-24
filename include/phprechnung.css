@@ -634,7 +634,7 @@ a img {
 }
 
 /* Action Links (Edit, Delete, etc.) - kompakter */
-.mblueTD a, tr.mblueTD a {
+.mblueTD a:not(.ninfolink):not(.nlink):not(.nmenulink), tr.mblueTD a:not(.ninfolink):not(.nlink):not(.nmenulink) {
 	padding: 6px 12px;
 	background: transparent;
 	color: #2c3e50 !important;
@@ -643,7 +643,7 @@ a img {
 	border: none;
 }
 
-.mblueTD a:hover, tr.mblueTD a:hover {
+.mblueTD a:not(.ninfolink):not(.nlink):not(.nmenulink):hover, tr.mblueTD a:not(.ninfolink):not(.nlink):not(.nmenulink):hover {
 	background: transparent;
 	color: #f97c24 !important;
 	transform: none;
