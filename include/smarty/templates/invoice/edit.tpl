@@ -605,7 +605,7 @@
 									<option title="{$message.DESCRIPTION}" label="{$message.DESCRIPTION}" value="{$message.MESSAGEID}">{$message.DESCRIPTION}</option>
 								{/if}
 							{/foreach}
-							</optgroup></select><a name="NewMessage" id="NewMessage"></a>
+							</optgroup></select>
 							</form>
 							</td>
 							<td align="center" valign="top" colspan="2">
