@@ -90,7 +90,7 @@ $DateTill = German_Mysql_Date($DateTill);
 $whereClause = "I.INVOICEID=V.INVOICEID AND I.CANCELED=2 AND P.POSITIONID=V.POSITIONID AND TO_DAYS(I.INVOICE_DATE) BETWEEN TO_DAYS('$DateFrom') AND TO_DAYS('$DateTill')";
 if(!empty($SearchString))
 {
-	$whereClause .= " AND P.POS_DESC LIKE '%$SearchString%'";
+	$whereClause .= " AND V.POS_DESC LIKE '%$SearchString%'";
 }
 
 $query = $db->Execute("SELECT I.INVOICEID, I.CANCELED, I.INVOICE_DATE, P.POSITIONID, P.POS_NAME, P.POS_DESC, V.POSITIONID, SUM(V.POS_QUANTITY) AS POS_QUANTITY, SUM(V.POS_QUANTITY*V.POS_PRICE) AS POS_AMOUNT, V.POS_GROUP, V.INVOICEID, V.INVOICEPOSID FROM invoice AS I, article AS P, invoicepos AS V WHERE $whereClause GROUP BY V.POSITIONID ORDER BY $Order $Sort LIMIT $intCursor, $EntrysPerPage");
