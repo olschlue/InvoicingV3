@@ -204,7 +204,7 @@ a.user-info-link:hover {
 	margin-bottom: 4px;
 	border-radius: 2px;
 	background: #f97c24;
-	border-left: 3px solid #ff6a00;
+	/*border-left: 3px solid #ff6a00;*/
 	box-shadow: none;
 }
 
@@ -718,25 +718,12 @@ img[src*="up.png"]:hover, img[src*="down.png"]:hover {
 	border-bottom: 1px solid #f97c24;
 }
 
-/* Minimale Alert/Message Boxen */
-.greentxt, .redtxt {
-	/*padding: 6px 10px;
-	border-radius: 2px;
-	margin: 8px 0;
-	display: inline-block;
-	box-shadow: none;
-	font-size: 0.9em;
-	*/
-}
-
 .greentxt {
 	background: #d4edda;
-	/*border-left: 2px solid #28a745;*/
 }
 
 .redtxt {
 	background: #f8d7da;
-	/*border-left: 2px solid #dc3545;*/
 }
 
 /* ===== Focus Styles für Barrierefreiheit ===== */
