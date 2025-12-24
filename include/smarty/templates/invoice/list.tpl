@@ -118,13 +118,12 @@ href="../syslog/list.php?{$Session}">{$Syslog}</a></td></tr>
 <a href="{$smarty.server.PHP_SELF}?{$AddCurrentPage}Order=TOTAL_AMOUNT-SUM_PAID&amp;Sort=ASC&amp;Canceled={$Canceled}&amp;{$Session}"><img border="0" src="../images/up.png" title="{$SortMsg} {$Open_Account} ASC" alt="{$SortMsg} {$Open_Account} ASC" /></a>
 <a href="{$smarty.server.PHP_SELF}?{$AddCurrentPage}Order=TOTAL_AMOUNT-SUM_PAID&amp;Sort=DESC&amp;Canceled={$Canceled}&amp;{$Session}"><img border="0" src="../images/down.png" title="{$SortMsg} {$Open_Account} DESC" alt="{$SortMsg} {$Open_Account} DESC" /></a>
 </td>
-<td nowrap="nowrap" align="center" width="50">&nbsp;</td>
-<td nowrap="nowrap" align="center" width="50">&nbsp;</td>
-<td nowrap="nowrap" align="center" width="50">&nbsp;</td>
-<td nowrap="nowrap" align="center" width="50">{$Entrys}:&nbsp;{$MaxRows}
+<td nowrap="nowrap" align="center" colspan="4">{$Entrys}:&nbsp;{$MaxRows}
+{*
 <a href="{$smarty.server.PHP_SELF}?Order={$Order}&amp;Sort={$Sort}&amp;Canceled=2&amp;{$Session}"><img border="0" src="../images/up.png" title="{$NotCanceledEntries}" alt="{$NotCanceledEntries}" /></a>
 <a href="{$smarty.server.PHP_SELF}?Order={$Order}&amp;Sort={$Sort}&amp;Canceled=1&amp;{$Session}"><img border="0" src="../images/down.png" title="{$SortMsg} {$CanceledEntries}" alt="{$CanceledEntries}" /></a>
 <a href="{$smarty.server.PHP_SELF}?Order={$Order}&amp;Sort={$Sort}&amp;Canceled=3&amp;{$Session}"><img border="0" src="../images/right.png" title="{$AllEntries}" alt="{$AllEntries}" /></a>
+*}
 &nbsp;
 </td>
 </tr>
