@@ -66,12 +66,12 @@ href="../syslog/list.php?{$Session}">{$Syslog}</a></td></tr>
 {* Menubar end *}
 <td id="td1_2" width="20px"></td><td style="width: auto;" valign="top" align="center">
 <table width="100%" class="phprechnung_tabelle" border="0" cellspacing="0" cellpadding="2" summary="Tabelle 1"><tbody>
-<tr><td align="center" colspan="8"><h2>{$Invoice} - {$SearchResult}</h2></td></tr>
-<tr><td align="center" colspan="8">{$DateMsg} {$DateFrom} {$DateFrom1} {$DateTill} {$DateTill1}</td></tr>
+<tr><td align="center" colspan="9"><h2>{$Invoice} - {$SearchResult}</h2></td></tr>
+<tr><td align="center" colspan="9">{$DateMsg} {$DateFrom} {$DateFrom1} {$DateTill} {$DateTill1}</td></tr>
 <tr><td>&nbsp;</td></tr>
 {* Display pager if $MaxRows => $Rows ( lines per page ) *}
 {if $MaxPages}
-	<tr><td align="center" colspan="8">
+	<tr><td align="center" colspan="9">
 	{if $CurrentPage > 1 }
 		<a href="{$smarty.server.PHP_SELF}?page=1&amp;{$Searchstring}&amp;Order={$Order}&amp;Sort={$Sort}&amp;Canceled={$Canceled}&amp;{$Session}"><img border="0" src="../images/first.png" title="{$FirstPageMsg}" alt="{$FirstPageMsg}" /></a>&nbsp;
 		<a href="{$smarty.server.PHP_SELF}?page={$PrevPage}&amp;{$Searchstring}&amp;Order={$Order}&amp;Sort={$Sort}&amp;Canceled={$Canceled}&amp;{$Session}"><img border="0" src="../images/prev.png" title="{$PrevPageMsg}" alt="{$PrevPageMsg}" /></a>&nbsp;
@@ -84,19 +84,19 @@ href="../syslog/list.php?{$Session}">{$Syslog}</a></td></tr>
 	</td></tr>
 {/if}
 {if $smarty.session.NewID and ( $smarty.session.NewID eq 1 )}
-	<tr><td align="center" colspan="8" class="greentxt">{$NewEntry} {$Invoice_No} {$invoiceID}</td></tr>
+	<tr><td align="center" colspan="9" class="greentxt">{$NewEntry} {$Invoice_No} {$invoiceID}</td></tr>
 {/if}
 {if $smarty.session.EditID and ( $smarty.session.EditID eq 1 )}
-	<tr><td align="center" colspan="8" class="greentxt">{$EntryChanged} {$Invoice_No} {$invoiceID}, {$Customer_No} {$myID}</td></tr>
+	<tr><td align="center" colspan="9" class="greentxt">{$EntryChanged} {$Invoice_No} {$invoiceID}, {$Customer_No} {$myID}</td></tr>
 {/if}
 {if $smarty.session.CancelID and ( $smarty.session.CancelID eq 1 )}
-	<tr><td align="center" colspan="8" class="greentxt">{$EntryCanceled} {$Invoice_No} {$invoiceID}, {$Customer_No} {$myID}</td></tr>
+	<tr><td align="center" colspan="9" class="greentxt">{$EntryCanceled} {$Invoice_No} {$invoiceID}, {$Customer_No} {$myID}</td></tr>
 {/if}
 {if $smarty.session.emailID and ( $smarty.session.emailID eq "1" )}
-	<tr><td align="center" colspan="8" class="greentxt">{$Email_OK} {$FIRSTNAME} {$LASTNAME} {$COMPANY}, {$smarty.session.Type} {$invoiceID}, {$Customer_No} {$MYID}</td></tr>
+	<tr><td align="center" colspan="9" class="greentxt">{$Email_OK} {$FIRSTNAME} {$LASTNAME} {$COMPANY}, {$smarty.session.Type} {$invoiceID}, {$Customer_No} {$MYID}</td></tr>
 {/if}
 {if $smarty.session.emailID and ( $smarty.session.emailID eq "2" )}
-	<tr><td align="center" colspan="8" class="redtxt">{$Email_Error}</td></tr>
+	<tr><td align="center" colspan="9" class="redtxt">{$Email_Error}</td></tr>
 {/if}
 <tr><td></td></tr>
 <tr class="mblueTD"><td nowrap="nowrap" align="left">&nbsp;{$Invoice_No}
@@ -127,7 +127,7 @@ href="../syslog/list.php?{$Session}">{$Syslog}</a></td></tr>
 </td></tr>
 {* Display entrys from database if $MaxRows > 0 *}
 {if $MaxRows eq 0}
-	<tr><td align="center" colspan="8" class="redtxt">{$NoEntry}</td></tr>
+	<tr><td align="center" colspan="9" class="redtxt">{$NoEntry}</td></tr>
 {else}
 {foreach from=$InvoiceData item=invoice}
 <tr class="{cycle values="grayTD,wTD"}">
@@ -215,7 +215,7 @@ href="../syslog/list.php?{$Session}">{$Syslog}</a></td></tr>
 <tr><td>&nbsp;</td></tr>
 {* Display pager and linkbar if $PageRows => $Rows ( lines per page ) *}
 {if $MaxPages and ($PageRows gte $MultiBar)}
-<tr><td align="center" colspan="8">
+<tr><td align="center" colspan="9">
 {if $CurrentPage > 1 }
 <a href="{$smarty.server.PHP_SELF}?page=1&amp;Order={$Order}&amp;Sort={$Sort}&amp;Canceled={$Canceled}&amp;{$Searchstring}&amp;{$Session}"><img border="0" src="../images/first.png" title="{$FirstPageMsg}" alt="{$FirstPageMsg}" /></a>&nbsp;
 <a href="{$smarty.server.PHP_SELF}?page={$PrevPage}&amp;Order={$Order}&amp;Sort={$Sort}&amp;Canceled={$Canceled}&amp;{$Searchstring}&amp;{$Session}"><img border="0" src="../images/prev.png" title="{$PrevPageMsg}" alt="{$PrevPageMsg}" /></a>&nbsp;
@@ -228,7 +228,7 @@ href="../syslog/list.php?{$Session}">{$Syslog}</a></td></tr>
 </td></tr>
 <tr><td>&nbsp;</td></tr>
 {* Include the linkbar *}
-<tr><td colspan="8">{include file="linkbar.tpl"}</td></tr>
+<tr><td colspan="9">{include file="linkbar.tpl"}</td></tr>
 {/if}
 </tbody></table>
 </td></tr>

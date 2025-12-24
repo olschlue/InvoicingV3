@@ -127,7 +127,7 @@
 					<table width="100%" border="0" cellspacing="3" cellpadding="3" summary="Tabelle 2">
 						{if $TaxFree neq 1}
 							<tr>
-								<td align="center" colspan="8"><h2>{$Offer} - {$Edit}</h2>
+								<td align="center" colspan="9"><h2>{$Offer} - {$Edit}</h2>
 							</td>
 							</tr>
 						{else}
@@ -138,7 +138,7 @@
 						{/if}
 						<tr>
 						{if $TaxFree neq 1}
-							<td align="center" colspan="8">
+							<td align="center" colspan="9">
 						{else}
 							<td align="center" colspan="7">
 						{/if}
@@ -157,7 +157,7 @@
 						{if $MaxRows eq 0}
 							<tr>
 							{if $TaxFree neq 1}
-								<td align="center" colspan="8" class="redtxt">
+								<td align="center" colspan="9" class="redtxt">
 							{else}
 								<td align="center" colspan="7" class="redtxt">
 							{/if}
@@ -167,7 +167,7 @@
 						{elseif $CANCELED neq 2}
 							<tr>
 							{if $TaxFree neq 1}
-								<td align="center" colspan="8" class="redtxt">
+								<td align="center" colspan="9" class="redtxt">
 							{else}
 								<td align="center" colspan="7" class="redtxt">
 							{/if}
@@ -180,7 +180,7 @@
 								</td>
 							</tr>
 						<tr>
-							<td align="left" valign="middle" colspan="8">&nbsp;&nbsp;&nbsp;&nbsp;
+							<td align="left" valign="middle" colspan="9">&nbsp;&nbsp;&nbsp;&nbsp;
 							<form id="Edit" name="Edit" action="customerlist.php?{$Session}" method="post">
 								<input type="hidden" name="offerID" value="{$offerID}" />
 								<input type="hidden" name="infoID" value="{$infoID}" />
@@ -209,7 +209,7 @@
 						{if $MYID}
 							{if $PRINT_NAME != 2}
 								<tr>
-									<td align="left" valign="middle" colspan="8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{$PREFIX} {$TITLE}
+									<td align="left" valign="middle" colspan="9">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{$PREFIX} {$TITLE}
 									</td>
 								</tr>
 								<tr>
@@ -487,7 +487,7 @@
 						</tr>
 						<tr>
 							{if $TaxFree neq 1}
-								<td colspan="8" align="center" valign="middle">
+								<td colspan="9" align="center" valign="middle">
 							{else}
 								<td colspan="7" align="center" valign="middle">
 							{/if}
@@ -651,7 +651,7 @@
 						</tr>
 						<tr>
 							{if $TaxFree neq 1}
-								<td align="center" colspan="8">
+								<td align="center" colspan="9">
 							{else}
 								<td align="center" colspan="7">
 							{/if}
