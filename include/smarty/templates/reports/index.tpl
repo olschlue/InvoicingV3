@@ -96,6 +96,9 @@ href="../syslog/list.php?{$Session}">{$Syslog}</a></td></tr>
 	<input type="hidden" name="Report" value="{$Report}" />
 	<tr><td align="right" width="40%" valign="middle">{$DateMsg} {$Date_From}:</td><td align="left" width="60%" valign="middle"><input title="{$DateMsg} {$Date_From}" class="form_input" type="text" name="DateFrom" size="30" value="{if $DateFrom}{$DateFrom}{else}{$smarty.now|date_format:"%d.%m.%Y"}{/if}" /></td></tr>
 	<tr><td align="right" width="40%" valign="middle">{$DateMsg} {$Date_Till}:</td><td align="left" width="60%" valign="middle"><input title="{$DateMsg} {$Date_Till}" class="form_input" type="text" name="DateTill" size="30" value="{if $DateTill}{$DateTill}{else}{$smarty.now|date_format:"%d.%m.%Y"}{/if}" /></td></tr>
+	{if $Report eq 'position_sales_summary_string.php'}
+	<tr><td align="right" width="40%" valign="middle">{$Search} {$PositionText}:</td><td align="left" width="60%" valign="middle"><input title="{$Search} {$PositionText}" class="form_input" type="text" name="SearchString" size="30" value="{$SearchString}" /></td></tr>
+	{/if}
 	<tr><td align="center" colspan="2"><input class="button" type="submit" title="{$Search}" value="{$Search}" /></td></tr>
 </form>
 {/if}
