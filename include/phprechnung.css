@@ -544,7 +544,7 @@ table[summary="Tabelle 3"] {
 td {
 	border-spacing: 0;
 	padding: 4px 6px;
-	vertical-align: middle;
+	vertical-align: top;
 }
 
 /* ===== Scrollbar Styling (fÃ¼r moderne Browser) ===== */
