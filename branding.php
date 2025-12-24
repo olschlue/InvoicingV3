@@ -78,7 +78,7 @@ define('BRANDING_COPYRIGHT_YEAR', '2025');
  */
 
 // Web-Root (Ihre eigene Webserver-Adresse)
-define('SYSTEM_WEB_URL', $_SERVER['DOCUMENT_ROOT'] . '/bill/test');
+define('SYSTEM_WEB_URL', 'https://oschlueter.de/bill/test');
 
 // Dokumenten-Root Pfad
 define('SYSTEM_DOCUMENT_ROOT', $_SERVER['DOCUMENT_ROOT'] . '/bill/test');
