@@ -144,8 +144,7 @@ href="../syslog/list.php?{$Session}">{$Syslog}</a></td></tr>
 		<td align="center" colspan="6">
 	{/if}
 	[&nbsp;<a title="{$Print_Invoice}" class="nmenulink" href="print_pdf.php?myID={$myID}&amp;invoiceID={$invoiceID}&amp;Type=Invoice&amp;Pos_Order={$Pos_Order}&amp;Pos_Sort={$Pos_Sort}&amp;{$Session}" target="_blank">{$Print_Invoice}</a>
-	&nbsp;|&nbsp;<a title="{$Copy_Invoice}" class="nmenulink" href="copy_invoice.php?myID={$myID}&amp;invoiceID={$invoiceID}&amp;infoID={$infoID}&amp;{$AddCurrentPage}Order={$Order}&amp;Sort={$Sort}{$Searchstring}&amp;{$Session}">{$Copy_Invoice}</a>
-	&nbsp;|&nbsp;<a title="{$Email_Invoice}&nbsp;{$FIRSTNAME}&nbsp;{$LASTNAME}&nbsp;{$COMPANY}" class="nmenulink" href="email.php?myID={$myID}&amp;invoiceID={$invoiceID}&amp;SendEmail=1&amp;infoID={$infoID}&amp;{$AddCurrentPage}Order={$Order}&amp;Sort={$Sort}{$Searchstring}&amp;{$Session}">{$Email}&nbsp;-&nbsp;{$Invoice}</a>&nbsp;]</td></tr>
+	&nbsp;|&nbsp;<a title="{$Copy_Invoice}" class="nmenulink" href="copy_invoice.php?myID={$myID}&amp;invoiceID={$invoiceID}&amp;infoID={$infoID}&amp;{$AddCurrentPage}Order={$Order}&amp;Sort={$Sort}{$Searchstring}&amp;{$Session}">{$Copy_Invoice}</a>&nbsp;]</td></tr>
 <tr><td>&nbsp;</td></tr>
 {if $PRINT_NAME neq 2}
 	<tr><td align="left" valign="middle">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{$PREFIX} {$TITLE}</td></tr>
