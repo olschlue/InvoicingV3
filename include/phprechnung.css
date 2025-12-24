@@ -720,22 +720,23 @@ img[src*="up.png"]:hover, img[src*="down.png"]:hover {
 
 /* Minimale Alert/Message Boxen */
 .greentxt, .redtxt {
-	padding: 6px 10px;
+	/*padding: 6px 10px;
 	border-radius: 2px;
 	margin: 8px 0;
 	display: inline-block;
 	box-shadow: none;
 	font-size: 0.9em;
+	*/
 }
 
 .greentxt {
 	background: #d4edda;
-	border-left: 2px solid #28a745;
+	/*border-left: 2px solid #28a745;*/
 }
 
 .redtxt {
 	background: #f8d7da;
-	border-left: 2px solid #dc3545;
+	/*border-left: 2px solid #dc3545;*/
 }
 
 /* ===== Focus Styles für Barrierefreiheit ===== */
