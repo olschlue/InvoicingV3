@@ -88,11 +88,11 @@
 				href="../payment/list.php?{$Session}">{$Payment}</a>
 				</td>
 			</tr>*}
-			<tr>
+			{*<tr>
 				<td align="left" class="phprechnung_menu"><a accesskey="C" title="{$Cashbook}"
 				href="../cashbook/list.php?{$Session}">{$Cashbook}</a>
 				</td>
-			</tr>
+			</tr>*}
 			<tr>
 				<td align="left" class="phprechnung_menu"><a accesskey="R" title="{$Reports}"
 				href="../reports/index.php?{$Session}">{$Reports}</a>
@@ -288,7 +288,7 @@
 					</table>
 					<table width="100%" border="0" cellspacing="1" cellpadding="3" summary="Tabelle 3">
 						<tr class="mblueTD">
-							<td nowrap="nowrap" align="left" valign="middle">{$PositionName}&nbsp;-&nbsp;[&nbsp;<a title="{$PositionNew}" class="nlink" href="posnew.php?myID={$myID}&amp;messageID={$NR_MESSAGE}&amp;InvoiceDate={$INVOICE_DATE}&amp;MethodOfPayment={$NR_METHOD_OF_PAYMENT}&amp;MethodOfPaymentDate={$MethodOfPaymentDate}&amp;Note={$Note}&amp;newofferID={$newofferID}&amp;Order={$Order}&amp;Sort={$Sort}&amp;{$Session}">&nbsp;{$New}&nbsp;</a>&nbsp;]
+							<td nowrap="nowrap" align="left" valign="middle">{$PositionName}&nbsp;-&nbsp;<a title="{$PositionNew}" class="btn ninfolink" href="posnew.php?myID={$myID}&amp;messageID={$NR_MESSAGE}&amp;InvoiceDate={$INVOICE_DATE}&amp;MethodOfPayment={$NR_METHOD_OF_PAYMENT}&amp;MethodOfPaymentDate={$MethodOfPaymentDate}&amp;Note={$Note}&amp;newofferID={$newofferID}&amp;Order={$Order}&amp;Sort={$Sort}&amp;{$Session}">{$New}</a>
 							</td>
 							<td nowrap="nowrap" align="left" valign="middle">{$PositionText}
 							</td>

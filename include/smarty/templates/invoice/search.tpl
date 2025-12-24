@@ -85,11 +85,11 @@
 					href="../payment/list.php?{$Session}">{$Payment}</a>
 					</td>
 				</tr>
-				<tr>
+				{*<tr>
 					<td align="left" class="phprechnung_menu"><a accesskey="C" title="{$Cashbook}"
 					href="../cashbook/list.php?{$Session}">{$Cashbook}</a>
 					</td>
-				</tr>
+				</tr>*}
 				<tr>
 					<td align="left" class="phprechnung_menu"><a accesskey="R" title="{$Reports}"
 					href="../reports/index.php?{$Session}">{$Reports}</a>
