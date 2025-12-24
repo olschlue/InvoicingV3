@@ -67,7 +67,7 @@ href="../syslog/list.php?{$Session}">{$Syslog}</a></td></tr>
 <td id="td1_2" width="20px"></td><td style="width: auto;" valign="top" align="center">
 <table width="100%" class="phprechnung_tabelle" border="0" cellspacing="0" cellpadding="2" summary="Tabelle 1"><tbody>
 <tr><td align="center" colspan="9"><h2>{$Invoice} - {$List}</h2></td></tr>
-<tr><td>&nbsp;</td></tr>
+<tr><td colspan="9">&nbsp;</td></tr>
 {* Display pager if $MaxRows => $Rows ( lines per page ) *}
 {if $MaxPages}
 <tr><td align="center" colspan="9">
@@ -97,7 +97,7 @@ href="../syslog/list.php?{$Session}">{$Syslog}</a></td></tr>
 {if $smarty.session.emailID and ( $smarty.session.emailID eq "2" )}
 	<tr><td align="center" colspan="9" class="redtxt">{$Email_Error}</td></tr>
 {/if}
-<tr><td></td></tr>
+<tr><td colspan="9"></td></tr>
 <tr class="mblueTD"><td nowrap="nowrap" align="left">&nbsp;{$Invoice_No}
 <a href="{$smarty.server.PHP_SELF}?{$AddCurrentPage}Order=INVOICEID&amp;Sort=ASC&amp;Canceled={$Canceled}&amp;{$Session}"><img border="0" src="../images/up.png" title="{$SortMsg} {$Invoice_No} ASC" alt="{$SortMsg} {$Invoice_No} ASC" /></a>
 <a href="{$smarty.server.PHP_SELF}?{$AddCurrentPage}Order=INVOICEID&amp;Sort=DESC&amp;Canceled={$Canceled}&amp;{$Session}"><img border="0" src="../images/down.png" title="{$SortMsg} {$Invoice_No} DESC" alt="{$SortMsg} {$Invoice_No} DESC" /></a>
