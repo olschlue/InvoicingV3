@@ -127,7 +127,7 @@
 					<table width="100%" border="0" cellspacing="3" cellpadding="3" summary="Tabelle 2">
 						<tr>
 						{if $TaxFree != 1}
-							<td align="center" colspan="9"><h2>{$Invoice} - {$New}</h2>
+							<td align="center" colspan="8"><h2>{$Invoice} - {$New}</h2>
 							</td>
 						{else}
 							<td align="center" colspan="7"><h2>{$Invoice} - {$New}</h2>
@@ -137,7 +137,7 @@
 						{if $smarty.session.NewID and ( $smarty.session.NewID eq 1 )}
 							{if $TaxFree != 1}
 								<tr>
-									<td align="center" colspan="9" class="greentxt">{$NewEntry} {$Invoice_No} {$invoiceID}
+									<td align="center" colspan="8" class="greentxt">{$NewEntry} {$Invoice_No} {$invoiceID}
 									</td>
 								</tr>
 							{else}
@@ -148,11 +148,11 @@
 							{/if}
 						{/if}
 						<tr>
-							<td>&nbsp;
+							<td colspan="8">&nbsp;
 							</td>
 						</tr>
 						<tr>
-							<td align="left" valign="middle" colspan="9">&nbsp;&nbsp;&nbsp;&nbsp;
+							<td align="left" valign="middle" colspan="8">&nbsp;&nbsp;&nbsp;&nbsp;
 							<form id="New" name="New" action="customerlist.php?{$Session}" method="post">
 								<input type="hidden" name="myID" value="{$MYID}" />
 								<input type="hidden" name="newofferID" value="{$newofferID}" />
@@ -172,7 +172,7 @@
 						{if $MYID}
 							{if $PRINT_NAME != 2}
 								<tr>
-									<td align="left" valign="middle" colspan="9">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{$PREFIX} {$TITLE}
+									<td align="left" valign="middle" colspan="8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{$PREFIX} {$TITLE}
 									</td>
 								</tr>
 								<tr>
@@ -342,7 +342,7 @@
 							{/if}
 						{/foreach}
 						<tr>
-							<td>&nbsp;
+							<td colspan="8">&nbsp;
 							</td>
 						</tr>
 						{if $TaxFree neq 1}
@@ -431,12 +431,12 @@
 							</tr>
 						{/if}
 						<tr>
-							<td>&nbsp;
+							<td colspan="8">&nbsp;
 							</td>
 						</tr>
 						<tr>
 							{if $TaxFree neq 1}
-								<td colspan="9" align="center" valign="middle">
+								<td colspan="8" align="center" valign="middle">
 							{else}
 								<td colspan="7" align="center" valign="middle">
 							{/if}
@@ -457,7 +457,7 @@
 							</td>
 						</tr>
 						<tr>
-							<td>&nbsp;
+							<td colspan="8">&nbsp;
 							</td>
 						</tr>
 						<tr>
