@@ -77,18 +77,15 @@ define('BRANDING_COPYRIGHT_YEAR', '2025');
  * ========================================
  */
 
-// Web-Root (Ihre eigene Webserver-Adresse)
-define('SYSTEM_WEB_URL', 'https://oschlueter.de/bill/test');
-
-// Dokumenten-Root Pfad
-define('SYSTEM_DOCUMENT_ROOT', $_SERVER['DOCUMENT_ROOT'] . '/bill/test');
+define('SYSTEM_WEB_URL', 'https://oschlueter.de/bill/sf');
+define('SYSTEM_DOCUMENT_ROOT', $_SERVER['DOCUMENT_ROOT'] . '/bill/sf');
+define('SYSTEM_CACHE_ROOT', $_SERVER['DOCUMENT_ROOT'] . '/bill/sf');
 
 // Template-Verzeichnis
 define('SYSTEM_TEMPLATE_DIR', SYSTEM_DOCUMENT_ROOT . '/include/smarty/templates');
 define('SYSTEM_CONFIG_DIR', SYSTEM_DOCUMENT_ROOT . '/include/smarty/configs');
 
 // Cache-Verzeichnis (benötigt Schreibrechte vom Webserver)
-define('SYSTEM_CACHE_ROOT', $_SERVER['DOCUMENT_ROOT'] . '/bill/test');
 define('SYSTEM_COMPILE_DIR', SYSTEM_CACHE_ROOT . '/include/smarty/templates_c');
 define('SYSTEM_CACHE_DIR', SYSTEM_CACHE_ROOT . '/include/smarty/cache');
 
