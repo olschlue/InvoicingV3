@@ -547,6 +547,18 @@ td {
 	vertical-align: top;
 }
 
+td[align="right"] {
+	text-align: right !important;
+}
+
+td[align="center"] {
+	text-align: center !important;
+}
+
+td[align="left"] {
+	text-align: left !important;
+}
+
 /* ===== Scrollbar Styling (für moderne Browser) ===== */
 ::-webkit-scrollbar {
 	width: 10px;
