@@ -98,6 +98,11 @@
 					<td align="left" class="phprechnung_menu"><a accesskey="S" title="{$Configuration}"
 					href="../configuration.php?{$Session}">{$Configuration}</a>
 					</td>
+			</tr>
+			<tr>
+				<td align="left" class="phprechnung_menu"><a accesskey="1" title="{$Syslog} - {$List}"
+				href="../syslog/list.php?{$Session}">{$Syslog}</a>
+				</td>
 				</tr>
 				{if $smarty.session.Username and ( $smarty.session.Username neq $Root )}
 					<tr>

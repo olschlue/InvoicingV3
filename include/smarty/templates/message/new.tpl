@@ -54,6 +54,8 @@ href="../cashbook/list.php?{$Session}">{$Cashbook}</a></td></tr>*}
 href="../reports/index.php?{$Session}">{$Reports}</a></td></tr>
 <tr><td align="left" class="phprechnung_menu"><a accesskey="S" title="{$Configuration}"
 href="../configuration.php?{$Session}">{$Configuration}</a></td></tr>
+<tr><td align="left" class="phprechnung_menu"><a accesskey="1" title="{$Syslog} - {$List}"
+href="../syslog/list.php?{$Session}">{$Syslog}</a></td></tr>
 <tr><td align="left" class="phprechnung_menu_sub"><a accesskey="1" title="{$Message} - {$List}"
 href="list.php?{$Session}">{$Message}</a></td></tr>
 <tr><td align="left" class="phprechnung_menu_sel"><a accesskey="2" title="{$Message} - {$New}"
