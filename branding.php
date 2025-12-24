@@ -77,7 +77,7 @@ define('BRANDING_COPYRIGHT_YEAR', '2025');
  * ========================================
  */
 
-// Web-Root (Ihre eigene Webserver-Adresse)
+// Web-Root (Ihre eigene Webserver-Adresse) 
 define('SYSTEM_WEB_URL', $_SERVER['HTTP_HOST'] . '/bill/test');
 define('SYSTEM_DOCUMENT_ROOT', $_SERVER['DOCUMENT_ROOT'] . '/bill/test');
 
