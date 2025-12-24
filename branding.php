@@ -39,8 +39,8 @@ define('BRANDING_LOGO_MAX_HEIGHT', '60px');
 
 // Farbschema (Haupt- und Akzentfarben)
 define('BRANDING_COLOR_PRIMARY', '#f97c24');      // Orange - Hauptfarbe
-define('BRANDING_COLOR_PRIMARY_HOVER', '#ff6a00'); // Orange dunkel - Hover
-define('BRANDING_COLOR_SECONDARY', '#ff6900');     // Orange alternativ
+define('BRANDING_COLOR_PRIMARY_HOVER', '#ff964a'); // Orange dunkel - Hover
+define('BRANDING_COLOR_SECONDARY', '#ff964a');     // Orange alternativ
 
 // Weitere UI-Farben
 define('BRANDING_COLOR_TEXT_DARK', '#2c3e50');     // Dunkelgrau für Text
@@ -78,7 +78,7 @@ define('BRANDING_COPYRIGHT_YEAR', '2025');
  */
 
 // Web-Root (Ihre eigene Webserver-Adresse)
-define('SYSTEM_WEB_URL', 'https://oschlueter.de/bill/test');
+define('SYSTEM_WEB_URL', $_SERVER['DOCUMENT_ROOT'] . '/bill/test');
 
 // Dokumenten-Root Pfad
 define('SYSTEM_DOCUMENT_ROOT', $_SERVER['DOCUMENT_ROOT'] . '/bill/test');

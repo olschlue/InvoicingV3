@@ -32,7 +32,76 @@
 <title>S&F - {$Title}</title>
 <link rel="stylesheet" type="text/css" href="{$Web}/include/phprechnung.css" title="phpRechnung Modern Style" media="print,screen" />
 <link rel="icon" href="{$Web}/images/favicon.png" type="image/png" />
+<!-- jQuery und jQuery UI für Datepicker -->
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
 {literal}
-
+<script>
+$(document).ready(function() {
+	// Datepicker für alle Datumsfelder
+	// Identifiziere Datumsfelder anhand ihrer Namen
+	var dateFieldNames = [
+		'DateFrom', 'DateTill', 'DateFrom1', 'DateTill1',
+		'Date_From1', 'Date_Till1', 'DateFrom_1', 'DateTill_1',
+		'InvoiceDate', 'OfferDate', 'PaymentDate', 'AchievedDate',
+		'MethodOfPaymentDate', 'Birthday', 'cashbookdate'
+	];
+	
+	// Füge Datepicker zu allen Feldern mit den genannten Namen hinzu
+	dateFieldNames.forEach(function(fieldName) {
+		$('input[name="' + fieldName + '"]').datepicker({
+			dateFormat: 'dd.mm.yy',
+			changeMonth: true,
+			changeYear: true,
+			yearRange: '1900:2100',
+			showButtonPanel: true,
+			showOtherMonths: true,
+			selectOtherMonths: true,
+			dayNamesMin: ['So', 'Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa'],
+			monthNames: ['Januar', 'Februar', 'März', 'April', 'Mai', 'Juni', 
+			             'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember'],
+			monthNamesShort: ['Jan', 'Feb', 'Mär', 'Apr', 'Mai', 'Jun', 
+			                  'Jul', 'Aug', 'Sep', 'Okt', 'Nov', 'Dez'],
+			firstDay: 1, // Woche beginnt am Montag
+			showWeek: true,
+			weekHeader: 'KW'
+		});
+	});
+	
+	// Zusätzlich: Alle input[type="text"] mit "date" oder "datum" im title/placeholder
+	$('input[type="text"]').each(function() {
+		var title = $(this).attr('title') || '';
+		var placeholder = $(this).attr('placeholder') || '';
+		var name = $(this).attr('name') || '';
+		
+		if ((title.toLowerCase().indexOf('datum') >= 0 || 
+		     title.toLowerCase().indexOf('date') >= 0 ||
+		     placeholder.toLowerCase().indexOf('datum') >= 0 || 
+		     placeholder.toLowerCase().indexOf('date') >= 0 ||
+		     name.toLowerCase().indexOf('date') >= 0 ||
+		     name.toLowerCase().indexOf('datum') >= 0) &&
+		    !$(this).hasClass('hasDatepicker')) {
+			$(this).datepicker({
+				dateFormat: 'dd.mm.yy',
+				changeMonth: true,
+				changeYear: true,
+				yearRange: '1900:2100',
+				showButtonPanel: true,
+				showOtherMonths: true,
+				selectOtherMonths: true,
+				dayNamesMin: ['So', 'Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa'],
+				monthNames: ['Januar', 'Februar', 'März', 'April', 'Mai', 'Juni', 
+				             'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember'],
+				monthNamesShort: ['Jan', 'Feb', 'Mär', 'Apr', 'Mai', 'Jun', 
+				                  'Jul', 'Aug', 'Sep', 'Okt', 'Nov', 'Dez'],
+				firstDay: 1,
+				showWeek: true,
+				weekHeader: 'KW'
+			});
+		}
+	});
+});
+</script>
 {/literal}
 </head>
