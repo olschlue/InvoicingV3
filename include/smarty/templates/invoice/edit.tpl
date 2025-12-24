@@ -396,7 +396,7 @@
 					</table>
 					<table width="100%" border="0" cellspacing="1" cellpadding="3" summary="Tabelle 3">
 						<tr class="mblueTD">
-							<td nowrap="nowrap" align="left" valign="middle">{$PositionName}&nbsp;-&nbsp;<a title="{$PositionNew}" class="btn ninfolink" href="posnew.php?myID={$myID}&amp;invoiceID={$invoiceID}&amp;page={$page}&amp;infoID={$infoID}&amp;messageID={$MESSAGEID}&amp;InvoiceDate={$INVOICE_DATE}&amp;MethodOfPayment={$NR_METHOD_OF_PAYMENT}&amp;MethodOfPaymentDate={$METHOD_OF_PAYMENT_DATE}&amp;Note={$NOTE}&amp;Order={$Order}&amp;Sort={$Sort}{$Searchstring}&amp;{$Session}">{$New}</a>
+							<td nowrap="nowrap" align="left" valign="middle">{$PositionName}&nbsp;-&nbsp;<a title="{$PositionNew}" class="ninfolink" href="posnew.php?myID={$myID}&amp;invoiceID={$invoiceID}&amp;page={$page}&amp;infoID={$infoID}&amp;messageID={$MESSAGEID}&amp;InvoiceDate={$INVOICE_DATE}&amp;MethodOfPayment={$NR_METHOD_OF_PAYMENT}&amp;MethodOfPaymentDate={$METHOD_OF_PAYMENT_DATE}&amp;Note={$NOTE}&amp;Order={$Order}&amp;Sort={$Sort}{$Searchstring}&amp;{$Session}">{$New}</a>
 							</td>
 							<td nowrap="nowrap" align="left" valign="middle">{$PositionText}
 							</td>
