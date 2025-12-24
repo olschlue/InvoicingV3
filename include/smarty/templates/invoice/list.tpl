@@ -206,16 +206,16 @@ href="../syslog/list.php?{$Session}">{$Syslog}</a></td></tr>
 	</tr>
 {/foreach}
 {/if}
-<tr><td>&nbsp;</td></tr>
+<tr><td colspan="9">&nbsp;</td></tr>
 {if $smarty.session.Username and ( $smarty.session.Username eq $Root )}
-	<tr><td>&nbsp;</td></tr>
+	<tr><td colspan="9">&nbsp;</td></tr>
 	{if $OPEN_ACCOUNT gt 0}
 		<tr><td valign="top" align="right" colspan="5">{$Open_Account} {$Invoice_Currency}:</td><td valign="top" align="right" colspan="4" class="redtxt">{$OPEN_ACCOUNT|number_format}</td></tr>
 	{/if}
 	<tr><td valign="top" align="right" colspan="5">{$Invoice_Amount} - {$PageMsg}  {$Invoice_Currency}:</td><td valign="top" align="right" colspan="4">{$TOTAL_PAGE|number_format}</td></tr>
 	<tr><td valign="top" align="right" colspan="5"><b>{$Invoice_Amount} {$Invoice_Currency}</b>:</td><td valign="top" align="right" colspan="4"><b>{$TOTAL_AMOUNT|number_format}</b></td></tr>
 {/if}
-<tr><td>&nbsp;</td></tr>
+<tr><td colspan="9">&nbsp;</td></tr>
 {* Display pager and linkbar if $PageRows => $Rows ( lines per page ) *}
 {if $MaxPages and ($PageRows gte $MultiBar)}
 <tr><td align="center" colspan="9">
@@ -229,7 +229,7 @@ href="../syslog/list.php?{$Session}">{$Syslog}</a></td></tr>
 <a href="{$smarty.server.PHP_SELF}?page={$MaxPages}&amp;Order={$Order}&amp;Sort={$Sort}&amp;Canceled={$Canceled}&amp;{$Session}"><img border="0" src="../images/last.png" title="{$LastPageMsg}" alt="{$LastPageMsg}" /></a>&nbsp;
 {/if}
 </td></tr>
-<tr><td>&nbsp;</td></tr>
+<tr><td colspan="9">&nbsp;</td></tr>
 {* Include the linkbar *}
 <tr><td colspan="9">{include file="linkbar.tpl"}</td></tr>
 {/if}
