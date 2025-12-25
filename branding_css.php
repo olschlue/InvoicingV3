@@ -26,6 +26,7 @@ $dynamic_css = str_replace(
 		'#6c757d',
 		'#ffffff',
 		'#f8f9fa',
+		'#fff5ed',
 		'#e9ecef',
 		'#28a745',
 		'#dc3545'
@@ -39,6 +40,7 @@ $dynamic_css = str_replace(
 		BRANDING_COLOR_TEXT_MUTED,
 		BRANDING_COLOR_BACKGROUND,
 		BRANDING_COLOR_BACKGROUND_LIGHT,
+		BRANDING_COLOR_BACKGROUND_HOVER,
 		BRANDING_COLOR_BORDER,
 		BRANDING_COLOR_SUCCESS,
 		BRANDING_COLOR_ERROR

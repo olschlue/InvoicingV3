@@ -48,6 +48,7 @@ define('BRANDING_COLOR_TEXT_LIGHT', '#495057');    // Mittelgrau für Text
 define('BRANDING_COLOR_TEXT_MUTED', '#6c757d');    // Hellgrau für Text
 define('BRANDING_COLOR_BACKGROUND', '#ffffff');    // Weiß für Hintergründe
 define('BRANDING_COLOR_BACKGROUND_LIGHT', '#f8f9fa'); // Hellgrau für Hintergründe
+define('BRANDING_COLOR_BACKGROUND_HOVER', '#fff5ed');  // Heller Hintergrund für Hover-Effekte
 define('BRANDING_COLOR_BORDER', '#e9ecef');        // Border-Farbe
 
 // Erfolgsmeldungen / Fehlermeldungen
