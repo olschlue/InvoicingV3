@@ -30,7 +30,7 @@
 <meta http-equiv="pragma" content="no-cache" />
 <meta name="author" content="Edy Corak" />
 <title>S&F - {$Title}</title>
-<link rel="stylesheet" type="text/css" href="{$Web}/include/phprechnung.css" title="phpRechnung Modern Style" media="print,screen" />
+<link rel="stylesheet" type="text/css" href="{$Web}/branding_css.php" title="phpRechnung Modern Style" media="print,screen" />
 <link rel="icon" href="{$Web}/images/favicon.png" type="image/png" />
 <!-- jQuery und jQuery UI für Datepicker -->
 <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
