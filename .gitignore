@@ -1,0 +1,26 @@
+# Sensible Konfigurationsdateien
+../branding_secrets.php
+branding_secrets.php
+
+# Cache und temporäre Dateien
+include/smarty/templates_c/
+include/smarty/cache/
+*.cache
+
+# Backup-Dateien
+*.bak
+*.backup
+*~
+
+# IDE/Editor-Dateien
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS-Dateien
+.DS_Store
+Thumbs.db
+
+# Log-Dateien
+*.log

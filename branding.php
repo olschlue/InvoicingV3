@@ -23,6 +23,23 @@
 
 /*
  * ========================================
+ * SENSIBLE KONFIGURATION LADEN
+ * ========================================
+ * Sensible Daten (DB-Zugänge, Encryption Keys, Pfade)
+ * werden aus einer separaten Datei geladen, die nicht
+ * in die Versionskontrolle eingecheckt wird.
+ */
+
+// Lade sensible Konfiguration aus übergeordnetem Verzeichnis
+$secrets_file = dirname(__DIR__) . '/branding_secrets.php';
+if (file_exists($secrets_file)) {
+	require_once($secrets_file);
+} else {
+	die('FEHLER: branding_secrets.php nicht gefunden! Bitte erstellen Sie die Datei im übergeordneten Verzeichnis.');
+}
+
+/*
+ * ========================================
  * FIRMEN-BRANDING EINSTELLUNGEN
  * ========================================
  * Hier können alle Personalisierungs-Einstellungen
@@ -74,55 +91,29 @@ define('BRANDING_COPYRIGHT_YEAR', '2025');
 
 /*
  * ========================================
- * SYSTEM-PFADE
+ * HINWEIS: Sensible Daten ausgelagert
  * ========================================
+ * 
+ * Die folgenden Einstellungen wurden in die Datei
+ * ../branding_secrets.php ausgelagert:
+ * 
+ * - SYSTEM_WEB_URL
+ * - SYSTEM_DOCUMENT_ROOT
+ * - SYSTEM_CACHE_ROOT
+ * - SYSTEM_TEMPLATE_DIR
+ * - SYSTEM_CONFIG_DIR
+ * - SYSTEM_COMPILE_DIR
+ * - SYSTEM_CACHE_DIR
+ * - DB_HOST
+ * - DB_USER
+ * - DB_PASS
+ * - DB_NAME
+ * - DB_TYPE
+ * - SECURITY_ENCRYPTION_KEY
+ * - SECURITY_ENCRYPTION_KEY_OLD
+ * 
+ * Diese Datei wird nicht in die Versionskontrolle eingecheckt.
  */
-
-define('SYSTEM_WEB_URL', 'https://oschlueter.de/bill/sf');
-define('SYSTEM_DOCUMENT_ROOT', $_SERVER['DOCUMENT_ROOT'] . '/bill/sf');
-define('SYSTEM_CACHE_ROOT', $_SERVER['DOCUMENT_ROOT'] . '/bill/sf');
-
-// Template-Verzeichnis
-define('SYSTEM_TEMPLATE_DIR', SYSTEM_DOCUMENT_ROOT . '/include/smarty/templates');
-define('SYSTEM_CONFIG_DIR', SYSTEM_DOCUMENT_ROOT . '/include/smarty/configs');
-
-// Cache-Verzeichnis (benötigt Schreibrechte vom Webserver)
-define('SYSTEM_COMPILE_DIR', SYSTEM_CACHE_ROOT . '/include/smarty/templates_c');
-define('SYSTEM_CACHE_DIR', SYSTEM_CACHE_ROOT . '/include/smarty/cache');
-
-/*
- * ========================================
- * DATENBANK-VERBINDUNG
- * ========================================
- */
-
-// Datenbank-Hostname
-define('DB_HOST', 'db5004652185.hosting-data.io');
-
-// Datenbank-Benutzername
-define('DB_USER', 'dbu1361608');
-
-// Datenbank-Passwort
-define('DB_PASS', 'ee97mnee');
-
-// Datenbank-Name
-define('DB_NAME', 'dbs3895544');
-
-// Datenbank-Typ (Standard: mysqli)
-define('DB_TYPE', 'mysqli');
-
-/*
- * ========================================
- * SICHERHEITS-EINSTELLUNGEN
- * ========================================
- */
-
-// Verschlüsselungs-Schlüssel (NICHT ÄNDERN nach Inbetriebnahme!)
-// Hinweis: Wenn Sie diesen Schlüssel ändern, ist ein Login nicht mehr möglich.
-define('SECURITY_ENCRYPTION_KEY', 'e76a669e075b6e034ec5911553a86abb');
-
-// Alter Schlüssel (für Migration nach User-Update)
-define('SECURITY_ENCRYPTION_KEY_OLD', 'e76a669e075b6e034ec5911553a86abb');
 
 /*
  * ========================================
