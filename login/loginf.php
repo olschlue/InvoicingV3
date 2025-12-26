@@ -34,7 +34,7 @@ if(isset($_POST['Password'])) {
 //
 DBConnect();
 
-$stmt = $db->Prepare("SELECT userid, DECODE(fullname, ?) AS fullname, DECODE(username, ?) AS username, DECODE(password, ?) AS password, DECODE(usergroup1, ?) AS usergroup1, DECODE(usergroup2, ?) AS usergroup2, language, user_active, license_accepted FROM user WHERE DECODE(username, ?) = ? AND DECODE(password, ?) = ? AND user_active = '1'");
+$stmt = $db->Prepare("SELECT userid, AES_DECRYPT(fullname, ?) AS fullname, AES_DECRYPT(username, ?) AS username, AES_DECRYPT(password, ?) AS password, AES_DECRYPT(usergroup1, ?) AS usergroup1, AES_DECRYPT(usergroup2, ?) AS usergroup2, language, user_active, license_accepted FROM user WHERE AES_DECRYPT(username, ?) = ? AND AES_DECRYPT(password, ?) = ? AND user_active = '1'");
 $stmt = $db->Execute($stmt, array($pkey, $pkey, $pkey, $pkey, $pkey, $pkey, $Username, $pkey, $Password));
 $numrows = $stmt->RowCount();
 

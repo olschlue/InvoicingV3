@@ -45,7 +45,7 @@ else
 	// Database connection
 	//
 	DBConnect();
-	$query1 = $db->Execute("SELECT USERID, DECODE(USERNAME,'$pkey') AS USERNAME FROM user WHERE DECODE(USERNAME,'$pkey')='$root' AND USERID=$userID");
+	$query1 = $db->Execute("SELECT USERID, AES_DECRYPT(USERNAME,'$pkey') AS USERNAME FROM user WHERE AES_DECRYPT(USERNAME,'$pkey')='$root' AND USERID=$userID");
 	$numrows1 = $query1->RowCount();
 
 	if ($numrows1)

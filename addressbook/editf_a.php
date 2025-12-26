@@ -110,7 +110,7 @@ else if(isset($_SESSION['Username']) && $_SESSION['Username'] != $root && $_SESS
 }
 else
 {
-	$query1 = $db->Execute("SELECT MYID, DECODE(USERNAME,'$pkey') AS USERNAME FROM addressbook WHERE DECODE(USERNAME,'$pkey')='$UserName' AND MYID != $myID");
+	$query1 = $db->Execute("SELECT MYID, AES_DECRYPT(USERNAME,'$pkey') AS USERNAME FROM addressbook WHERE AES_DECRYPT(USERNAME,'$pkey')='$UserName' AND MYID != $myID");
 	$numrows1 = $query1->RowCount();
 
 	if ($numrows1) {
@@ -120,7 +120,7 @@ else
 	}
 	else
 	{
-		$query3 = "UPDATE addressbook SET MODIFIEDBY='$_SESSION[Username]', MODIFIED='$CurrentDateTime', PASSWORD=ENCODE('$Password1','$pkey'), USERLANGUAGE='$UserLanguage', USERNAME=ENCODE('$UserName','$pkey'), USER_ACTIVE='$UserActive' WHERE MYID=$myID";
+		$query3 = "UPDATE addressbook SET MODIFIEDBY='$_SESSION[Username]', MODIFIED='$CurrentDateTime', PASSWORD=AES_ENCRYPT('$Password1','$pkey'), USERLANGUAGE='$UserLanguage', USERNAME=AES_ENCRYPT('$UserName','$pkey'), USER_ACTIVE='$UserActive' WHERE MYID=$myID";
 
 		if ($db->Execute($query3) === false)
 		{

@@ -133,7 +133,7 @@ else
 	$query1 = $db->Execute("SELECT myid FROM addressbook WHERE FIRSTNAME='$firstname' AND LASTNAME='$lastname' AND ADDRESS='$address' AND POSTALCODE='$postalcode' AND CITY='$city'");
 	$numrows1 = $query1->RowCount();
 
-	$query2 = $db->Execute("SELECT DECODE(USERNAME,'$pkey') AS USERNAME FROM addressbook WHERE DECODE(USERNAME,'$pkey')='$username'");
+	$query2 = $db->Execute("SELECT AES_DECRYPT(USERNAME,'$pkey') AS USERNAME FROM addressbook WHERE AES_DECRYPT(USERNAME,'$pkey')='$username'");
 	$numrows2 = $query2->RowCount();
 
 	if ($numrows1)
@@ -155,7 +155,7 @@ else
 		$birthday = German_Mysql_Date($birthday);
 
 		$query3 = "INSERT INTO addressbook (MYID, PRINT_NAME, PREFIX, FIRSTNAME, LASTNAME, TITLE, COMPANY, DEPARTMENT, ADDRESS, CITY, STATEPROV, POSTALCODE, COUNTRY, POSITION, INITIALS, SALUTATION, PHONEHOME, PHONEOFFI, PHONEOTHE, PHONEWORK, MOBILE, PAGER, FAX, EMAIL, URL, NOTE, ALTFIELD1, ALTFIELD2, URL2, EMAIL2, CATEGORY, METHODOFPAY, MESSAGE, BIRTHDAY, BANKNAME, BANKACCOUNT, BANKNUMBER, BANKIBAN, BANKBIC, TAX_FREE, TAXNR, BUSINESS_TAXNR, USERNAME, PASSWORD, USERLANGUAGE, USER_ACTIVE, CREATEDBY, MODIFIEDBY, USERGROUP1, USERGROUP2, CREATED, MODIFIED)";
-		$query3 .= "VALUES (NULL, '$printname', '$prefix', '$firstname', '$lastname', '$title', '$company', '$department', '$address', '$city', '$stateprov', '$postalcode', '$country', '$position', '$initials', '$salutation', '$phonehome', '$phoneoffi', '$phoneothe', '$phonework', '$mobile', '$pager', '$fax', '$email', '$url', '$note', '$altfield1', '$altfield2', '$url2', '$email2', '$category', '$methodofpayment', '$message', '$birthday', '$bankname', '$bankaccount', '$banknumber', '$bankiban', '$bankbic', '2', '$taxnr', '$businesstaxnr', ENCODE('$username','$pkey'), ENCODE('$password1','$pkey'), '$userlanguage', '$useractive', '$_SESSION[Username]', '$_SESSION[Username]', '$_SESSION[Usergroup1]', '$_SESSION[Usergroup2]', '$CurrentDateTime', '$CurrentDateTime')";
+		$query3 .= "VALUES (NULL, '$printname', '$prefix', '$firstname', '$lastname', '$title', '$company', '$department', '$address', '$city', '$stateprov', '$postalcode', '$country', '$position', '$initials', '$salutation', '$phonehome', '$phoneoffi', '$phoneothe', '$phonework', '$mobile', '$pager', '$fax', '$email', '$url', '$note', '$altfield1', '$altfield2', '$url2', '$email2', '$category', '$methodofpayment', '$message', '$birthday', '$bankname', '$bankaccount', '$banknumber', '$bankiban', '$bankbic', '2', '$taxnr', '$businesstaxnr', AES_ENCRYPT('$username','$pkey'), AES_ENCRYPT('$password1','$pkey'), '$userlanguage', '$useractive', '$_SESSION[Username]', '$_SESSION[Username]', '$_SESSION[Usergroup1]', '$_SESSION[Usergroup2]', '$CurrentDateTime', '$CurrentDateTime')";
 
 		if ($db->Execute($query3) === false)
 		{

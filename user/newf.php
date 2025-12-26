@@ -78,7 +78,7 @@ else
 	// Database connection
 	//
 	DBConnect();
-	$query1 = $db->Execute("SELECT DECODE(USERNAME,'$pkey') FROM user WHERE DECODE(USERNAME,'$pkey')='$UserName'");
+	$query1 = $db->Execute("SELECT AES_DECRYPT(USERNAME,'$pkey') FROM user WHERE AES_DECRYPT(USERNAME,'$pkey')='$UserName'");
 	$numrows1 = $query1->RowCount();
 
 	if ($numrows1)
@@ -91,7 +91,7 @@ else
 	{
 
 		$query2 = "INSERT INTO user (USERID, FULLNAME, USERNAME, PASSWORD, USERGROUP1, USERGROUP2, LANGUAGE, USER_ACTIVE, LICENSE_ACCEPTED, CREATEDBY, MODIFIEDBY, CREATED, MODIFIED)";
-		$query2 .= "VALUES(NULL, ENCODE('$FullName','$pkey'), ENCODE('$UserName','$pkey'), ENCODE('$Password1','$pkey'), ENCODE('$UserGroup1','$pkey'), ENCODE('$UserGroup2','$pkey'), '$UserLanguage', $UserActive, '2','$_SESSION[Username]','$_SESSION[Username]','$CurrentDateTime','$CurrentDateTime')";
+		$query2 .= "VALUES(NULL, AES_ENCRYPT('$FullName','$pkey'), AES_ENCRYPT('$UserName','$pkey'), AES_ENCRYPT('$Password1','$pkey'), AES_ENCRYPT('$UserGroup1','$pkey'), AES_ENCRYPT('$UserGroup2','$pkey'), '$UserLanguage', $UserActive, '2','$_SESSION[Username]','$_SESSION[Username]','$CurrentDateTime','$CurrentDateTime')";
 
 		if ($db->Execute($query2) === false)
 		{

@@ -74,7 +74,7 @@ DBConnect();
 
 // Get all information about selected customer
 //
-$query = $db->Execute("SELECT CREATEDBY, CREATED, MYID, DECODE(USERNAME,'$pkey') AS USERNAME, USERLANGUAGE, USER_ACTIVE
+$query = $db->Execute("SELECT CREATEDBY, CREATED, MYID, AES_DECRYPT(USERNAME,'$pkey') AS USERNAME, USERLANGUAGE, USER_ACTIVE
 	FROM addressbook WHERE MYID=$myID");
 
 // If an error has occurred, display the error message

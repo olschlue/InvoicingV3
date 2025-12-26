@@ -41,7 +41,7 @@ DBConnect();
 
 // Update language
 //
-$query = $db->Execute("UPDATE user SET LANGUAGE='$Language' WHERE DECODE(USERNAME,'$pkey')='$_SESSION[Username]'");
+$query = $db->Execute("UPDATE user SET LANGUAGE='$Language' WHERE AES_DECRYPT(USERNAME,'$pkey')='$_SESSION[Username]'");
 $_SESSION['Language'] = $Language;
 
 // Go back to the configuration site

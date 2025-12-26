@@ -53,11 +53,11 @@ if(empty($Order) || $Order !== 'LANGUAGE' && $Order !== 'FULLNAME')
 
 if ($UserGroup_1 > 0)
 {
-	$UserGroup_1 = "AND DECODE(USERGROUP1,'$pkey') = $UserGroup_1";
+	$UserGroup_1 = "AND AES_DECRYPT(USERGROUP1,'$pkey') = $UserGroup_1";
 }
 if ($UserLanguage_1 > 0)
 {
-	$UserLanguage_1 = "AND DECODE(LANGUAGE,'$pkey') = $UserLanguage_1";
+	$UserLanguage_1 = "AND AES_DECRYPT(LANGUAGE,'$pkey') = $UserLanguage_1";
 }
 
 $smarty->assign("Title","$a[user_admin] - $a[searchresult]");
@@ -74,7 +74,7 @@ $intCursor = ($page - 1) * $EntrysPerPage;
 
 // Get User Information
 //
-$query = $db->Execute("SELECT USERID, DECODE(FULLNAME,'$pkey') AS FULLNAME, DECODE(USERNAME,'$pkey') AS USERNAME, LANGUAGE FROM user WHERE DECODE(FULLNAME,'$pkey') LIKE '%$FullName_1%' AND DECODE(USERNAME,'$pkey') LIKE '%$UserName_1%' $UserGroup_1 $UserLanguage_1 ORDER BY $Order $Sort LIMIT $intCursor, $EntrysPerPage");
+$query = $db->Execute("SELECT USERID, AES_DECRYPT(FULLNAME,'$pkey') AS FULLNAME, AES_DECRYPT(USERNAME,'$pkey') AS USERNAME, LANGUAGE FROM user WHERE AES_DECRYPT(FULLNAME,'$pkey') LIKE '%$FullName_1%' AND AES_DECRYPT(USERNAME,'$pkey') LIKE '%$UserName_1%' $UserGroup_1 $UserLanguage_1 ORDER BY $Order $Sort LIMIT $intCursor, $EntrysPerPage");
 
 // If an error has occurred, display the error message
 //
@@ -87,7 +87,7 @@ else
 
 	// Count MaxRows
 	//
-	$query1 = $db->Execute("SELECT USERID, DECODE(FULLNAME,'$pkey') AS FULLNAME, DECODE(USERNAME,'$pkey') AS USERNAME, LANGUAGE FROM user WHERE DECODE(FULLNAME,'$pkey') LIKE '%$FullName_1%' AND DECODE(USERNAME,'$pkey') LIKE '%$UserName_1%' $UserGroup_1 $UserLanguage_1");
+	$query1 = $db->Execute("SELECT USERID, AES_DECRYPT(FULLNAME,'$pkey') AS FULLNAME, AES_DECRYPT(USERNAME,'$pkey') AS USERNAME, LANGUAGE FROM user WHERE AES_DECRYPT(FULLNAME,'$pkey') LIKE '%$FullName_1%' AND AES_DECRYPT(USERNAME,'$pkey') LIKE '%$UserName_1%' $UserGroup_1 $UserLanguage_1");
 
 	$numrows = $query1->RecordCount();
 

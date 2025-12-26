@@ -41,7 +41,7 @@ DBConnect();
 
 // Update language
 //
-$query = $db->Execute("UPDATE user SET LICENSE_ACCEPTED='1', MODIFIEDBY='$_SESSION[Username]', MODIFIED='$CurrentDateTime' WHERE DECODE(USERNAME,'$pkey')='$_SESSION[Username]'");
+$query = $db->Execute("UPDATE user SET LICENSE_ACCEPTED='1', MODIFIEDBY='$_SESSION[Username]', MODIFIED='$CurrentDateTime' WHERE AES_DECRYPT(USERNAME,'$pkey')='$_SESSION[Username]'");
 
 // Set new license status
 //

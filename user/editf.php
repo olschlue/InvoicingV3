@@ -46,7 +46,7 @@ DBConnect();
 
 // Get the username
 //
-$query = $db->Execute("SELECT USERID, DECODE(USERNAME,'$pkey') AS USERNAME FROM user WHERE USERID=$userID");
+$query = $db->Execute("SELECT USERID, AES_DECRYPT(USERNAME,'$pkey') AS USERNAME FROM user WHERE USERID=$userID");
 
 // If an error has occurred, display the error message
 //
@@ -99,15 +99,15 @@ else
 {
 	if(isset($_SESSION['Username']) && $_SESSION['Username'] == $root && $userID == 1)
 	{
-		$query = $db->Execute("UPDATE user SET FULLNAME=ENCODE('$FullName','$pkey'), PASSWORD=ENCODE('$Password1','$pkey'), LANGUAGE='$UserLanguage', MODIFIEDBY='$_SESSION[Username]', MODIFIED='$CurrentDateTime' WHERE USERID=$userID");
+		$query = $db->Execute("UPDATE user SET FULLNAME=AES_ENCRYPT('$FullName','$pkey'), PASSWORD=AES_ENCRYPT('$Password1','$pkey'), LANGUAGE='$UserLanguage', MODIFIEDBY='$_SESSION[Username]', MODIFIED='$CurrentDateTime' WHERE USERID=$userID");
 	}
 	else if(isset($_SESSION['Username']) && $_SESSION['Username'] == $Username)
 	{
-		$query = $db->Execute("UPDATE user SET FULLNAME=ENCODE('$FullName','$pkey'), PASSWORD=ENCODE('$Password1','$pkey'), LANGUAGE='$UserLanguage', MODIFIEDBY='$_SESSION[Username]', MODIFIED='$CurrentDateTime' WHERE USERID=$userID");
+		$query = $db->Execute("UPDATE user SET FULLNAME=AES_ENCRYPT('$FullName','$pkey'), PASSWORD=AES_ENCRYPT('$Password1','$pkey'), LANGUAGE='$UserLanguage', MODIFIEDBY='$_SESSION[Username]', MODIFIED='$CurrentDateTime' WHERE USERID=$userID");
 	}
 	else
 	{
-		$query = $db->Execute("UPDATE user SET FULLNAME=ENCODE('$FullName','$pkey'), PASSWORD=ENCODE('$Password1','$pkey'), LANGUAGE='$UserLanguage', USERGROUP1=ENCODE('$UserGroup1','$pkey'), USERGROUP2=ENCODE('$UserGroup2','$pkey'), USER_ACTIVE='$UserActive', MODIFIEDBY='$_SESSION[Username]', MODIFIED='$CurrentDateTime' WHERE USERID=$userID");
+		$query = $db->Execute("UPDATE user SET FULLNAME=AES_ENCRYPT('$FullName','$pkey'), PASSWORD=AES_ENCRYPT('$Password1','$pkey'), LANGUAGE='$UserLanguage', USERGROUP1=AES_ENCRYPT('$UserGroup1','$pkey'), USERGROUP2=AES_ENCRYPT('$UserGroup2','$pkey'), USER_ACTIVE='$UserActive', MODIFIEDBY='$_SESSION[Username]', MODIFIED='$CurrentDateTime' WHERE USERID=$userID");
 	}
 
 	$query2 = "INSERT INTO syslog (SYSLOGID, CREATED, DESCRIPTION, CREATEDBY, USERGROUP1, USERGROUP2)";

@@ -66,7 +66,7 @@ $intCursor = ($page - 1) * $EntrysPerPage;
 
 // Get User Information
 //
-$query = $db->Execute("SELECT USERID, DECODE(FULLNAME,'$pkey') AS FULLNAME, DECODE(USERNAME,'$pkey') AS USERNAME, LANGUAGE FROM user ORDER BY $Order $Sort LIMIT $intCursor, $EntrysPerPage");
+$query = $db->Execute("SELECT USERID, AES_DECRYPT(FULLNAME,'$pkey') AS FULLNAME, AES_DECRYPT(USERNAME,'$pkey') AS USERNAME, LANGUAGE FROM user ORDER BY $Order $Sort LIMIT $intCursor, $EntrysPerPage");
 
 // If an error has occurred, display the error message
 //

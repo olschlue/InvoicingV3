@@ -32,7 +32,7 @@ CheckSession();
 //
 DBConnect();
 
-$query = $db->GetAll("SELECT DECODE(NAME,'$pkeyOld') AS NAME, DECODE(BENUTZERNAME,'$pkeyOld') AS BENUTZERNAME, DECODE(KENNWORT,'$pkeyOld') AS KENNWORT, DECODE(SPRACHE,'$pkeyOld') AS SPRACHE FROM anmeldung WHERE DECODE(BENUTZERNAME,'$pkeyOld')='admin'");
+$query = $db->GetAll("SELECT AES_DECRYPT(NAME,'$pkeyOld') AS NAME, AES_DECRYPT(BENUTZERNAME,'$pkeyOld') AS BENUTZERNAME, AES_DECRYPT(KENNWORT,'$pkeyOld') AS KENNWORT, AES_DECRYPT(SPRACHE,'$pkeyOld') AS SPRACHE FROM anmeldung WHERE AES_DECRYPT(BENUTZERNAME,'$pkeyOld')='admin'");
 
 if (!$query)
 	print($db->ErrorMsg());
@@ -77,10 +77,10 @@ else
 			$Language = "2";
 		}
 
-		$query1 = $db->Execute("UPDATE user SET FULLNAME=ENCODE('$AdminName','$pkeyOld'), USERNAME=ENCODE('$AdminBenutzername','$pkeyOld'), PASSWORD=ENCODE('$AdminKennwort','$pkeyOld'), USERGROUP1=ENCODE('1','$pkeyOld'), USERGROUP2=ENCODE('2','$pkeyOld'), LANGUAGE=$Language, LICENSE_ACCEPTED='2', MODIFIEDBY='admin', MODIFIED='$CurrentDateTime' WHERE USERID=1");
+		$query1 = $db->Execute("UPDATE user SET FULLNAME=AES_ENCRYPT('$AdminName','$pkeyOld'), USERNAME=AES_ENCRYPT('$AdminBenutzername','$pkeyOld'), PASSWORD=AES_ENCRYPT('$AdminKennwort','$pkeyOld'), USERGROUP1=AES_ENCRYPT('1','$pkeyOld'), USERGROUP2=AES_ENCRYPT('2','$pkeyOld'), LANGUAGE=$Language, LICENSE_ACCEPTED='2', MODIFIEDBY='admin', MODIFIED='$CurrentDateTime' WHERE USERID=1");
 	}
 
-$query2 = $db->GetAll("SELECT DECODE(NAME,'$pkeyOld') AS NAME, DECODE(BENUTZERNAME,'$pkeyOld') AS BENUTZERNAME, DECODE(KENNWORT,'$pkeyOld') AS KENNWORT, DECODE(SPRACHE,'$pkeyOld') AS SPRACHE FROM anmeldung WHERE DECODE(BENUTZERNAME,'$pkeyOld') != 'admin'");
+$query2 = $db->GetAll("SELECT AES_DECRYPT(NAME,'$pkeyOld') AS NAME, AES_DECRYPT(BENUTZERNAME,'$pkeyOld') AS BENUTZERNAME, AES_DECRYPT(KENNWORT,'$pkeyOld') AS KENNWORT, AES_DECRYPT(SPRACHE,'$pkeyOld') AS SPRACHE FROM anmeldung WHERE AES_DECRYPT(BENUTZERNAME,'$pkeyOld') != 'admin'");
 
 if (!$query2)
 	print($db->ErrorMsg());
@@ -126,7 +126,7 @@ else
 		}
 
 		$query3 = "INSERT INTO user (USERID, FULLNAME, USERNAME, PASSWORD, USERGROUP1, USERGROUP2, LANGUAGE, USER_ACTIVE, LICENSE_ACCEPTED, CREATEDBY, MODIFIEDBY, CREATED, MODIFIED)";
-		$query3 .= "VALUES(NULL, ENCODE('$Name','$pkeyOld'), ENCODE('$Benutzername','$pkeyOld'), ENCODE('$Kennwort','$pkeyOld'), ENCODE('5','$pkeyOld'), ENCODE('4','$pkeyOld'), $Sprache, 1, '2','admin','admin','$CurrentDateTime','$CurrentDateTime')";
+		$query3 .= "VALUES(NULL, AES_ENCRYPT('$Name','$pkeyOld'), AES_ENCRYPT('$Benutzername','$pkeyOld'), AES_ENCRYPT('$Kennwort','$pkeyOld'), AES_ENCRYPT('5','$pkeyOld'), AES_ENCRYPT('4','$pkeyOld'), $Sprache, 1, '2','admin','admin','$CurrentDateTime','$CurrentDateTime')";
 
 		if ($db->Execute($query3) === false)
 		{
