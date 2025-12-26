@@ -84,11 +84,8 @@ if (isset($_SESSION['IPAddress']) || !$numrows) {
 		exit(print('<strong>Database Error! Invalid Input!</strong>'));
 	}
 
-	if ($LicenseAccepted !== "1") {
-		exit(header("Location: $web/license.php?$sessname=$sessid", TRUE, "302"));
-	} else {
-		exit(header("Location: $web/index.php?$sessname=$sessid", TRUE, "302"));
-	}
+	// License check removed - redirect directly to index
+	exit(header("Location: $web/index.php?$sessname=$sessid", TRUE, "302"));
 }
 
 DBClose();

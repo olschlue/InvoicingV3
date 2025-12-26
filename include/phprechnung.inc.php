@@ -199,17 +199,14 @@ function CheckUser() {
 	if(!isset($_SESSION['Username'])) {
 		exit(header("Location: $web/login/login.php?$sessname=$sessid"));
 	}
-	CheckLicense();
+	// CheckLicense(); // License check removed
 }
 
-// Check if user has accepted the license
+// Check if user has accepted the license - DISABLED
 //
 function CheckLicense() {
-	global $web, $sessname, $sessid;
-
-	if(isset($_SESSION['LicenseAccepted']) && $_SESSION['LicenseAccepted'] != '1') {
-		exit(header("Location: $web/license.php?$sessname=$sessid"));
-	}
+	// License check has been removed from the system
+	return true;
 }
 
 // Are you administrator
